@@ -5,11 +5,4 @@ task :build do
   system "jekyll build"
   system "rm -r #{GH_PAGES_DIR}/*"
   system "cp -r ./_site/* #{GH_PAGES_DIR}/"
-  system "git add --all"
-  system "git commit -m 'Updating my blog'"
-  system "git push origin master"
-  system "cd #{GH_PAGES_DIR}"
-  system "git add --all"
-  system "git commit -m 'Updating my blog'"
-  system "git push origin master"
 end
