@@ -7,5 +7,5 @@ task :build do
   system "cp -r ./_site/* #{GH_PAGES_DIR}/"
   system "git add --all"
   system "git commit -m 'Updating my blog'"
-  git push origin master
+  system "git push origin master"
 end
