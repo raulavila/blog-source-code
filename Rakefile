@@ -8,4 +8,8 @@ task :build do
   system "git add --all"
   system "git commit -m 'Updating my blog'"
   system "git push origin master"
+  system "cd #{GH_PAGES_DIR}"
+  system "git add --all"
+  system "git commit -m 'Updating my blog'"
+  system "git push origin master"
 end
