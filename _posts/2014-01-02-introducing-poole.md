@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing Poole
+title: Introducing Poolea
 permalink: /introducing/poole
 tags:
 - Me
