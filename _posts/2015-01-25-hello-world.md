@@ -5,6 +5,7 @@ permalink: /hello-world
 tags:
 - Me
 - Blog
+comments: true
 ---
 
 Desde hace tiempo me lleva rondando por la cabeza la idea de tener una página personal / blog. La verdad es que hasta hace poco consideraba que no tenía demasiadas cosas que aportar a la comunidad, pero me he dado cuenta de que [cualquiera](/sobre-mi) en este mundillo tiene algo que decir.

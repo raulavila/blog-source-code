@@ -20,6 +20,7 @@
 
       <main>
         {{ content }}
+        {% include comments.html %}
       </main>
 
       <footer class="footer">
@@ -29,7 +30,8 @@
       </footer>
     </div>
 
-  {% include foot.html %}
+  {% include twitter.html %}
+  {% include google_analytics.html %}
 
   </body>
 </html>
