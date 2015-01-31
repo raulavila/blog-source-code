@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Entornos integrados de desarrollo (IDE)
-permalink: 
+permalink: 2015/01/entornos-integrados-desarrollo
 tags:
 - IDE
 - desarrollo

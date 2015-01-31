@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World!
-permalink: hello-world
+permalink: 2015/01/hello-world
 tags:
 - Me
 - Blog

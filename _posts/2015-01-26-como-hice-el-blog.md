@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cómo hice el blog
-permalink: como-hice-el-blog
+permalink: 2015/01/como-hice-el-blog
 tags:
 - Blog
 comments: true
