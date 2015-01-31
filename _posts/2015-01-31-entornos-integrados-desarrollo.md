@@ -8,6 +8,8 @@ tags:
 comments: true
 ---
 
+![IntelliJ Idea](/public/pictures/screenshot_intellij.png)
+
 Los entornos integrados de desarrollo (IDE) son una herramienta fundamental en el desarrollo de software profesional (y no profesional, diría yo). La asistencia que ofrecen para la generación de código, navegación entre archivos, depuración, despliegues, integración con control de versiones, etc, los hace imprescindibles para cumplir con los mínimos de productividad que exige un mercado tan competitivo como el actual.
 
 <!--break-->

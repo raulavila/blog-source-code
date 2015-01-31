@@ -7,7 +7,7 @@ tags:
 comments: true
 ---
 
-![Jekyll y GitHub]({{ site.url }}/public/pictures/jekyll-github.png)
+![Jekyll y GitHub](/public/pictures/jekyll-github.png)
 
 En Internet hay un montón de alternativas para crear un blog propio. Cuando me propuse crear una web personal tuve claro desde el principio que los contenidos generados deberían ser míos. Me explico: en ocasiones, al utilizar plataformas como [blogger](http://www.blogger.com) ocurre que los posts quedan alojados en un servidor sobre el que no tienes ningún control. Y así te puedes encontrar con que nuestro amigo Google ha decidido que no estás cumpliendo las *condiciones de uso* y cerrártelo de buenas a primeras. En la misma liga juegan los blogs de [WordPress](https://es.wordpress.com/), por ejemplo.
 
