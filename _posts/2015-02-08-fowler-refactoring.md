@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fowler's Refactoring. Un clásico con errores (parte 1)
-permalink: 2015/02/fowler-refactoring
+permalink: 2015/02/fowler-refactoring-1
 tags:
 - refactoring
 - desarrollo
