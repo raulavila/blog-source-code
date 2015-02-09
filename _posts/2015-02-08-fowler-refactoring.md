@@ -77,6 +77,10 @@ Para que una clase sea inmutable no basta con que sus atributos sean final y no 
 
 Si queremos usar de todas todas la clase Date para limitar los rangos de DateRange, la forma adecuada de que DateRange sea inmutable es crear "defensive copies" en los getters. Esta técnica está explicada estupendamente en el libro ["Effective Java"](http://www.amazon.es/Effective-Java-Programming-Language-Guide/dp/0321356683/ref=sr_1_1?ie=UTF8&qid=1423422393&sr=8-1&keywords=Effective+Java) de Joshua Bloch. Consiste en crear una copia del objeto a devolver en lugar del propio objeto. de esta forma el cliente no tiene una referencia de la instancia contenida en la clase inmutable, sino una copia, y puede hacer lo que quiera con ella, ya que la instancia original seguirá encapsulada en dicha clase inmutable:
 
+<div class="font-small">
+(Gracias Jorge por el comentario sobre el error en el constructor)
+</div>
+
 {% highlight java %}
 
 public class DateRangeInmutable {
@@ -85,8 +89,8 @@ public class DateRangeInmutable {
     private final Date end;
 
     public DateRangeInmutable(Date start, Date end) {
-        this.start = start;
-        this.end = end;
+        this.start = new Date(start.getTime());
+        this.end = new Date(end.getTime());
     }
 
     public Date getStart() {
