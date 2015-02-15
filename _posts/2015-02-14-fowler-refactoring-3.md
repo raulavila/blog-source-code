@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fowler's Refactoring. Un clásico con errores (y 3)
+title: Desgranando Fowler's Refactoring (y 3)
 permalink: 2015/02/fowler-refactoring-3
 tags:
 - refactoring
@@ -65,7 +65,7 @@ public class Person {
     }
 
     public static Person createFemale() {
-        return new Person(true, 'M');
+        return new Person(false, 'F');
     }
 
     public boolean isMale() {
