@@ -16,7 +16,7 @@ discusión. Además si algún lector considera que he desbarrado en algún aspec
 
 ###Inline Temp (pág. 119)
 
-Este refactoring es bastante sencillo, consiste en reemplazar
+Este refactoring es bastante sencillo, en el libro de Fowler se propone reemplazar
 
 {% highlight java %}
 double basePrice = anOrder.basePrice();
