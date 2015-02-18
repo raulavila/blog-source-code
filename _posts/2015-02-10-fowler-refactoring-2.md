@@ -241,6 +241,15 @@ Veamos como quedarían los tests:
 
 {% endhighlight %}
 
+{% highlight xml %}
+
+<bean id="" 
+            class="">
+            
+</bean>
+
+{% endhighlight %}
+
 
 Como siempre, los ejemplos los dejo subidos [en mi repositorio de GitHub](https://github.com/raulavila/fowlers-refactoring-errors).
 
