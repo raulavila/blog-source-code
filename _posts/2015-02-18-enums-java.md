@@ -141,7 +141,7 @@ public enum Operation {
    //....
    VERY_COMPLEX_OPERATION;
    //....
-   public abstract int perform(int operand1, int operand2){
+   public int perform(int operand1, int operand2){
       throw new UnsupportedOperationException();
    }
 } 
