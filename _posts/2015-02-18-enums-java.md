@@ -21,7 +21,7 @@ public enum EmployeeType {
 } 
  {% endhighlight %}
 
-<!-- break -->
+<!--break-->
 
 También es bastante normal que se utilicen de una forma algo más avanzada, asignando parámetros a cada valor enumerado:
 
