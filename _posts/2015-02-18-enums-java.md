@@ -9,16 +9,14 @@ tags:
 comments: true
 ---
 
-[Los tipos enumerados de Java](http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html) (`enum`) fueron añadidos en la versión 5 del lenguaje. Su uso más inmediato fue el de
-"contenedores de constantes", y me temo que gran parte de los desarrolladores desconocen la flexibilidad que permiten
- más allá de este típico uso:
- 
+[Los tipos enumerados de Java](http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html) (`enum`) fueron añadidos en la versión 5 del lenguaje. Su uso más inmediato fue el de "contenedores de constantes", y me temo que gran parte de los desarrolladores desconocen la flexibilidad que permiten más allá de este típico uso:
+
  {% highlight java %}
 public enum EmployeeType {
     ENGINEER,
     MANAGER,
     SALESMAN;
-} 
+}
  {% endhighlight %}
 
 <!--break-->
@@ -49,20 +47,16 @@ public enum EmployeeType {
 }
 {% endhighlight %}
 
-En el ejemplo se asigna un nombre "para mostrar" (`toString()` por defecto sacaría el valor del enumerado tal cual, 
-en letras mayúsculas) y un salario a cada tipo de empleado.
+En el ejemplo se asigna un nombre "para mostrar" (`toString()` por defecto sacaría el valor del enumerado tal cual, en letras mayúsculas) y un salario a cada tipo de empleado.
 
-Mi intención con este post es dar a conocer usos más avanzados de los enumerados, que yo personalmente utilizo 
-bastante a menudo y de formas quizás menos ortodoxas.
+Mi intención con este post es dar a conocer usos más avanzados de los enumerados, que yo personalmente utilizo bastante a menudo y de formas quizás menos ortodoxas.
 
 ([Como siempre el código está en GitHub](https://github.com/raulavila/enums-examples))
 
 ### Enums como estados con comportamiento asociado
 
-Los enumerados me parecen una de las formas más claras y elegantes de implementar [el patrón State](http://en.wikipedia.org/wiki/State_pattern). En el siguiente ejemplo creamos una clase *Calculator* de una sola operación, y que expone
- dos métodos, `setOperation`, para cambiar la operación (el estado) de la calculadora, y `performOperation`, que 
- recibe dos números y devuelve el resultado de aplicar la operación:
-  
+Los enumerados me parecen una de las formas más claras y elegantes de implementar [el patrón State](http://en.wikipedia.org/wiki/State_pattern). En el siguiente ejemplo creamos una clase *Calculator* de una sola operación, y que expone dos métodos, `setOperation`, para cambiar la operación (el estado) de la calculadora, y `performOperation`, que recibe dos números y devuelve el resultado de aplicar la operación:
+
   {% highlight java %}
 public class Calculator {
 
@@ -83,10 +77,9 @@ public class Calculator {
     }
 }
   {% endhighlight %}
-  
-  Como vemos, la clase no tiene ni idea de como se implementan las operaciones, delegando su ejecución a la instancia
-   de Operation:
-   
+
+  Como vemos, la clase no tiene ni idea de como se implementan las operaciones, delegando su ejecución a la instancia de Operation:
+
    {% highlight java %}
 public enum Operation {
     ADD("+") {
@@ -127,15 +120,11 @@ public enum Operation {
     public abstract int perform(int operand1, int operand2);
 }
    {% endhighlight %}
-   
-Aquí es donde se ve de forma clara cómo encapsulamos cada operación en las distintas instancias de Operation
-dentro del método `perform`, que a nivel de clase está declarado como método abstracto (ya que se implementa en cada 
-uno de los enumerados). También exponemos un atributo, `operator`, que no es más que el símbolo que identifica a cada
- operación, aunque en el ejemplo no se utiliza.
- 
-El método `perform` podría haber contenido una implementación por defecto, de forma que si luego no la sobrescribimos
- en las instancias sería la ejecutada por el compilador:
- 
+
+Aquí es donde se ve de forma clara cómo encapsulamos cada operación en las distintas instancias de Operation dentro del método `perform`, que a nivel de clase está declarado como método abstracto (ya que se implementa en cada uno de los enumerados). También exponemos un atributo, `operator`, que no es más que el símbolo que identifica a cada operación, aunque en el ejemplo no se utiliza.
+
+El método `perform` podría haber contenido una implementación por defecto, de forma que si luego no la sobrescribimos en las instancias sería la ejecutada por el compilador:
+
  {% highlight java %}
 public enum Operation {
    //....
@@ -144,14 +133,13 @@ public enum Operation {
    public int perform(int operand1, int operand2){
       throw new UnsupportedOperationException();
    }
-} 
+}
  {% endhighlight %}
- 
- En este ejemplo podemos declarar una operación y no implementarla de momento, mientras que con la primera versión no
-  sería posible.
-  
-  Como es de esperar la calculadora funciona según lo esperado:
-  
+
+ En este ejemplo podemos declarar una operación y no implementarla de momento, mientras que con la primera versión no sería posible.
+
+Como es de esperar la calculadora funciona según lo esperado:
+
   {% highlight java %}
 Calculator calculator = new Calculator(Operation.ADD);
 
@@ -165,9 +153,8 @@ assertThat(calculator.performOperation(8, 2)).isEqualTo(6);
 
 ###Estados asociados
 
-Siguiendo con el patrón State, es posible asociar estados de la misma enumeración entre sí, con la única condición de
- que no es posible referenciar un valor del enumerado que aún no ha sido declarado:
- 
+Siguiendo con el patrón State, es posible asociar estados de la misma enumeración entre sí, con la única condición de que no es posible referenciar un valor del enumerado que aún no ha sido declarado:
+
  {% highlight java %}
 enum OvenState {
 
@@ -198,11 +185,9 @@ enum OvenState {
     }
 }
  {% endhighlight %}
- 
- En el ejemplo defino estados de un horno imaginario, de forma que cada estado contiene una referencia de su estado 
- siguiente. Debido a la restricción comentada más arriba, no es posible declarar los estados como sería más natural, 
- de BEGIN a END, porque en tal caso el compilador se quejaría.
- 
+
+ En el ejemplo defino estados de un horno imaginario, de forma que cada estado contiene una referencia de su estado siguiente. Debido a la restricción comentada más arriba, no es posible declarar los estados como sería más natural, de BEGIN a END, porque en tal caso el compilador se quejaría.
+
 La implementación del horno con su estado quedaría:
 
 {% highlight java %}
@@ -236,8 +221,7 @@ public class Oven {
 }
 {% endhighlight %}
 
-De nuevo el horno no tiene ni idea de todos los estados por los que pasa, solo sabe que hay un estado inicial, y que 
-existe un estado final según el valor devuelto por `hasFinished`.
+De nuevo el horno no tiene ni idea de todos los estados por los que pasa, solo sabe que hay un estado inicial, y que existe un estado final según el valor devuelto por `hasFinished`.
 
 {% highlight java %}
 Oven oven = new Oven();
@@ -268,8 +252,7 @@ oven.reset();
 assertThat(oven.getState()).isEqualTo("Oven is starting");
 {% endhighlight %}
 
-Siguiendo con mi manía de desacoplar al máximo, ¡el horno ni siquiera tendría por qué saber el valor del estado 
-inicial! Para eso habría que declarar un método estátido en OvenState:
+Siguiendo con mi manía de desacoplar al máximo, ¡el horno ni siquiera tendría por qué saber el valor del estado inicial! Para eso habría que declarar un método estátido en OvenState:
 
 {% highlight java %}
 public static OvenState getInitialState() {
@@ -290,9 +273,7 @@ Esto ya queda al gusto de cada uno, pero yo prefiero esta última versión.
 
 ###Enums como parametrizaciones
 
-Imaginemos un sistema que contiene una serie de parámetros de configuración a persistir en una base de datos o 
-similar. Dichos parámetros pueden contener diversos tipos de datos, pero en la tabla el tipo del
-valor será un String para dar flexibilidad, es decir, tendremos algo como:
+Imaginemos un sistema que contiene una serie de parámetros de configuración a persistir en una base de datos o similar. Dichos parámetros pueden contener diversos tipos de datos, pero en la tabla el tipo del valor será un String para dar flexibilidad, es decir, tendremos algo como:
 
 <table>
     <thead>
@@ -325,10 +306,7 @@ valor será un String para dar flexibilidad, es decir, tendremos algo como:
     </tbody>
 </table>
 
-Aunque el tipo de PARAM_VALUE sea un String, es evidente que cada parámetro tiene una naturaleza muy concreta 
-(podemos tener fechas, enteros, cadenas, etc). Nos gustaría que nuestra clase DAO que persiste esta información 
-chequeara el tipo de los datos antes de almacenarlos. Además queremos que los nombres de los parámetros estuvieran 
-acotados a una serie muy concreta.
+Aunque el tipo de PARAM_VALUE sea un String, es evidente que cada parámetro tiene una naturaleza muy concreta (podemos tener fechas, enteros, cadenas, etc). Nos gustaría que nuestra clase DAO que persiste esta información chequeara el tipo de los datos antes de almacenarlos. Además queremos que los nombres de los parámetros estuvieran acotados a una serie muy concreta.
 
 Diría que no hay mejor forma de hacer esto que utilizando un enumerado:
 
@@ -364,8 +342,7 @@ public enum ConfigParam {
 }
 {% endhighlight %}
 
-Como vemos, cada instancia contiene el nombre del parámetro a persistir, y la clase del valor. El propio enumerado 
-expone un método que chequea si un objeto en concreto contiene un valor válido para el parámetro.
+Como vemos, cada instancia contiene el nombre del parámetro a persistir, y la clase del valor. El propio enumerado expone un método que chequea si un objeto en concreto contiene un valor válido para el parámetro.
 
 La clase DAO, por tanto, delegaría toda la lógica al valor del enumerado que quiera almacenar el cliente:
 
@@ -375,7 +352,7 @@ public interface ConfigDAO {
 }
 
 public abstract class AbstractConfigDAO implements ConfigDAO {
-    
+
     @Override
     public void save(ConfigParam param, Object value) {
         validate(param, value);
@@ -400,10 +377,8 @@ public abstract class AbstractConfigDAO implements ConfigDAO {
 }
 {% endhighlight %}
 
-La clase `AbstractConfigDAO` es una implementación del [Template method pattern](http://en.wikipedia.org/wiki/Template_method_pattern), y sería necesario completar el "algoritmo" con una implementación concreta del 
-método `doSave`. En el código para este ejemplo me olvido por completo de almacenar nada (el cometido de este post no
- es hablar de persistencia de datos en Java :) ),por lo que he creado una implementación Dummy:
- 
+La clase `AbstractConfigDAO` es una implementación del [Template method pattern](http://en.wikipedia.org/wiki/Template_method_pattern), y sería necesario completar el "algoritmo" con una implementación concreta del método `doSave`. En el código para este ejemplo me olvido por completo de almacenar nada (el cometido de este post no es hablar de persistencia de datos en Java :) ),por lo que he creado una implementación Dummy:
+
  {% highlight java %}
 public class DummyConfigDAO extends AbstractConfigDAO {
 
@@ -414,9 +389,9 @@ public class DummyConfigDAO extends AbstractConfigDAO {
     }
 }
  {% endhighlight %}
- 
+
  En los tests se ve muy bien lo claro que quedan los clientes utilizando esta aproximación:
- 
+
  {% highlight java %}
 @Test
 public void testCorrectSystemName() throws Exception {
@@ -432,12 +407,8 @@ public void testIncorrectSystemName() throws Exception {
     configDAO.save(ConfigParam.SYSTEM_NAME, Integer.valueOf(1));
 }
  {% endhighlight %}
- 
- 
+
+
 ###Conclusión
- 
- Espero que con este post haya quedado demostradada la flexibilidad de los enumerados en Java, y la claridad que dan al
-código si se usan convenientemente. Me he dejado algún uso en el tintero, como puede ser la implementación del patrón
- Singleton, [pero este tema ya está cubierto de sobra.](http://javarevisited.blogspot.co.uk/2012/07/why-enum-singleton-are-better-in-java.html)
- 
- 
+
+ Espero que con este post haya quedado demostradada la flexibilidad de los enumerados en Java, y la claridad que dan al código si se usan convenientemente. Me he dejado algún uso en el tintero, como puede ser la implementación del patrón Singleton, [pero este tema ya está cubierto de sobra.](http://javarevisited.blogspot.co.uk/2012/07/why-enum-singleton-are-better-in-java.html)
