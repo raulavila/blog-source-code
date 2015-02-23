@@ -64,4 +64,8 @@ Personalmente he trabajado durante los últimos diez meses en un sistema con est
 
 ###Otras charlas
 
-Se hablaron de otras cosas, como la importancia de seleccionar las palabras claves para aplicaciones subidas a la App Store de Apple a la hora de ganar visibilidad, las virguerías que se pueden hacer con [Arduino](http://www.arduino.cc/), la plataforma [Native Script](http://www.telerik.com/nativescript), para desarrollo Cross platform de aplicaciones móviles, o una introducción a la metodología [SCRUM](http://es.wikipedia.org/wiki/Scrum). Fue un día bastante provechoso, y repetiría sin dudarlo.
+Se hablaron de otras cosas, como la importancia de seleccionar las palabras claves para aplicaciones subidas a la App Store de Apple a la hora de ganar visibilidad, las virguerías que se pueden hacer con [Arduino](http://www.arduino.cc/), la plataforma [Native Script](http://www.telerik.com/nativescript), para desarrollo Cross platform de aplicaciones móviles, o una introducción a la metodología [SCRUM](http://es.wikipedia.org/wiki/Scrum).
+
+Fue un día bastante provechoso, y repetiría sin dudarlo, máxime cuando además no me fui con las manos vacías, ¡me tocó una de las rifas! :) Aquí la foto que da fe de ello:
+
+![Rifa](/public/pictures/raffle.jpg)
