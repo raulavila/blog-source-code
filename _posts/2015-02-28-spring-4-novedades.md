@@ -105,18 +105,18 @@ En Spring 3 obtendríamos la excepción "No qualifying bean of type [Store] is d
 En Spring 3 era posible inyectar una seria de beans que implementaran una interfaz en particular, pero no era posible garantizar el orden de la inyección:
 
 {% highlight java %}
-public interface MessageService {
-    String getMessage();
+public interface GreetingService {
+    String getGreeting();
 }
 
-public class MultiMessagePrinter {
+public class MultiGreetingPrinter {
 
     @Autowired
-    private List<MessageService> messageServices;
+    private List<GreetingService> greetingServices;
 
-    public void printMessage() {
-    	for(MessageService messageService: messageServices) {
-    		System.out.println(messageService.getMessage());
+    public void printGreeting() {
+    	for(GreetingService greetingService: greetingServices) {
+    		System.out.println(greetingService.getGreeting());
     	}
 
     }
@@ -124,7 +124,7 @@ public class MultiMessagePrinter {
 }
 {% endhighlight %}
 
-En el ejemplo, si tenemos varios objetos de diferentes clases que implementan la interfaz MessageService en el contexto de Spring, todos ellos serán inyectadas en la lista, pero si queremos establecer prioridades en el orden en que dichas instancias serán invocadas (por ejemplo, para implementar el patrón [Chain of Responsibility](http://en.wikipedia.org/wiki/Chain-of-responsibility_pattern)) no había forma de hacerlo. Esto se ha solucionado en Spring 4 añadiendo la interfaz `Ordered` que solo expone un método, `getOrder`:
+En el ejemplo, si tenemos varios objetos de diferentes clases que implementan la interfaz GreetingService en el contexto de Spring, todos ellos serán inyectadas en la lista, pero si queremos establecer prioridades en el orden en que dichas instancias serán invocadas (por ejemplo, para implementar el patrón [Chain of Responsibility](http://en.wikipedia.org/wiki/Chain-of-responsibility_pattern)) no había forma de hacerlo. Esto se ha solucionado en Spring 4 añadiendo la interfaz `Ordered` que solo expone un método, `getOrder`:
 
 {% highlight java %}
 
@@ -134,10 +134,10 @@ public interface Ordered {
 
 {% endhighlight %}
 
-Nuestras implementaciones de MessageService deberán implementar también la interfaz Ordered, y los objetos serán inyectados siguiendo el orden dictado por `getOrder`:
+Nuestras implementaciones de GreetingService deberán implementar también la interfaz Ordered, y los objetos serán inyectados siguiendo el orden dictado por `getOrder`:
 
 {% highlight java %}
-public class PersonGreeting implements MessageService, Ordered {
+public class PersonGreeting implements GreetingService, Ordered {
     /*..*/
 
     private int order;
@@ -157,7 +157,7 @@ public class PersonGreeting implements MessageService, Ordered {
 De esta forma podemos crear los beans en el contexto estableciendo su orden:
 
 {% highlight xml %}
-<bean id="personGreeting" class="com.raulavila.spring.messages.PersonGreeting">
+<bean id="personGreeting" class="com.raulavila.spring.greeting.PersonGreeting">
 	<property name="personName" value="Raul" />
 	<property name="order" value="2" />
 </bean>
@@ -181,11 +181,11 @@ public class MyApplicationContext {
 	}
 
 	@Bean(name="helloWorld")
-	@Conditional(NoMessageServiceDefined.class)
-	public MessageService createMessageService(){
-		return new MessageService() {
+	@Conditional(NoGreetingServiceDefined.class)
+	public GreetingService createGreetingService(){
+		return new GreetingService() {
 			@Override
-			public String getMessage() {
+			public String getGreeting() {
 				return "Hello world!!";
 			}
 		};
@@ -205,21 +205,21 @@ Bastante autoexplicativa, asocia una descripción al Bean. Es especialmente úti
 Opción bastante interesante, como su propio nombre indica condiciona la creación del bean al resultado (booleano, claro) devuelto por la clase indicada en la anotación, y que debe implementar la interfaz `Condition`:
 
 {% highlight java %}
-public class NoMessageServiceDefined implements Condition{
+public class NoGreetingServiceDefined implements Condition{
 
 	@Override
 	public boolean matches(ConditionContext context,
 			AnnotatedTypeMetadata metadata) {
 
 		return context.getBeanFactory()
-						.getBeansOfType(MessageService.class)
+						.getBeansOfType(GreetingService.class)
 						.isEmpty();
 	}
 
 }
 {% endhighlight %}
 
-En este ejemplo se revisa el contexto para comprobar si ya existe algún bean de la clase MessageService, y en tal caso se evitaría la creación de uno nuevo. Bastante útil cuando tenemos la configuración repartida en diferentes ficheros y pueden existir duplicidades.
+En este ejemplo se revisa el contexto para comprobar si ya existe algún bean de la clase GreetingService, y en tal caso se evitaría la creación de uno nuevo. Bastante útil cuando tenemos la configuración repartida en diferentes ficheros y pueden existir duplicidades.
 
 ###Configuración del contexto mediante Groovy DSL
 
