@@ -118,7 +118,7 @@ class Manager implements Employee {
 
 ###Mejorando la propuesta. Fuera switch.
 
-En general, las sentencias switch (o en su defecto, una serie de ifs encadenados), suelen ser un ["code smell"](http://en.wikipedia.org/wiki/Code_smell), ya que entre otras cosas, aumentan la [complejidad ciclomática](http://es.wikipedia.org/wiki/Complejidad_ciclom%C3%A1tica). Me atrevería a decir que en un 95% de los casos es posible encontrar mejores soluciones que el uso de una sentencia switch. 
+En general, las sentencias switch (o en su defecto, una serie de ifs encadenados), suelen ser un ["code smell"](http://en.wikipedia.org/wiki/Code_smell), ya que entre otras cosas, aumentan la [complejidad ciclomática](http://es.wikipedia.org/wiki/Complejidad_ciclom%C3%A1tica). Me atrevería a decir que en un 95% de los casos es posible encontrar mejores soluciones que el uso de una sentencia switch.
 
 En este caso, tenemos que el método create genera instancias de clases derivadas de Employee, basándose en el valor de una enumeración...diría que esto puede representarse en un Map EmployeeType => Class, y generando las instancias mediante el método newInstance de la clase Class. Veamos el resultado:
 
@@ -126,7 +126,7 @@ En este caso, tenemos que el método create genera instancias de clases derivada
 
 public enum EmployeeFactory {
     INSTANCE;
-    
+
     private Map<EmployeeType, Class<? extends Employee>> typeClassMap =
                 new ImmutableMap.Builder<EmployeeType, Class<? extends Employee>>()
                     .put(EmployeeType.ENGINEER, Engineer.class)
@@ -221,7 +221,7 @@ Veamos como quedarían los tests:
                         .put(EmployeeType.SALESMAN, Salesman.class)
                         .put(EmployeeType.MANAGER, Manager.class)
                         .build();
-        
+
         employeeFactory = new EmployeeFactoryConfigurable(typeClassMap);
     }
 
@@ -241,22 +241,4 @@ Veamos como quedarían los tests:
 
 {% endhighlight %}
 
-{% highlight xml %}
-
-<bean id="" 
-            class="">
-            
-</bean>
-
-{% endhighlight %}
-
-
 Como siempre, los ejemplos los dejo subidos [en mi repositorio de GitHub](https://github.com/raulavila/fowlers-refactoring-errors).
-
-
-
-
-
-
-
-
