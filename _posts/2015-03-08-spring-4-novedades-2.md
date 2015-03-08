@@ -11,7 +11,7 @@ comments: true
 
 Continuamos con el repaso a las novedades de la versión 4 de Spring, en esta ocasión más centrados en las relativas al desarrollo web, servicios REST, etc.
 
-Cómo ya comenté en [la primera parte](/2015/02/spring-4-novedades), probablemente el proyecto más popular de Spring sea Spring MVC, y su mayor baza la claridad con la que podemos crear controladores web, bien sea manejando peticiones [Ajax](http://es.wikipedia.org/wiki/AJAX) o con un estilo más tradicional, redirigiendo a vistas JSP, etc. Es posible incluso configurar fácilmente y para la misma petición diferentes formatos de respuesta (JSON, XML, vista tradicional, CSV, lo que se) mediante el uso de [view resolvers](http://examples.javacodegeeks.com/enterprise-java/spring/mvc/spring-mvc-view-resolver-example/), y se integra muy bien con librerías de plantillas como [Apache Tiles](https://tiles.apache.org/).
+Cómo ya comenté en [la primera parte](/2015/02/spring-4-novedades), probablemente el proyecto más popular de Spring sea Spring MVC, y su mayor baza la claridad con la que podemos crear controladores web, bien sea manejando peticiones [Ajax](http://es.wikipedia.org/wiki/AJAX) o con un estilo más tradicional, redirigiendo a vistas JSP, etc. Es posible incluso configurar fácilmente y para la misma petición diferentes formatos de respuesta (JSON, XML, vista tradicional, CSV, lo que sea) mediante el uso de [view resolvers](http://examples.javacodegeeks.com/enterprise-java/spring/mvc/spring-mvc-view-resolver-example/), y se integra muy bien con librerías de plantillas como [Apache Tiles](https://tiles.apache.org/).
 
 <!--break-->
 
@@ -101,7 +101,7 @@ public void testSyncRestTemplate() {
 
 El problema de este cliente es que es síncrono, por lo que las llamadas son bloqueantes, y dificulta en gran medida el desarrollo de aplicaciones multithreading, más que nada porque nos obliga a desarrollar un wrapper asíncrono. Supongo que muchos desarrolladores se quejaron a la comunidad Spring de este asunto, porque la versión 4 viene con su propio cliente asíncrono, `AsynRestTemplate`. A grandes rasgos podemos utilizar este cliente de dos formas diferentes:
 
-* Bloqueando el thread mientras esperamos la respuesta:
+1- Bloqueando el thread mientras esperamos la respuesta:
 
 {% highlight java %}
 AsyncRestTemplate restTemplate = new AsyncRestTemplate();
@@ -126,7 +126,7 @@ try {
 
 La llamada a `futureEntity.get()` suspenderá el thread que ejecuta la petición REST hasta recibir la respuesta, por lo que otros threads se podrán seguir ejecutando mientras este está suspendido. Es decir, eliminamos esperas activas y  optimizamos recursos.
 
-* Configurando funciones callback:
+2- Configurando funciones callback:
 
 {% highlight java %}
 AsyncRestTemplate restTemplate = new AsyncRestTemplate();
@@ -261,7 +261,7 @@ Aquí vemos que:
 
 * Es necesario incluir las librerías JS `sock-js` y `stomp`
 * En el método `connect` vemos cómo hay que suscribirse a un topic, siendo necesario configurar el nombre completo del topic y la función callback cuando recibamos un mensaje publicado por el broker
-* En el método `sendName` mandamos un mensaje al endpoint "/app/hello", que será manejado en el controlador. Nótese como en este ejemplo recibimos el mensaje de vuelta desde el broker en el mismo cliente, pero no tiene que ser así
+* En el método `sendName` mandamos un mensaje al endpoint "/app/hello", que será manejado en el controlador. Nótese como en este ejemplo recibimos el mensaje de vuelta desde el broker en el mismo cliente, pero no tiene por qué ser así
 * En el método disconnect eliminamos la suscripción al topic
 
 En el siguiente video tenéis una demostración en vivo de la aplicación (siempre es más fácil ver algo en directo para entenderlo del todo :), disculpad la falta de estilos CSS en condiciones). Como se puede ver, se abren dos pestañas a la misma aplicación, y cuando se conecta cada cliente al websocket este empezará a recibir los mensajes publicados sin necesidad de enviar petición previa:
