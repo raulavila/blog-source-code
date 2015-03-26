@@ -11,7 +11,7 @@ comments: true
 
 ¿Son necesarias las revisiones de código? ¿No revisamos ya el código al mismo tiempo que desarrollamos? Si ya utilizo el refactoring como práctica habitual, ¿qué sentido tiene revisar el código de nuevo?
 
-Son muchas las preguntas que pueden surgir en un equipo de desarrolladores en referencia a las revisiones de código. Pero peor aún que las preguntas son las inquietudes o recelos (¡si se revisa mi código tirarán por tierra mi trabajo!). Antes de nada, empezaremos definiendo que es una revisión de código (*Code review*).
+Son muchas las preguntas que pueden surgir en un equipo de desarrolladores en referencia a las revisiones de código. Pero peor aún que las preguntas son las inquietudes o recelos ("¡si se revisa mi código tirarán por tierra mi trabajo!"). Antes de nada, empezaremos definiendo qué es una revisión de código (*Code review*).
 
 <!--break-->
 
@@ -31,10 +31,10 @@ Seamos directos: en nuestra profesión abundan los perfiles "complicados". Sin e
 
 * ¿Tú código es fácil de entender por otra persona que no seas tú?
 * ¿Tú mismo serías capaz de entender ese código de aquí a un par de años?
-* ¿Has tenido en cuenta todos los factores que afectan o pueden afectar al sistema a la hora de desarrollar tu código?
+* ¿Has tenido en cuenta TODOS los factores que afectan o pueden afectar al sistema a la hora de desarrollar tu código?
 * ¿Si tú descubrieras un error flagrante en el código de otro no crees que es tu responsabilidad como profesional arreglarlo? En tal caso, ¿no es mejor detectar ese tipo de errores cuanto antes?
 
-####Colectividad del codigo. El código no es mío.
+####Colectividad del codigo. El código no es mío
 
 Efectivamente, cuando trabajamos en un proyecto empresarial, estamos programando código que seguirá siendo desarrollado, mejorado y mantenido por un buen puñado de desarrolladores en el futuro. Creo que en semejante ámbito no tiene ningún sentido hablar de propiedad individual del código, más bien todo lo contrario.
 
@@ -51,7 +51,7 @@ El resto del equipo (en nuestro ejemplo, los otros tres desarrolladores), o más
 1. Descubrir herramientas, API's, maneras de afrontar un problema...que desconocíamos
 2. Obtener un conocimiento global del sistema (no sólo de las partes que YO desarrollo)
 3. Aportar puntos de vista externos, y sacar a relucir cuestiones que se le pueden haber pasado por alto al desarrollador principal
-4. Mejorar la calidad. En ocasiones el funcionamiento de un fragmento de código que puede resultar muy evidente a su creador no lo es tanto para otros
+4. Mejorar la calidad y legibilidad. En ocasiones el funcionamiento de un fragmento de código que puede resultar muy evidente a su creador no lo es tanto para otros
 5. Conseguir la tan ansiada "colectividad del código"
 
 Por supuesto, no todos los comentarios del resto del equipo pueden resultar acertados, y es tarea de **todo el equipo** alcanzar un consenso sobre las acciones que hay que llevar a cabo una vez finalizada la revisión. En general, siempre surgirán cambios a aplicar. En mi actual empresa damos por hecho que tras la "Revisión de código" siempre habrá una tarea de "Cambios tras revisión de código", y siempre añadimos una estimación de estas tareas al conjunto de la historia de usuario. De hecho, nunca damos por cerrada (**done**) una historia de usuario hasta que ha pasado por la revisión de código.
@@ -71,9 +71,13 @@ Deducimos por tanto que si un código no es revisado por nadie, **solamente una 
 
 ##Herramientas
 
-La revisión de código puede hacerse reuniendo al equipo en una sala o utilizando una herramienta creada con ese cometido. Existen varias en el mercado, tanto Open Source como comerciales, para conducir Code Reviews. En [este link](http://en.wikipedia.org/wiki/List_of_tools_for_code_review) se listan varias de ellas. Personalmente he trabajado con [Crucible](https://www.atlassian.com/software/crucible/overview) de [Atlassian](https://www.atlassian.com/), que se integra estupendamente con el resto de la suite Atlassian (JIRA para gestión de tareas, Stash como repositorio de código Git, etc), y permite iniciar conversaciones a partir de una línea de código, bloque, añadir comentarios generales, etc (imagen descargada de la propia web de Atlassian):
+La revisión de código puede hacerse reuniendo al equipo en una sala o utilizando una herramienta creada con ese cometido. Existen varias en el mercado, tanto Open Source como comerciales, para conducir Code Reviews. En [este link](http://en.wikipedia.org/wiki/List_of_tools_for_code_review) se listan varias de ellas. Personalmente he trabajado con [Crucible](https://www.atlassian.com/software/crucible/overview) de [Atlassian](https://www.atlassian.com/), que se integra estupendamente con el resto de la suite Atlassian (JIRA para gestión de tareas, Stash como repositorio de código Git, etc), y permite iniciar conversaciones a partir de una línea de código, bloque, añadir comentarios generales, etc:
 
 ![Crucible](/public/pictures/code-review-hero.png)
+
+<div class="font-small" style="text-align:center;">
+(imagen descargada de la propia web de Atlassian)
+</div>
 
 ##Mi experiencia personal
 
@@ -83,6 +87,6 @@ Hay otro factor más "incómodo" de decir, y es que, sabiendo de antemano que tu
 
 ##Conclusiones
 
-Ayer mismo terminé un proyecto en el que he estado trabajando durante 11 meses (de hecho hoy estoy iniciando mis vacaciones :)), habiendo completado 75 revisiones de código a lo largo de este tiempo. Creo que es con diferencia, el producto de mayor calidad que he entregada hasta ahora, y pondría totalmente la mano en el fuego por él. Seguro que el resto de desarrolladores del proyecto piensan exactamente lo mismo que yo. Sin "Code Reviews" jamás habríamos conseguido estándares tan altos ni por asomo.
+Ayer mismo terminé un proyecto en el que he estado trabajando durante 11 meses (de hecho hoy estoy iniciando mis vacaciones :)), habiendo completado 75 revisiones de código a lo largo de este tiempo. Creo que es, con diferencia, el producto de mayor calidad que he entregada hasta ahora, y pondría totalmente la mano en el fuego por él. Seguro que el resto de desarrolladores del proyecto piensan exactamente lo mismo que yo. Sin "Code Reviews" jamás habríamos conseguido estándares tan altos ni por asomo.
 
 Dadle una oportunidad a las revisiones de código, nunca volveréis atrás.
