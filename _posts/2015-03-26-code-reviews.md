@@ -4,7 +4,7 @@ title: Code Reviews (revisiones de código)
 permalink: 2015/03/code-reviews
 tags:
 - desarrollo
-- buenas-practicas
+- buenas-prácticas
 - agile
 comments: true
 ---
