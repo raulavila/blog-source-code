@@ -3,7 +3,7 @@ layout: post
 title: Cómo encontré trabajo de informático en Londres
 permalink: 2015/04/trabajo-londres
 tags:
-- Londres
+- London
 - trabajo
 comments: true
 ---
