@@ -4,7 +4,7 @@ title: El patrón Composite en la práctica
 permalink: 2015/04/patron-composite
 tags:
 - desarrollo
-- patrones-diseño
+- patrones
 comments: true
 ---
 
