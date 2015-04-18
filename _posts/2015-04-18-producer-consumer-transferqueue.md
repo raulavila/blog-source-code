@@ -517,3 +517,5 @@ new Thread(dryer).start();
 La API concurrency de Java ofrece diversas alternativas para resolver los problemas tradicionales de multithreading, lo cual no quita que sigan siendo extraordinariamente complejos en ocasiones. Nunca es tarea fácil analizar y mejorar el rendimiento de este tipo de aplicaciones, pero cuanto menor sea el número de puntos a los que hay que prestar atención más sencilla será esta optimización.
 
 Dentro del patrón "Producer-Consumer", `TransferQueue` nos permite centrarnos en la configuración de los actores y no en la del buffer, por lo que es una muy buena opción a tener en cuenta.
+
+[Click aquí para ver o descargar el código en Github](https://github.com/raulavila/blog-examples/tree/master/src/main/java/com/raulavila/multithreading)
