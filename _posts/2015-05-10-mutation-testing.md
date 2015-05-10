@@ -53,7 +53,7 @@ genera una cobertura del 100% en la clase MaxCoverage...¿diriáis que el test t
 
 ###Mutation testing al rescate
 
-¿En qué consiste Mutation testing? El concepto es bastante sencillo: consiste en realizar pequeñas modificaciones en el código de producción, conocidas como "mutaciones". Cada mutación "debería" romper algún test. Si no lo hace, la mutación "ha sobrevivido" (survived). Si rompe algún test, la mutación "ha sido asesinada" (killed). De esta forma estamos generando una nueva medida de calidad, mucho más fiable que la cobertura de código, conocida como "porcentaje de mutaciones asesinadas" (percentage of mutations killed). Este porcentaje debería ser del 100%.
+¿En qué consiste Mutation testing? El concepto es bastante sencillo: consiste en realizar pequeñas modificaciones en el código de producción, conocidas como "mutaciones". Cada mutación "debería" romper algún test. Si no lo hace, la mutación "ha sobrevivido" (survived). Si rompe algún test, la mutación "ha sido derribada" (killed). De esta forma estamos generando una nueva medida de calidad, mucho más fiable que la cobertura de código, conocida como "porcentaje de mutaciones derribadas" (percentage of mutations killed). Este porcentaje debería ser del 100%.
 
 Las mutaciones realizadas en el código son pequeñas modificaciones del estilo:
 
@@ -241,7 +241,7 @@ public class CalculatorTest {
 }
 {% endhighlight %}
 
-En esta ocasión ponemos a prueba datos de diferente naturaleza y en ambos modos de ejecución. De nuevo, PIT vuelve a ser feliz, dando un 100% de mutaciones asesinadas.
+En esta ocasión ponemos a prueba datos de diferente naturaleza y en ambos modos de ejecución. De nuevo, PIT vuelve a ser feliz, dando un 100% de mutaciones derribadas.
 
 ####Test defectuoso: verificación de colaboraciones
 
@@ -353,6 +353,6 @@ public class CalculatorTest {
 }
 {% endhighlight %}
 
-Con lo que, de nuevo, hemos conseguido que PIT nos de un 100% de cobertura y de porcentaje de mutaciones asesinadas :). Podría seguir explorando aún más las posibilidades de esta utilidad, pero creo que este ejemplo es más que suficiente para descubrir todo su potencial.
+Con lo que, de nuevo, hemos conseguido que PIT nos de un 100% de cobertura y de porcentaje de mutaciones derribadas :). Podría seguir explorando aún más las posibilidades de esta utilidad, pero creo que este ejemplo es más que suficiente para descubrir todo su potencial.
 
 El único punto flaco que le encuentro es que, debido al proceso que es necesario ejecutar para mutar el código, en sistemas con gran número de tests y miles de líneas de código, el tiempo necesario para generar un informe completo es elevado. Pero algo así no debería ser problema si tenemos programados builds nocturnos en nuestros sistema de integración continua, ¿verdad?
