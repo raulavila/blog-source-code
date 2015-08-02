@@ -11,7 +11,7 @@ comments: true
 
 En mi [anterior post](/2015/01/entornos-integrados-desarrollo) hablé de IDE's y las diferentes alternativas que hay en el mercado. Mi intención inicial con ese post era hablar de atajos de teclado, pero me extendí demasiado con la introducción y preferí terminar ese hilo para hablar de ello más adelante.
 
-En mi opinión, ningún desarrollador profesional puede proclamarse como tal si no domina al menos una gran parte de los atajos de teclado que detallaré a continuación. El desarrollo de software debe estar centrado en producir una buena arquitectura y un código mantenible y modular. Un código con estas características no es generado a la primera, requiriendo de un proceso sucesivo de depuración y refactorización. Las herramientas ofrecidas por los IDE's facilitan muchísimo esta labor, y me atrevería a decir que no conocerlas dificulta el proceso a seguir para llevar a cabo las acciones necesarias que nos llevarán a cumplir con el objetivo de entregar un código [SOLID](http://es.wikipedia.org/wiki/SOLID_%28object-oriented_design%29). 
+En mi opinión, ningún desarrollador profesional puede proclamarse como tal si no domina al menos una gran parte de los atajos de teclado que detallaré a continuación. El desarrollo de software debe estar centrado en producir una buena arquitectura y un código mantenible y modular. Un código con estas características no es generado a la primera, requiriendo de un proceso sucesivo de depuración y refactorización. Las herramientas ofrecidas por los IDE's facilitan muchísimo esta labor, y me atrevería a decir que no conocerlas dificulta el proceso a seguir para llevar a cabo las acciones necesarias que nos llevarán a cumplir con el objetivo de entregar un código [SOLID](http://es.wikipedia.org/wiki/SOLID_%28object-oriented_design%29).
 
 <!--break-->
 
@@ -55,7 +55,7 @@ Vamos a ello.
 			</td>
 			<td>
 				Eclipse: modificada sobre el default
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -69,7 +69,7 @@ Vamos a ello.
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -83,7 +83,7 @@ Vamos a ello.
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -97,11 +97,11 @@ Vamos a ello.
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
-				Ver ficheros editados recientemente
+				Ver ficheros abiertos recientemente
 			</td>
 			<td>
 				Ctrl + E
@@ -111,7 +111,21 @@ Vamos a ello.
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Ver ficheros editados recientemente
+			</td>
+			<td>
+				Ctrl + Shift + E
+			</td>
+			<td>
+				Cmd + Shift + E
+			</td>
+			<td>
+			-
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -125,7 +139,7 @@ Vamos a ello.
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -139,7 +153,7 @@ Vamos a ello.
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -149,11 +163,11 @@ Vamos a ello.
 				Ctrl + G
 			</td>
 			<td>
-				Cmd + Shift + G
+				Cmd + G
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -167,10 +181,52 @@ Vamos a ello.
 			</td>
 			<td>
 				No existe en Eclipse
-			</td>		
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Navegar en la historia del cursor
+			</td>
+			<td>
+				Alt + Left/Right
+			</td>
+			<td>
+				Ctrl + Alt + Left/Right
+			</td>
+			<td>
+				-
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Ir al inicio/final del fichero
+			</td>
+			<td>
+				Ctrl + Home/End
+			</td>
+			<td>
+				Cmd + Up/Down
+			</td>
+			<td>
+				-
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Mover cursor al final/inicio de bloque ({})
+			</td>
+			<td>
+				Ctrl + Shift + P
+			</td>
+			<td>
+				Ctrl + Shift + P
+			</td>
+			<td>
+				-
+			</td>
 		</tr>
 	</tbody>
-</table> 
+</table>
 
 Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad es que en este caso sigo utilizando las flechas de la barra de herramientas, y no pienso reflejar comandos que no utilizo para darme el pisto :). Si en algún momento los añado a mi toolbox diario lo actualizaría aquí.
 
@@ -206,7 +262,7 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -220,7 +276,7 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -234,7 +290,7 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -248,7 +304,7 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 			</td>
 			<td>
 				No existe en Eclipse
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -262,7 +318,7 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -276,7 +332,7 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -290,11 +346,11 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 			</td>
 			<td>
 				Eclipse: no hay shortcut por defecto
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
-				Borrar línea 	
+				Borrar línea
 			</td>
 			<td>
 				Ctrl + D
@@ -304,7 +360,7 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -318,7 +374,7 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 			</td>
 			<td>
 				No existe en Eclipse
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -328,11 +384,11 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 				Ctrl + 1, Alt + Enter
 			</td>
 			<td>
-				Cmd + 1
+				Cmd + 1, Cmd + Enter
 			</td>
 			<td>
 				-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -346,11 +402,25 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 			</td>
 			<td>
 				-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
-				Generar código 
+				Sugerencias incluyendo static
+			</td>
+			<td>
+				Ctrl + Alt + Space
+			</td>
+			<td>
+				Ctrl + Alt + Space
+			</td>
+			<td>
+				-
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Generar código
 			</td>
 			<td>
 				Alt + Insert
@@ -360,12 +430,26 @@ Me dejo algún atajo como Navegar adelante/atrás, a modo explorador. La verdad 
 			</td>
 			<td>
 				-
-			</td>		
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Rodear con (try/catch, if, etc)
+			</td>
+			<td>
+				Alt + Shift + Z
+			</td>
+			<td>
+				Cmd + Shift + Z
+			</td>
+			<td>
+				-
+			</td>
 		</tr>
 	</tbody>
 </table>
 
-Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión tienen en el incremento de la productividad. Veamos con detalle las más complejas: 
+Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión tienen en el incremento de la productividad. Veamos con detalle las más complejas:
 
 * "Pegar de la historia", en IntelliJ, guarda un histórico del portapapeles, y permite seleccionar el fragmento a pegar de una lista. Es bastante interesante.
 * Completar statement / bloque: una de las opciones más potentes de IntelliJ de las que no existen en Eclipse. Cierra y formatea la línea o bloque en curso, añadiendo los paréntesis o llaves necesarios para balancear correctamente la instrucción, así como el punto y coma si es un statement de una sola línea.
@@ -407,7 +491,7 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 				IntelliJ: no hay shortcut por defecto (increíblemente)
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -421,7 +505,7 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 				IntelliJ: no hay shortcut por defecto (increíblemente)
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -435,7 +519,7 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -449,7 +533,21 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Buscar símbolo
+			</td>
+			<td>
+				Ctrl + Shift + S
+			</td>
+			<td>
+				Cmd + Shift + S
+			</td>
+			<td>
+			-
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -463,7 +561,21 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 				IntelliJ: no hay shortcut por defecto
-			</td>		
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Buscar en todas partes
+			</td>
+			<td>
+				Double Shift
+			</td>
+			<td>
+				Double Shift
+			</td>
+			<td>
+				-
+			</td>
 		</tr>
 	</tbody>
 </table>
@@ -500,7 +612,7 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -510,25 +622,25 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 				Alt + Shift + M
 			</td>
 			<td>
-				Cmd + Alt + M
+				Alt + Shift + M, Cmd + Alt + M
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
 				Extraer variable
 			</td>
 			<td>
-				Alt + Shift + L 
+				Alt + Shift + L
 			</td>
 			<td>
-				Cmd + Alt + L 
+				Alt + Shift + L, Cmd + Alt + L
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -542,7 +654,7 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 				No hay shortcut por defecto
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -556,7 +668,7 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -570,7 +682,7 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 	</tbody>
 </table>
@@ -607,7 +719,7 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -621,7 +733,7 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -635,7 +747,7 @@ Las opciones reflejadas en esta tabla son, sin duda, las que mayor repercusión 
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 	</tbody>
 </table>
@@ -674,7 +786,21 @@ Evidentemente, la opción "Formatear código" lo hará según lo tengamos config
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Insertar nueva línea después de la actual
+			</td>
+			<td>
+				Shift + Enter
+			</td>
+			<td>
+				Shift + Enter
+			</td>
+			<td>
+			-
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -688,7 +814,7 @@ Evidentemente, la opción "Formatear código" lo hará según lo tengamos config
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -702,7 +828,7 @@ Evidentemente, la opción "Formatear código" lo hará según lo tengamos config
 			</td>
 			<td>
 			-
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -716,7 +842,7 @@ Evidentemente, la opción "Formatear código" lo hará según lo tengamos config
 			</td>
 			<td>
 				No es el shortcut por defecto de IntelliJ
-			</td>		
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -730,7 +856,49 @@ Evidentemente, la opción "Formatear código" lo hará según lo tengamos config
 			</td>
 			<td>
 				Eclipse: estas no son las opciones por defecto
-			</td>		
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Debug clase / tests
+			</td>
+			<td>
+				Ctrl + Shift + F11
+			</td>
+			<td>
+				Ctrl + Shift + F11
+			</td>
+			<td>
+				-
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Seleccionar ejecución
+			</td>
+			<td>
+				Ctrl + Shift + F8
+			</td>
+			<td>
+				Ctrl + Shift + F8
+			</td>
+			<td>
+				-
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Seleccionar ejecución (debug)
+			</td>
+			<td>
+				Ctrl + Shift + F9
+			</td>
+			<td>
+				Ctrl + Shift + F9
+			</td>
+			<td>
+				-
+			</td>
 		</tr>
 		<tr>
 			<td>
@@ -744,7 +912,7 @@ Evidentemente, la opción "Formatear código" lo hará según lo tengamos config
 			</td>
 			<td>
 				No es el shortcut por defecto en OS X
-			</td>		
+			</td>
 		</tr>
 	</tbody>
 </table>
@@ -756,7 +924,3 @@ La última opción de la tabla existe sólo en IntelliJ, y es muy interesante. P
 Una buena forma de aprender estos atajos de teclado es introducirlos de manera progresiva en la dinámica de trabajo. No es posible dominar más de cuarenta shortcuts en un par de días, pero aprender tres o cuatro por semana es perfectamente posible, y seguramente ya conozcáis muchos de ellos. De hecho me daría por contento si gracias a este post os he dado a conocer dos o tres atajos que os resulten útiles de ahora en adelante.
 
 Personalmente, mi intención con este artículo ha sido más la de recolectar de forma ordenada los diferentes shortcuts que utilizo para que me sirva de recordatorio si algún día tengo que configurar de cero el Keymap en una nueva instalación.
-
-
-
-
