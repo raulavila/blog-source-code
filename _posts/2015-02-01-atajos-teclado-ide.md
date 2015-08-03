@@ -174,7 +174,7 @@ Vamos a ello.
 				Abrir definición en popup
 			</td>
 			<td>
-				Alt + Space
+				Ctrl + Shift + I
 			</td>
 			<td>
 				Alt + Space
