@@ -12,6 +12,8 @@ Me apasiona el lenguaje Java y [la comunidad que lo rodea](http://www.meetup.com
 Si quieres saber más sobre mí puedes hacerlo en los siguientes enlaces:
 
 * [Perfil LinkedIn](http://uk.linkedin.com/in/raulavila)
+* [GitHub](https://github.com/raulavila)
 * [Twitter](http://www.twitter.com/ravila80) (no soy demasiado activo, lo utilizo sobre todo como fuente de información)
+* Contacto: [contact@raulavila.com](mailto:contact@raulavila.com)
 
 Informática aparte, mi gran pasión siempre ha sido la música. La foto que encabeza esta sección está tomada en el [Elliott Smith Wall](https://roadtrippers.com/us/los-angeles-ca/attractions/elliott-smith-memorial-figure-8-wall) de Los Ángeles.
