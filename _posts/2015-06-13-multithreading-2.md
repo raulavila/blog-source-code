@@ -464,4 +464,4 @@ public class GameScale {
 
 El código es algo más complejo, pero creo que se entiende bien. Tan sólo cambiando la constante podremos escalar el juego todo lo que queramos, y la concurrencia nos garantizará los turnos perfectamente :)
 
-En la siguiente entrega de la serie nos centraremos en la creación y gestión de threads, de forma que la clase `Game` sea mucho menos críptica de lo que es en esta última versión.
+[En la siguiente entrega de la serie](/2015/06/multithreading-3) nos centraremos en la creación y gestión de threads, de forma que la clase `Game` sea mucho menos críptica de lo que es en esta última versión.

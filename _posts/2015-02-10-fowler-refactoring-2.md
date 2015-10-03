@@ -241,4 +241,4 @@ Veamos como quedarían los tests:
 
 {% endhighlight %}
 
-Como siempre, los ejemplos los dejo subidos [en mi repositorio de GitHub](https://github.com/raulavila/fowlers-refactoring-errors).
+Como siempre, los ejemplos los dejo subidos [en mi repositorio de GitHub](https://github.com/raulavila/fowlers-refactoring-errors). Seguiré desgranando este libro [en mi siguiente post](/2015/02/fowler-refactoring-3).

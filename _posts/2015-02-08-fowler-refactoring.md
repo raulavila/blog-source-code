@@ -29,7 +29,7 @@ En el refactoring "Introduce parameter object" (pág 295) aparece un ejemplo muy
 {% highlight java %}
 
 public class DateRange {
-    
+
     private final Date start;
     private final Date end;
 
@@ -61,12 +61,12 @@ public void testInmutableClass() throws Exception {
     DateRange range = new DateRange(start, end);
 
     Date dateAux = range.getEnd();
-    
+
     //Modifies end date!
     dateAux.setTime(123123);
 
     assertThat(range.getStart()).isEqualTo(parse("2001-01-01")) ;
-    
+
     //End date of the range modified!
     assertThat(range.getEnd()).isNotEqualTo(parse("2001-01-02"));
 }
@@ -127,8 +127,6 @@ public void testInmutableClass() throws Exception {
 
 {% endhighlight %}
 
-Prefiero dejarlo aquí por hoy. Me he dado cuenta de que explicar cada ejemplo con detalle lleva su tiempo, así que iré desgranando los diferentes puntos en posteriores artículos.
+Prefiero dejarlo aquí por hoy. Me he dado cuenta de que explicar cada ejemplo con detalle lleva su tiempo, así que iré desgranando los diferentes puntos [en posteriores artículos](/2015/02/fowler-refactoring-2).
 
 Subiré todos los ejemplos en [este repositorio de GitHub](https://github.com/raulavila/fowlers-refactoring-errors).
-
-

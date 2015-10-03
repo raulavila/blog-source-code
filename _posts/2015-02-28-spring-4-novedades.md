@@ -235,4 +235,4 @@ beans {
 
 Cada línea dentro del scope beans define un bean mediante los parámetros "name tipo parámetros_del_constructor". La verdad es que Groovy aporta una gran flexbilidad, pero yo siempre he sido más de tipado estático, lo siento :). [Más información aquí](http://spring.io/blog/2014/03/03/groovy-bean-configuration-in-spring-framework-4).
 
-Terminamos aquí el repaso a las mejoras del core. En el próximo post hablaré de las mejoras introducidas a nivel de desarrollo Web.
+Terminamos aquí el repaso a las mejoras del core. [En el próximo post](/2015/03/spring-4-novedades-2) hablaré de las mejoras introducidas a nivel de desarrollo Web.

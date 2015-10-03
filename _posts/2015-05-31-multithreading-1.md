@@ -415,6 +415,6 @@ public void run() {
 
 En general, hemos de ser muy cuidadosos a la hora de manejar `InterruptedException`. Otra estrategia recomendada, que implicaría modificar la lógica de nuestro método `run`, es volver a lanzar la excepción para que sea manejada en algún otro lugar. En ningún caso **nunca** debemos tragarnos la excepción sin más.
 
-Quedan muchas mejoras por llevar a cabo, la aplicación está lejos de ser óptima (empezando por esa horrenda espera activa). En el siguiente post añadiremos mejoras para optimizar el uso de la CPU mediante el uso de locks y condiciones.
+Quedan muchas mejoras por llevar a cabo, la aplicación está lejos de ser óptima (empezando por esa horrenda espera activa). [En el siguiente post](/2015/06/multithreading-2) añadiremos mejoras para optimizar el uso de la CPU mediante el uso de locks y condiciones.
 
 (El código, como siempre, [en Github](https://github.com/raulavila/blog-examples/tree/master/src/main/java/com/raulavila/pingpong)).

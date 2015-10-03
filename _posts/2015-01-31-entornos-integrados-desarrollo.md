@@ -22,9 +22,9 @@ En el mundo Java son principalmente tres los IDE's que podemos utilizar:
 
 Durante la mayor parte de mi carrera profesional trabajé con Eclipse, y para un par de proyectos utilicé NetBeans, en parte por imposiciones del proyecto (aunque no sea necesario, en ciertos equipos de trabajo interesa que todos los desarrolladores utilicen el mismo IDE). Nunca me gustó excesivamente NetBeans, aunque siendo honesto, hará cuatro años que no lo utilizo, así que quizás ha evolucionado hasta ponerse a la altura. Su principal problema era el excesivo consumo de recursos, y la escasa fluidez en el funcionamiento.
 
-Eclipse, por tanto, fue siempre mi opción favorita. Cuenta además con una cantidad ingente de plugins que permiten ampliar su funcionalidad e incrementar su potencial, muchos de ellos se van incluyendo por defecto en posteriores versiones de la aplicación si su aceptación es grande (por ejemplo el plugin de Maven, [M2Eclipse](http://eclipse.org/m2e/)). 
+Eclipse, por tanto, fue siempre mi opción favorita. Cuenta además con una cantidad ingente de plugins que permiten ampliar su funcionalidad e incrementar su potencial, muchos de ellos se van incluyendo por defecto en posteriores versiones de la aplicación si su aceptación es grande (por ejemplo el plugin de Maven, [M2Eclipse](http://eclipse.org/m2e/)).
 
-IntelliJ nunca fue opción debido a su naturaleza comercial. Ya sabemos que la mayoría de empresas en España piensas más en términos de gasto que de inversión, y existiendo opciones libres no le ven sentido a gastar en licencias. Aunque bien es verdad que existe una [versión libre](http://www.jetbrains.org/pages/viewpage.action?pageId=983211), carece de demasiadas herramientas que son imprescindibles a nivel empresarial (como la integración con Tomcat). 
+IntelliJ nunca fue opción debido a su naturaleza comercial. Ya sabemos que la mayoría de empresas en España piensas más en términos de gasto que de inversión, y existiendo opciones libres no le ven sentido a gastar en licencias. Aunque bien es verdad que existe una [versión libre](http://www.jetbrains.org/pages/viewpage.action?pageId=983211), carece de demasiadas herramientas que son imprescindibles a nivel empresarial (como la integración con Tomcat).
 
 Mi mudanza a Londres cambió esta perspectiva, ya que aquí IntelliJ es el número 1. Al principio mostré reticencias a dar el salto, mis primeras semanas en la empresa fueron un bombardeo de información en un idioma que estaba empezando a dominar, y no me apetecía aprender una herramienta nueva cuando con Eclipse me manejaba como pez en el agua. Pero la llegada a mi empresa de un brillante developer con las ideas muy claras prácticamente me obligó a cambiar. Sencillamente, no entendía cómo era posible que no utilizara IntelliJ, y se tomó convencerme para usarlo como algo personal.
 
@@ -32,13 +32,4 @@ Total, que finalmente no me quedó más remedio que instalármelo...y ¡la verda
 
 Dadle a una oportunidad a IntelliJ, la Community Edition es suficiente para trastear en casa. Eso sí, luego no querréis volver a Eclipse, como me ha pasado a mí, aunque para evitar el efecto regresión sigo utilizando los mismos atajos de teclado, no sea que algún día en una futura empresa haya que volver a Eclipse.
 
-Atajos de teclado...precisamente en este post quería hablar de atajos de teclado, pero me he extendido tanto que creo que será mejor hacerlo más adelante :).
-
-
-
-
-
-
-
-
-
+Atajos de teclado...precisamente en este post quería hablar de atajos de teclado, pero me he extendido tanto que creo que será mejor [hacerlo más adelante](/2015/02/atajos-teclado-ide) :).
