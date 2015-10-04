@@ -21,25 +21,24 @@
   <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
 </head>
 
-  <body>
+  <body class="cv">
 
     <div class="container content">
       <header class="masthead">
           <h1 class="masthead-title" style="text-align:left">
             <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
+            <div style="float:right; padding-top:5px;">
+                <a href="/public/CV_Raul_Avila.pdf" downloads>
+                  <img alt="Download as PDF" src="/public/pictures/icons/pdf.png" />
+                </a>
+            </div>
           </h1>
           <div class="font-small" style="text-align:left">
-          <a href="mailto:contact@raulavila.com">contact@raulavila.com</a>
+              <a href="mailto:contact@raulavila.com">contact@raulavila.com</a>
           </div>
       </header>
 
       <main>
-          <div style="float:right">
-              <a href="/public/jrebel.pdf" downloads>
-                <img alt="Download as PDF" src="/public/pictures/icons/pdf.png" />
-              </a>
-          </div>
-          <div style="clear:both" />
         {{ content }}
       </main>
 
