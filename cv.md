@@ -5,7 +5,7 @@ title: Raúl Ávila - CV
 
 ##Profile
 
-Senior Java Developer (back-end specialist) with a strong focus on software quality, use of patterns and, in general, improving the processes and practices of the teams where I’m involved. Having an extensive experience (10+ years), my goal is not just delivering working software but consolidating solid architectures and optimizing the maintainability of the final result.
+Senior Java Software Engineer specialized in back-end developments, with a strong focus on quality, use of patterns and, in general, improving the processes and practices of the teams where I’m involved. Having an extensive experience (10+ years), my goal is not just delivering working software but consolidating solid architectures and optimizing the maintainability of the final result.
 
 ##Core strengths
 
