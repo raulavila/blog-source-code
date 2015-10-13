@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Patterns of Enterprise Application Architecture (y 2)
-permalink: 2015/10/patterns-eaa-1
+permalink: 2015/10/patterns-eaa-2
 tags:
 - desarrollo
 - patrones
