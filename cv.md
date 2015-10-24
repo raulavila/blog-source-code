@@ -47,7 +47,7 @@ Senior Java Software Engineer specialized in back-end developments, with a stron
 &nbsp;&nbsp;&nbsp;&nbsp;**Miscellaneous**
 
 * *Front End:* HTML, CSS, Apache Tiles, Bootstrap, Javascript, AJAX, jQuery
-* *Agile methodologies and practices:* SCRUM, BDD, TDD
+* *Agile methodologies and practices:* SCRUM, BDD, TDD, Refactoring
 * *Cotinuous Integration:* Git, SVN, Artifactory, Jenkins, Bamboo, Sonar, Stash
 * *Virtualization:* Docker, Vagrant
 * *Cloud:* Google App Engine, SauceLabs platform
