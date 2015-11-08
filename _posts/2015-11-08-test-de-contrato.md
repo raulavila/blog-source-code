@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tests de contrato
-permalink: 2015/10/test-de-contrato
+permalink: 2015/11/test-de-contrato
 tags:
 - desarrollo
 - testing
