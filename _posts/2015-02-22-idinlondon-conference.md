@@ -4,7 +4,7 @@ title: International Developers in London Conference
 permalink: 2015/02/idinlondon-conference
 tags:
 - London
-- events
+- eventos
 comments: true
 ---
 
