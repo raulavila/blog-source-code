@@ -13,7 +13,7 @@ Si quieres saber más sobre mí puedes hacerlo en los siguientes enlaces:
 
 * [Perfil LinkedIn](http://uk.linkedin.com/in/raulavila)
 * [GitHub](https://github.com/raulavila)
-* [Twitter](http://www.twitter.com/ravila80) (no soy demasiado activo, lo utilizo sobre todo como fuente de información)
+* [Twitter](http://www.twitter.com/_RaulAvila_) (no soy demasiado activo, lo utilizo sobre todo como fuente de información)
 * [Curriculum Vitae](/cv)
 * Contacto: [raul@raulavila.com](mailto:raul@raulavila.com)
 
