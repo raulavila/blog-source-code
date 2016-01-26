@@ -15,6 +15,9 @@ Si quieres saber más sobre mí puedes hacerlo en los siguientes enlaces:
 * [GitHub](https://github.com/raulavila)
 * [Twitter](http://www.twitter.com/_Raul_Avila) (no soy demasiado activo, lo utilizo sobre todo como fuente de información)
 * [Curriculum Vitae](/cv)
-* Contacto: [raul@raulavila.com](mailto:raul@raulavila.com)
 
 Informática aparte, mi gran pasión siempre ha sido la música. La foto que encabeza esta sección está tomada en el [Elliott Smith Wall](https://roadtrippers.com/us/los-angeles-ca/attractions/elliott-smith-memorial-figure-8-wall) de Los Ángeles.
+
+Por último, si te quieres poner en contacto conmigo, lo puedes hacer en la siguiente dirección de correo:
+
+<img style="width:" src="/public/pictures/email.jpg" />

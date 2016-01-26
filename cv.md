@@ -109,8 +109,8 @@ Senior Java Software Engineer specialized in back-end developments, with a stron
 
 ##Contributions to Community
 
-* **Blog**: [www.raulavila.com](www.raulavila.com), about Java and best practices in Software Development. I use my native language, Spanish, because I think the value I can add is bigger than writing in English. (The internet is full of awesome blogs in English, but not as many in Spanish, being the second language in the world)
-* **GitHub**: [www.github.com/raulavila](www.github.com/raulavila). It basically contains challenges, projects where I experiment with technologies and code that I comment on my blog. You can have a good idea of my programming style, even though, due to the nature of these projects, most of them don’t have a good test coverage
+* **Blog**: [www.raulavila.com](http://www.raulavila.com), about Java and best practices in Software Development. I use my native language, Spanish, because I think the value I can add is bigger than writing in English. (The internet is full of awesome blogs in English, but not as many in Spanish, being the second language in the world)
+* **GitHub**: [www.github.com/raulavila](http://www.github.com/raulavila). It basically contains challenges, projects where I experiment with technologies and code that I comment on my blog. You can have a good idea of my programming style, even though, due to the nature of these projects, most of them don’t have a good test coverage
 * Regular attendee to events and talks in London Software Craftmanship Community and London Java Community. I even delivered one lightning talk in the LSCC (16/7/15, slides: [http://bit.ly/1e3t3xe](http://bit.ly/1e3t3xe))
 
 ##Education
