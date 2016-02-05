@@ -57,7 +57,10 @@ Senior Java Software Engineer specialized in back-end developments, with a stron
 
 ##Work experience
 
-**2014 to present: Analyst Programmer at  Motability Operations (London)**
+**2016 to present: Software Engineer at Pivotal Labs (London)**
+
+
+**2014 to 2016: Analyst Programmer at  Motability Operations (London)**
 
 *Motability Operations is a financial not-for-profit company that operates the Motability Scheme, which enables disabled people to lease a car*
 
