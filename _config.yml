@@ -1,6 +1,8 @@
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
+
+#Removed this parameter in order to work in Jekyll 3
+#relative_permalinks: true
 
 # Setup
 title:            Raúl Ávila
@@ -20,3 +22,6 @@ github:
 
 # Build
 exclude: [Rakefile]
+
+# Gems
+gems: [jekyll-paginate]
