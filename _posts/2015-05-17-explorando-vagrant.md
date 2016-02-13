@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Explorando Vagrant
-permalink: 2015/05/explorando-vagrant
+permalink: 2015/05/explorando-vagrant/
 tags:
 - desarrollo
 - devops

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MethodHandles como alternativa a Reflection
-permalink: 2015/04/method-handles
+permalink: 2015/04/method-handles/
 tags:
 - desarrollo
 - java

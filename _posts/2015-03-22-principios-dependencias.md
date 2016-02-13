@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dependency Inversion vs Dependency Injection
-permalink: 2015/03/principios-dependencias
+permalink: 2015/03/principios-dependencias/
 tags:
 - desarrollo
 - principios

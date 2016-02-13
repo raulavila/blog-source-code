@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resolución de dependencias en Gradle
-permalink: 2015/09/gradle-dependencias
+permalink: 2015/09/gradle-dependencias/
 tags:
 - desarrollo
 - herramientas

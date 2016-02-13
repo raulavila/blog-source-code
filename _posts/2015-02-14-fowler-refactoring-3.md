@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Desgranando Fowler's Refactoring (y 3)
-permalink: 2015/02/fowler-refactoring-3
+permalink: 2015/02/fowler-refactoring-3/
 tags:
 - refactoring
 - desarrollo

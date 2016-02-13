@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cómo hice el blog
-permalink: 2015/01/como-hice-el-blog
+permalink: 2015/01/como-hice-el-blog/
 tags:
 - Blog
 comments: true
@@ -39,7 +39,7 @@ Reproduciré a continuación, a modo de referencia, los diferentes pasos que lle
 14. Para publicar bajo un dominio propio, en lugar de *.github.io, compré el nombre en [NameCheap](https://www.namecheap.com/). Es una opción bastante barata, e incluye el servicio [WhoIs Guard](https://www.namecheap.com/domains/whois.aspx).
 15. Configurar las DNS de GitHub pages en NameCheap. [Este blog](http://davidensinger.com/2013/03/setting-the-dns-for-github-pages-on-namecheap/) lo explica perfectamente.
 16. Añadir comentarios [Disqus](https://disqus.com/). Tras darme de alta en la web, las indicaciones fueron muy claras y funcionó sin ningún problema.
-17. Añadir [Google Analytics](http://www.google.com/analytics/), para así poder saber si me visita alguien de vez en cuando. 
+17. Añadir [Google Analytics](http://www.google.com/analytics/), para así poder saber si me visita alguien de vez en cuando.
 16. Tunear detallitos sin importancia aquí y allá.
 
 Creo que no me dejo nada. Mención especial para [este post](http://joshualande.com/jekyll-github-pages-poole/), que me sirvió de referencia para muchos de los puntos. De hecho, utilizo la misma plantilla.
@@ -58,5 +58,3 @@ Por tanto, finalmente mi blog está dividido en dos repositorios:
 * [Y otro con el site generado en local con Jekyll](https://github.com/raulavila/raulavila.github.io)
 
 Es increíble la cantidad de trabajo que puede llevar montar una página tan sencillita, pero estoy bastante orgulloso del resultado.
-
-

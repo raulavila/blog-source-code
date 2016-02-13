@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Complejidad esencial vs Complejidad accidental
-permalink: 2015/05/complejidad-esencial-accidental
+permalink: 2015/05/complejidad-esencial-accidental/
 tags:
 - buenas-practicas
 comments: true

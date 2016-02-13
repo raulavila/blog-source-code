@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Eliminando dependencias estáticas en legacy code
-permalink: 2015/03/refactoring-legacy-static
+permalink: 2015/03/refactoring-legacy-static/
 tags:
 - desarrollo
 - refactoring

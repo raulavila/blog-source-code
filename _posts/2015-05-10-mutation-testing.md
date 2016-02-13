@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mutation testing&#58; tests de máxima calidad
-permalink: 2015/05/mutation-testing
+permalink: 2015/05/mutation-testing/
 tags:
 - desarrollo
 - testing

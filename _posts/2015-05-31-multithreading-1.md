@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multithreading para dummies (1)
-permalink: 2015/05/multithreading-1
+permalink: 2015/05/multithreading-1/
 tags:
 - java
 - desarrollo

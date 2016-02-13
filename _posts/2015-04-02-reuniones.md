@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Las reuniones en proyectos de desarrollo
-permalink: 2015/04/reuniones
+permalink: 2015/04/reuniones/
 tags:
 - desarrollo
 - gestión

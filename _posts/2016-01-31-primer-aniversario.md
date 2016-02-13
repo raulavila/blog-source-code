@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Un año de blog
-permalink: 2016/01/primer-aniversario
+permalink: 2016/01/primer-aniversario/
 tags:
 - Me
 - blog

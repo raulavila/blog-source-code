@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mi primera experiencia con TDD
-permalink: 2015/08/primera-experiencia-tdd
+permalink: 2015/08/primera-experiencia-tdd/
 tags:
 - TDD
 - desarrollo

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Características de Maven que (quizás) no conocías
-permalink: 2015/08/caracteristicas-maven
+permalink: 2015/08/caracteristicas-maven/
 tags:
 - desarollo
 - maven

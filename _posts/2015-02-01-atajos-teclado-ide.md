@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Atajos de teclado en IDE's
-permalink: 2015/02/atajos-teclado-ide
+permalink: 2015/02/atajos-teclado-ide/
 tags:
 - IDE
 - desarrollo

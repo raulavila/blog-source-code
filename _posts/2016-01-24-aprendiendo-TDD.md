@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Aprendiendo TDD
-permalink: 2016/01/aprendiendo-TDD
+permalink: 2016/01/aprendiendo-TDD/
 tags:
 - TDD
 - desarrollo

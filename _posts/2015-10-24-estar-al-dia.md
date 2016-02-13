@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Estar al día
-permalink: 2015/10/estar-al-dia
+permalink: 2015/10/estar-al-dia/
 tags:
 - desarrollo
 - miscelanea

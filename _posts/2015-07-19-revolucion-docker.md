@@ -1,7 +1,7 @@
 ---
 layout: post
 title: La revolución Docker
-permalink: 2015/07/revolucion-docker
+permalink: 2015/07/revolucion-docker/
 tags:
 - desarrollo
 - devops

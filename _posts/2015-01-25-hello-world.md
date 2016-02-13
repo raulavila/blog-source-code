@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World!
-permalink: 2015/01/hello-world
+permalink: 2015/01/hello-world/
 tags:
 - Me
 - Blog
@@ -25,4 +25,3 @@ Como no tengo mucha intención de ser referencia de nada, no pretendo que esta w
 Muy variado, vaya. Tampoco pretendo seguir ningún ritmo fijo de publicación. Quizás publique una vez cada dos meses, o una vez cada dos días, dependiendo de lo que se me pase por la cabeza.
 
 Gracias por leerme.
-

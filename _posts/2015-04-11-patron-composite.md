@@ -1,7 +1,7 @@
 ---
 layout: post
 title: El patrón Composite en la práctica
-permalink: 2015/04/patron-composite
+permalink: 2015/04/patron-composite/
 tags:
 - desarrollo
 - patrones

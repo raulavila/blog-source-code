@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Optimizando el patrón Producer-Consumer con TransferQueue
-permalink: 2015/04/producer-consumer-transferqueue
+permalink: 2015/04/producer-consumer-transferqueue/
 tags:
 - desarrollo
 - multithreading

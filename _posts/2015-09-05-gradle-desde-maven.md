@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gradle desde Maven
-permalink: 2015/09/gradle-desde-maven
+permalink: 2015/09/gradle-desde-maven/
 tags:
 - desarrollo
 - herramientas
