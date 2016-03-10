@@ -5,6 +5,8 @@ permalink: 2015/09/gradle-desde-maven/
 tags:
 - desarrollo
 - herramientas
+- Gradle
+- Maven
 comments: true
 ---
 

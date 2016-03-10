@@ -5,6 +5,7 @@ permalink: 2015/07/revolucion-docker/
 tags:
 - desarrollo
 - devops
+- Docker
 comments: true
 ---
 

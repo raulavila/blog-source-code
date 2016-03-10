@@ -3,8 +3,8 @@ layout: post
 title: Novedades en Spring 4 (y 2)
 permalink: 2015/03/spring-4-novedades-2/
 tags:
-- java
-- spring
+- Java
+- Spring
 - websockets
 comments: true
 ---

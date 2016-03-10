@@ -3,7 +3,7 @@ layout: post
 title: Cómo hice el blog
 permalink: 2015/01/como-hice-el-blog/
 tags:
-- Blog
+- blog
 comments: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Uso avanzado de enumerados
 permalink: 2015/02/enums-java/
 tags:
-- java
+- Java
 - enums
 - desarrollo
 comments: true

@@ -4,7 +4,7 @@ title: Acoplamiento temporal
 permalink: 2015/07/acoplamiento-temporal/
 tags:
 - desarollo
-- buenas-prácticas
+- buenas-practicas
 comments: true
 ---
 

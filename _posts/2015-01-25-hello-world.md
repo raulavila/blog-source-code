@@ -3,8 +3,8 @@ layout: post
 title: Hello World!
 permalink: 2015/01/hello-world/
 tags:
-- Me
-- Blog
+- me
+- blog
 comments: true
 ---
 

@@ -3,8 +3,8 @@ layout: post
 title: Novedades en Spring 4 (parte 1)
 permalink: 2015/02/spring-4-novedades/
 tags:
-- java
-- spring
+- Java
+- Spring
 comments: true
 ---
 

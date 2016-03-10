@@ -4,7 +4,7 @@ title: Revisa tu código autogenerado
 permalink: 2016/02/codigo-autogenerado/
 tags:
 - desarrollo
-- java
+- Java
 - IDE
 comments: true
 ---
