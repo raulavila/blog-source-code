@@ -4,7 +4,7 @@ title: Agilidad, XP y Scrum
 permalink: 2016/04/agilidad-xp-scrum/
 tags:
 - desarrollo
-- metdologías
+- metdologias
 comments: true
 ---
 
