@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Passionate Programmer (el libro)
-permalink: 2016/04/passionate-programmer
+permalink: 2016/04/passionate-programmer/
 tags:
 - soft-skills
 - libros
