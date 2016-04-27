@@ -6,6 +6,7 @@ tags:
 - desarrollo
 - patrones
 - arquitectura
+- libros
 comments: true
 ---
 

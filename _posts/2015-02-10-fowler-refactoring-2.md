@@ -5,6 +5,7 @@ permalink: 2015/02/fowler-refactoring-2/
 tags:
 - refactoring
 - desarrollo
+- libros
 comments: true
 ---
 
