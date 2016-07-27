@@ -29,7 +29,7 @@ Por favor, no dejéis ventanas rotas. ¡Ojo!, que no estoy hablando de [deuda t�
 
 ##Do one thing, do it well and do it only
 
-Este mantra se lo debo a [Uncle Bob](https://twitter.com/unclebobmartin), y no es más que el [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) formulado de forma pegadiza :)
+"Haz una cosa, hazla bien, y sólo esa". Este mantra se lo debo a [Uncle Bob](https://twitter.com/unclebobmartin), y no es más que el [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) formulado de forma pegadiza :)
 
 No creo que sea necesario profundizar mucho aquí. Nunca, **nunca**, debemos añadir más de una responsabilidad a nuestros métodos o clases. En general, mi norma es que si necesitas una conjunción ("y...", "o...") para describir lo que hace un determinado método, tu método está haciendo demasiadas cosas.
 
@@ -50,7 +50,7 @@ Me voy a ahorrar un ejemplo, ya que no me veo capaz de hacerlo mejor que [el aut
 
 ##Abstractions in code, details in data
 
-Esto lo aprendí en el curso ["World's best intro to TDD"](http://www.jbrains.ca/permalink/the-worlds-best-intro-to-tdd-demo-video), aunque indirectamente lo venía aplicando en determinadas circunstancias.
+"Abstracciones en código, detalles en datos". Esto lo aprendí en el curso ["World's best intro to TDD"](http://www.jbrains.ca/permalink/the-worlds-best-intro-to-tdd-demo-video), aunque indirectamente lo venía aplicando en determinadas circunstancias.
 
 La clave de este mantra es que, cuando nos vemos codificando un método o clase con diferentes caminos de ejecución que dependen de datos de entrada o del contexto en que nuestro código se está ejecutando, suele ser posible abstraer los datos concretos fuera de nuestro código. De esta forma disminuimos la [complejidad ciclomática](https://es.wikipedia.org/wiki/Complejidad_ciclom%C3%A1tica) y facilitamos el testing, dos grandes beneficios que mejorarán infinitamente la calidad de nuestro software.
 
@@ -103,7 +103,7 @@ Podría discutirse que la clase `GreetingService` sigue sin ser inmutable, pero 
 
 ##Make it work, make it better, make it pretty
 
-Esto lo he aprendido recientemente, y es el enfoque que utilizamos en mi empresa durante el desarrollo mediante TDD. Cuando tenemos que desarrollar una determinada funcionalidad solemos seguir estos pasos:
+"Haz que funcione, hazlo mejor, hazlo bonito". Esto lo he aprendido recientemente, y es el enfoque que utilizamos en mi empresa durante el desarrollo mediante TDD. Cuando tenemos que desarrollar una determinada funcionalidad solemos seguir estos pasos:
 
 * Comenzamos escribiendo los tests que la describan y guíen nuestra codificación y diseño
 * Nuestro objetivo es conseguir que nuestros tests se ejecuten de forma exitosa (make it work)
