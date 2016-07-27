@@ -108,7 +108,7 @@ Podría discutirse que la clase `GreetingService` sigue sin ser inmutable, pero 
 * Comenzamos escribiendo los tests que la describan y guíen nuestra codificación y diseño
 * Nuestro objetivo es conseguir que nuestros tests se ejecuten de forma exitosa (make it work)
 * Una vez conseguido nos paramos a pensar en si el diseño puede mejorar (make it better)
-* Y una vez llevados a cabo los refactorings que consideremos oportunos, limmpiamos nuestro código de cualquier "ventana rota" para dejarlo lo más limpio posible (make it pretty)
+* Y una vez llevados a cabo los refactorings que consideremos oportunos, eliminamos de nuestro código cualquier "ventana rota" para dejarlo lo más limpio posible (make it pretty)
 
 Encuentro este enfoque increíblemente efectivo, pero la verdad es que no tiene sentido si no trabajáis con TDD, así que en tal caso, [empezad por ahí](/2016/01/aprendiendo-TDD/).
 
