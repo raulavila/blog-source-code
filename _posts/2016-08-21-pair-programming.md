@@ -44,6 +44,6 @@ Como todo en esta vida, también hay contras, aunque creo que se pueden mitigar 
 * Choques de personalidad: esto es algo inevitable, cada persona es un mundo, y tantas horas juntos lleva a momentos de relativa tensión cuando hay desacuerdos. Esto lo he vivido más veces trabajando con programadores de nuestros clientes que con programadores de nuestra empresa, ya que en nuestro proceso de selección buscamos a gente que se adapte bien al proceso, pero no tenemos este poder con la gente de fuera que viene a trabajar con nosotros. La paciencia es muy importante cuando se trabaja con pair programming, y nunca, nunca, se debe ser maleducado o grosero con el otro
 * Desconexión de una mitad: si en un momento determinado notas que estás desconectando de la tareas entre manos, o que le está ocurriendo al otro, lo mejor que se puede hacer es proponer un break. En nuestras oficinas tenemos mesas de ping pong para facilitar esto, y viene muy bien para cambiar radicalmente de actividad durante diez minutos y desconectar
 
-##Conclusiones
+##Conclusión
 
 No creo que la lectura de este artículo convenza a nadie para introducir pair programming en su día a día, pero sí espero que haya quedado claro por qué es una práctica muy recomendable. Para profundizar más, echad un vistazo al [libro de Kent Beck sobre Extreme Programming](https://www.amazon.es/Extreme-Programming-Explained-Embrace-Embracing/dp/0321278658/ref=sr_1_1).
