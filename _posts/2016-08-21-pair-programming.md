@@ -3,8 +3,8 @@ layout: post
 title: Pair Programming
 permalink: 2016/08/pair-programming/
 tags:
-- buenas-practicas
-- me
+- desarrollo
+- extreme-programming
 comments: true
 ---
 

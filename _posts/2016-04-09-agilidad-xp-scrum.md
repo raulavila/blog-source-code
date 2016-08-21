@@ -5,6 +5,7 @@ permalink: 2016/04/agilidad-xp-scrum/
 tags:
 - desarrollo
 - metdologias
+- extreme-programming
 comments: true
 ---
 
