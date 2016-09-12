@@ -15,7 +15,7 @@ Así que en este post y alguno que vendrá profundizaré en todos, o casi todos,
 
 ##Niveles (o gravedad) de ventanas rotas
 
-Si no habéis leído el post a que me refiero más arriba, echadle un vistazo para saber que es una ventana rota...¿ya?
+Si no habéis leído [el post a que me refiero más arriba](/2016/07/mis-5-mantras/), echadle un vistazo para saber que es una ventana rota...¿ya?
 
 Bien, como todo en esta vida, no hay nada completamente blanco ni negro, sino diferentes tonos de grises. Lo mismo ocurre con estos descuidos que deterioran nuestro código, los hay muy flagrantes, mientras que otros podrían pasarse por alto (aunque no deberíamos). Como programadores, y para obtener el máximo valor posible de nuestro tiempo, debemos saber actuar consecuentemente según la gravedad de lo que veamos.
 
