@@ -4,6 +4,7 @@ title: Mis cinco mantras
 permalink: 2016/07/mis-5-mantras/
 tags:
 - desarrollo
+- 5-mantras
 comments: true
 ---
 

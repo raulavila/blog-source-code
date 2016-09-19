@@ -4,6 +4,7 @@ title: Ventanas rotas
 permalink: 2016/09/ventanas-rotas/
 tags:
 - desarrollo
+- 5-mantras
 comments: true
 ---
 
