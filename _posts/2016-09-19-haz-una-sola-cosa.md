@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Haz una sola cosa
-permalink: 2016/09/haz-una-sola-cosa
+permalink: 2016/09/haz-una-sola-cosa/
 tags:
 - desarrollo
 - 5-mantras
