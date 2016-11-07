@@ -22,7 +22,7 @@ En este post pretendo recopilar las fuentes que utilizo de forma relativamente f
 
 ##Twitter
 
-Me atrevería a afirmar que hoy día no se puede entender Internet sin Twitter. El problema de Twitter es su inmensidad, que puede llegar a agobiar en ocasiones. Pero nada como seguir a las personas adecuadas, tirar un poco de la cuerda, y montaremos una lista de referencia que nos hará imposible vivir de espaldas a la realidad. No querría sobrecargar el post con una ristra interminable de "influencers", pero si os interesa, [aquí dejo mi lista de gente a la que sigo](https://twitter.com/ravila80/following).
+Me atrevería a afirmar que hoy día no se puede entender Internet sin Twitter. El problema de Twitter es su inmensidad, que puede llegar a agobiar en ocasiones. Pero nada como seguir a las personas adecuadas, tirar un poco de la cuerda, y montaremos una lista de referencia que nos hará imposible vivir de espaldas a la realidad. No querría sobrecargar el post con una ristra interminable de "influencers", pero si os interesa, [aquí dejo mi lista de gente a la que sigo](https://twitter.com/_Raul_Avila/following).
 
 ##Newsletters / Listas de correo
 
