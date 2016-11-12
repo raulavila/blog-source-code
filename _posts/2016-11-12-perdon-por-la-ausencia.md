@@ -52,4 +52,12 @@ Yo también aprendí varias cosas, es curioso como diferentes programadores afro
 
 Por último añadir que había bastantes españoles en el evento, ¡lo cual demuestra que somos un país de personas muy inquietas!
 
-Las próximas semanas se presentan entretenidas, viajaré al [Codemotion](https://2016.codemotion.es/) en Madrid, a finales de Noviembre tendrá lugar la [LJC Open Conference](https://sites.google.com/site/ljcopenconference/), y con eso me parece que daré por cerrado mi año, ¡porque vaya otoño que me estoy pegando! :) Y repito, espero escribir algo más, aunque sean recapitulaciones de eventos.
+## The Practical Dev
+
+[The Practical Dev](https://dev.to/) es una web colaborativa donde cualquiera puede escribir posts relacionados con el desarrollo software. Cuando empecé con mi blog (¡hace casi dos años ya!) tuve muchas dudas sobre si escribir en español o en inglés, pero me decanté por el español porque me resulta más cómodo y rápido, y porque me gustaría ayudar a gente con peores conocimientos de inglés, ya que buenos blogs en inglés hay miles.
+
+Sin embargo siempre me picó pensar que determinados posts publicados eran de suficiente calidad para tener un buen alcance si los hubiera escrito en inglés. Llegué incluso a plantearme combinar los dos idiomas en el blog, pero eso le habría dado poca consistencia. Así que recientemente me vino a la cabeza la idea de traducir estos posts de los que me siento más orgullos y publicarlos en medios como [Medium](https://medium.com/) o [The Practical Dev](https://dev.to/), decidiéndome finalmente por este último al estar más centrado a una comunidad muy específica (los desarrolladores).
+
+Mi primer post publicado es [My Experience with Pair Programming](https://dev.to/raulavila/my-experience-with-pair-programming), y es una traducción [del que escribí aquí](/2016/08/pair-programming/). Lo bueno de estas plataformas es que la audiencia la tienes ganada de antemano, y mi post tuvo 200 interacciones en total en Twitter, lo cual está bien para ser el primero, así que seguiré publicando en el futuro.
+
+Las próximas semanas se presentan entretenidas, viajaré al [Codemotion](https://2016.codemotion.es/) en Madrid, a finales de Noviembre tendrá lugar la [LJC Open Conference](https://sites.google.com/site/ljcopenconference/), y con eso me parece que daré por cerrado mi año, ¡porque vaya otoño me estoy pegando! :) Y repito, espero escribir algo más, aunque sean recapitulaciones de eventos.
