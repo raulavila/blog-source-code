@@ -47,7 +47,7 @@ La mejor forma de mejorar el listening es practicar, practicar y practicar, sin 
 
 * [English Videos](http://www.engvid.com/): profesores de diferentes países y acentos dando clases de inglés, de gramática, vocabulario, use of english...de todo, vaya
 * [BBC Learning English](http://www.bbc.co.uk/learningenglish/): página para aprender inglés de la BBC. Es inglés británico, y hay muchísimas secciones, pero mi favorita, y la que más he utilizado, es "6 minute English". Son audios de 6 minutos donde dos personas hablan de un tema en concreto, y están muy muy bien. Podéis poneros como objetivo diario escuchar dos programas de 6 minute English varias veces, por ejemplo
-* [Elllo](http://www.elllo.org/): es una web con cientos de audios muy breves (de 1 a 2 minutos, es lo normal), con conversaciones informales y en varios acentos. Lo mejor, en mi opinión, es que son conversaciones muy reales, no parece en ningún momento que estén adaptando el nivel de cara al aprendizaje, como a veces si puede pasar con los audios de la BBC
+* [Elllo](http://www.elllo.org/): es una web con cientos de audios muy breves (de 1 a 2 minutos es lo normal), con conversaciones informales y en varios acentos. Lo mejor, en mi opinión, es que son conversaciones muy reales, no parece en ningún momento que estén adaptando el nivel de cara al aprendizaje, como a veces si puede pasar con los audios de la BBC
 
 ## Leer
 
@@ -60,7 +60,7 @@ Comprad un Kindle y leed en inglés. La ventaja de utilizar un libro electrónic
 
 ## Vivir en otro país
 
-Nada puede igualar a vivir un tiempo en otro país para adquirir soltura con un idioma. El problema es que puede no ser una opción factible, pero si lo es, aunque sea por unos meses, deberiáis hacerlo. Personalmente, irme a vivir a Londres es quizás la mejor decisión que haya tomado en mi vida, y conozco a muy poca gente que se arrepienta de haber dado ese paso.
+Nada puede igualar a vivir un tiempo en otro país para adquirir soltura con un idioma. El problema es que puede no ser una opción factible, pero si lo es, aunque sea por unos meses, deberíais hacerlo. Personalmente, irme a vivir a Londres es quizás la mejor decisión que haya tomado en mi vida, y conozco a muy poca gente que se arrepienta de haber dado ese paso.
 
 ## Motivación
 
