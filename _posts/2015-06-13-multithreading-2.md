@@ -67,7 +67,7 @@ Os voy a contar una historia curiosa para ilustrar esto que estoy explicando. Cu
 
 La forma más fácil de deshacernos de la espera activa es mediante el uso de Locks. En pocas palabras, locking es un mecanismo que permite establecer políticas de exclusión en aplicaciones concurrentes cuando existen instancias cuyo estado puede ser compartido y modificado por diferentes threads.
 
-Este estado susceptible de ser modificado por más de un thread debe protegrese mediante el uso de una sección crítica ([critical section](http://www.linuxtopia.org/online_books/programming_books/thinking_in_java/TIJ315_013.htm)). Java ofrece diferentes mecanismos parar implementar secciones críticas, y en este post veremos los más importantes.
+Este estado susceptible de ser modificado por más de un thread debe protegrese mediante el uso de una sección crítica ([critical section](https://en.wikipedia.org/wiki/Critical_section)). Java ofrece diferentes mecanismos parar implementar secciones críticas, y en este post veremos los más importantes.
 
 ###Versión 3: Intrinsic locking
 
