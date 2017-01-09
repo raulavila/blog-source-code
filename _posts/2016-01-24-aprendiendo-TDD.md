@@ -18,7 +18,7 @@ En estos tiempos de información a espuertas, los recursos para aprender cualqui
 
 Por eso mismo he decidido pasar revista a los recursos que personalmente he utilizado, y diría me han servido estupendamente para tener una buena base con el TDD. Algunos de ellos ya los mencioné [en mi primer post sobre el tema](/2015/08/primera-experiencia-tdd), pero creo que es ahora, medio año después, cuando realmente me veo con la confianza suficiente para describir un camino de aprendizaje que os dejará en posición de aplicar TDD en vuestro día a día una vez lo hayáis finalizado.
 
-###Primer paso: El libro de Kent Beck
+### Primer paso: El libro de Kent Beck
 
 [Test Driven Development by Example](http://www.amazon.es/Driven-Development-Example-Addison-Wesley-Signature/dp/0321146530/ref=sr_1_1?ie=UTF8&qid=1438434705&sr=8-1&keywords=Kent+Beck) es considerado la obra fundamental por los "TDD practicioners". Tras haberla leído, diría que el libro se queda un poco a medias, pero su primera parte es **imprescindible**. Es en esta primera parte donde se desarrolla paso a paso un sistema específico (para realizar operaciones monetarias, básicamente) mediante el famoso proceso "Red-Green-Refactor". Este sería el primer ejemplo que yo recomendaría implementar a un completo novato en la materia para "romper el cascarón". Si os interesa echar un vistazo, [aquí está mi implementación](https://github.com/raulavila/tdd-kent-beck), aunque no os servirá de nada si no lo hacéis por vosotros mismos.
 
@@ -28,7 +28,7 @@ El último capítulo ("Mastering TDD") recupera el pulso, con un formato pregunt
 
 En resumen, haceros con una copia de este libro y centraros en los capítulos "The Money Example" y "Mastering TDD" para tener una buena base de cara a los siguientes pasos.
 
-###Segundo paso: la presentación de Sandro Mancuso
+### Segundo paso: la presentación de Sandro Mancuso
 
 [Sandro Mancuso](https://twitter.com/sandromancuso) es uno de los líderes del movimiento [Software Craftmanship](http://manifesto.softwarecraftsmanship.org/) y fundador de la empresa [Codurance](http://codurance.com/), que aboga por el desarrollo basado en buenas prácticas (TDD, pair programming, diseño incremental, etc).
 
@@ -40,7 +40,7 @@ Me parece asombroso lo precisa y clara que resulta esta presentación en un tiem
 * [Parte 2](https://www.youtube.com/watch?v=gs0rqDdz3ko)
 * [Parte 3](https://www.youtube.com/watch?v=R9OAt9AOrzI)
 
-###Tercer paso (y definitivo): World's best intro to TDD
+### Tercer paso (y definitivo): World's best intro to TDD
 
 [J.B. Rainsberger](https://twitter.com/jbrains) es otra de las figuras fundamentales en la actualidad cuando hablamos de Agile, TDD y Coaching en general. [Su web](http://www.jbrains.ca/) está plagada de recursos de todo tipo (además de ofrecer sus servicios :)), pero la piedra filosofal es el curso [World's Best Intro To TDD](http://online-training.jbrains.ca/courses/wbitdd-01). Su "modesto" nombre hace perfecta justicia a su contenido, y su precio (97 dólares) me parece barato para lo que ofrece.
 
@@ -52,7 +52,7 @@ A destacar los asombrosos procesos de refactoring que lleva a cabo en todo momen
 
 En mi repositorio de GitHub podéis encontrar [el código](https://github.com/raulavila/tdd-jbrains) que desarrollé en este curso, pero añado de nuevo que no os servirá de mucho si no lo implementáis vosotros mismos.
 
-###Conclusiones
+### Conclusiones
 
 Las fuentes detalladas en este artículo están orientadas fundamentalmente al lenguaje Java. Si vuestro lenguaje principal es otro seguramente haya otros cursos ahí fuera, aunque realmente la metodología no cambiará en absoluto, y me atrevería a afirmar que Java es un lenguaje ideal para seguir las explicaciones aunque no seas un conocedor, debido a su verbosidad.
 

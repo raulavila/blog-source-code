@@ -15,7 +15,7 @@ Tras mi reciente cambio de empresa a una que es [verdaderamente ágil](http://pi
 
 <!--break-->
 
-##Scrum
+## Scrum
 
 Scrum es la metodología ágil más popular con bastante diferencia, tanto que ha dado lugar a un nuevo rol en el mundo empresarial conocido como "Scrum Master". No es mi intención explicarla en profundidad, para ello hay [varios sitios](https://proyectosagiles.org/que-es-scrum/), y [montones de referencias](http://scrumreferencecard.com/) . Es tal el alcance de Scrum, que existe una organización, [Scrum Alliance](https://www.scrumalliance.org), que ofrece (por un "módico" precio) varias [certificaciones](https://www.scrumalliance.org/certifications).
 
@@ -25,7 +25,7 @@ En mi opinión, el principal defecto de Scrum es que se trata de un marco tan de
 
 Para transformar una empresa en ágil, se necesita mucho más que simular que se trabaja por iteraciones y poner post-its en las paredes. Se necesita un conjunto concretos de valores, principios y prácticas, que deben adoptarse de forma paulatina hasta desembocar en una forma de trabajar totalmente diferente.
 
-##Extreme Programming
+## Extreme Programming
 
 Extreme Programming (XP) es ese conjunto de valores, principios y prácticas que acabo de mencionar. Podríamos llamarlo metodología si queréis, pero es mucho más que eso.
 
@@ -43,6 +43,6 @@ Para alcanzar estos ideales, XP propone una serie de prácticas que son ley y ha
 
 Todas estas prácticas, adoptadas de forma incremental, llevan a trabajar de una forma completamente diferente, y que una vez experimentada te hacen no querer volver atrás. Lo que más me ha llamado la atención, en estos dos meses que llevo trabajando con XP, es la confianza total que los managers tienen en el equipo, en sus estimaciones y en sus entregas.
 
-##Scrum vs XP
+## Scrum vs XP
 
 Está muy claro con qué me quedo. Mi experiencia con Scrum no ha sido demasiado buena en general, por los motivos expuestos anteriormente. No digo que Scrum, bien utilizado, no pueda dar buenos resultados, pero, la verdad, para utilizarlo realmente bien habría que aplicar todas las prácticas de XP, por lo que al final tendriamos algo así como Scrum-Xp. De hecho, es curioso como el libro [Scrum and XP from the trenches](http://wwwis.win.tue.nl/2R690/doc/ScrumAndXpFromTheTrenchesonline07-31.pdf), que vuelvo a recomendar y puede considerarse una referencia fundamental de la comunidad ágil menciona ambas metdologías en el título.

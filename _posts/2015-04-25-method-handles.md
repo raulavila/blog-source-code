@@ -14,7 +14,7 @@ He estado jugando un poco con esta API, y comprobando si las afirmaciones sobre 
 
 <!--break-->
 
-###El código a testear
+### El código a testear
 
 Tendremos un par de beans sencillos, `Item` y  `Store`:
 
@@ -63,7 +63,7 @@ public class Store {
 }
 {% endhighlight %}
 
-###Acceso a miembros mediante Reflection
+### Acceso a miembros mediante Reflection
 
 Creemos un par de tests en los que accederemos, por un lado, al método `getName` de `Item`, y por otro, al método `addItem` de Store.
 
@@ -104,7 +104,7 @@ Supongo que en general todos estamos familiarizados con Reflection, a partir de 
 
 Lo bueno de Reflection es que facilita la implementación de frameworks en los que se exponen métodos de configuración dinámicos a través de ficheros de propiedades, XML's, etc, que serán resueltos en tiempo de despliegue o ejecución. La desventaja es, por supuesto, que determinados errores no serán desvelados en tiempo de compilación, por lo que su uso sólo está recomendado para casos muy específicos, o para la implementación de frameworks. Otra desventaja es la cantidad de checked exceptions que lanzan los métodos de la API, aunque en el ejemplo está oculto, ya que hemos propagado las excepciones a la declaración del método. **Esta aproximación para las excepciones no es nada recomendable en código de producción**, que quede claro :)
 
-###Acceso a miembros mediante MethodHandle
+### Acceso a miembros mediante MethodHandle
 
 El mismo ejemplo, utilizando Method Handles, sería:
 
@@ -162,7 +162,7 @@ Las diferencias, respecto al uso de Reflection, son:
 
 Personalmente prefiero el diseño de esta API al de Reflection, ya que separa mejor las responsabilidades y la veo algo más clara. De hecho, siempre que he tenido que utilizar Reflection en el pasado, lo he hecho mediante una librería que la encapsula (tipo [ReflectionUtils](http://docs.spring.io/spring-framework/docs/4.0.4.RELEASE/javadoc-api/org/springframework/util/ReflectionUtils.html) de Spring).
 
-###Los tiempos de ejecución
+### Los tiempos de ejecución
 
 Comenzamos el artículo diciendo que, una de las supuestas ventajas de utilizar Method Handles es su mejor rendimiento sobre Reflection. Al menos en mis pruebas, esto no es así, veamos los resultados de los tests:
 

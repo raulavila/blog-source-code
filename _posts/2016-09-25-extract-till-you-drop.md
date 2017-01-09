@@ -20,7 +20,7 @@ En pocas palabras, extraer no es más que crear una nueva unidad de código inde
 
 Prácticamente todos los niveles de extracción pueden llevarse a cabo mediante las herramientas de desarrollo que utilizamos a diario (aka [IDEs](/2015/01/entornos-integrados-desarrollo/)). Por lo que, si estas funcionalidades no os son conocidas, echadle un vistazo tras terminar de leer este post.
 
-###Extraer variables
+### Extraer variables
 
 Es el nivel más básico de extracción, y no es más que crear variables locales conteniendo el resultado de una expresión concreta en lugar de embeber dicha expresión entre los parámetros de la llamada a un método, por ejemplo:
 
@@ -108,7 +108,7 @@ printNames(
 
 será mucho más habitual. Por otro lado, tenemos un beneficio añadido, y es que al extraer en variables, la depuración es mucho más sencilla. En efecto, bastará con ubicar un punto de ruptura en la línea que contiene la invocación a `printNames` para poder conocer de inmediato los valores de todos sus parámetros.
 
-###Extraer funciones
+### Extraer funciones
 
 Es el nivel más importante de extracción a mi parecer. Repito aquí las dos "reglas de las funciones" según Uncle Bob:
 
@@ -300,7 +300,7 @@ private void cleanUpGame(HttpServletResponse response, Game game) {
 }
 {% endhighlight %}
 
-###Extraer clases
+### Extraer clases
 
 Es muy habitual encontrarse con funciones largas, de más de 100 líneas, donde se llevan a cabo todo tipo de acciones de lo más heterogéneo, como parsear parámetros, validarlos, procesarlos, enviarlos a algún sitio, y además manejar todos los escenarios de error posibles. Bien, dichas funciones son más bien clases camufladas, y, como desarrolladores, deberemos pensar siempre en la mejor forma de aislar responsabilidades dentro de clases bien estructuradas en lugar de dar vida a métodos monstruosos.
 
@@ -333,10 +333,10 @@ public class ErrorHandler {
 Y también sería conveniente encapsular la lógica de gestión de juego fuera de la clase controladora, pero eso lo dejo como ejercicio :)
 
 
-###Extraer paquetes
+### Extraer paquetes
 
 Por último, tenemos que prestar atención al tamaño de nuestros `packages` o `namespaces`, que deben estar bien cohesionados, y enfocados en hacer "una sola cosa". No me extenderé más en esto, porque ya lo mencioné en [el post anterior](/2016/09/haz-una-sola-cosa/).
 
-###Conclusión: empatía
+### Conclusión: empatía
 
 Leí hace poco que [Kent Beck](https://es.wikipedia.org/wiki/Kent_Beck), a la pregunta de "¿Cuál es la cualidad más importante del Software?" respondió "Empatía". Seguir este mantra es la forma más fácil de alcanzar esa empatía, porque nos obligará a pensar permanentemente en el programador que viene detrás de nosotros y en como facilitarle la lectura del código.

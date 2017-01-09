@@ -14,7 +14,7 @@ Continuamos con el repaso a [la obra de Fowler](http://www.amazon.es/Enterprise-
 
 <!--break-->
 
-##Web Presentation Patterns
+## Web Presentation Patterns
 
 La mayoría de estos patrones tenían más sentido cuando fue escrito el libro, es decir, antes de que se existieran todos los frameworks web que nos hacen la vida tan fácil ahora ([Spring MVC](http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/mvc.html), [Java Server Faces](https://es.wikipedia.org/wiki/JavaServer_Faces)). No obstante, creo que merece la pena destacar alguno:
 
@@ -23,14 +23,14 @@ La mayoría de estos patrones tenían más sentido cuando fue escrito el libro, 
 * [Application Controller](http://martinfowler.com/eaaCatalog/applicationController.html), patrón similar a Front Controller, pero que además maneja el flujo de la navegación en nuestra aplicación, es decir, conoce de antemano cuál será la siguiente página que hay que mostrar al usuario al finalizar la acción en curso, y en base a ciertas condiciones. [Spring WebFlow](http://projects.spring.io/spring-webflow/) es el módulo de Spring que implementa este patrón
 * Patrones de presentación: a destacar el que más ha sobrevivido el paso del tiempo, [Template View](http://martinfowler.com/eaaCatalog/templateView.html). Es, como indica su nombre, una plantilla HTML a rellenar (lo que alguna vez hemos hecho todos con JSP o [FreeMarker](http://freemarker.org/), vaya)
 
-##Distribution Patterns
+## Distribution Patterns
 
 Las llamadas remotas a sistemas o procesos ubicados en diferentes servidores siempre serán costosas, por mucho que evolucione el hardware o las velocidades de conexión. Para minimizar el impacto de estas llamadas tenemos dos patrones:
 
 * [Remote Facade](http://martinfowler.com/eaaCatalog/remoteFacade.html): es una fachada remota pesada que encapsula llamadas a una API más ligera. El objetivo es minimizar el número de conexiones / peticiones. Así, en el ejemplo del link (y del libro), para actualizar una dirección, tarea que en la API original requeriría de varias llamadas a los métodos `setStreet`, `setCity`, etc, en la fachada lo dejamos como un solo método, `setAddress(street, city, zip)`, que recibirá todos los parámetros
 * [Data Transfer Object](http://martinfowler.com/eaaCatalog/dataTransferObject.html): como su propio nombre bien indica, encapsula un conjunto de datos para su transferencia. Viene a ser el complemento a Remote Facade cuando necesitamos devolver un conjunto de datos, de forma que en lugar de invocar varios getters, hacemos una sola llamada que nos traerá de vuelta toda la información
 
-##Offline Concurrency Patterns
+## Offline Concurrency Patterns
 
 La concurrencia es uno de los temas más complicados de comprender y utilizar correctamente en el desarrollo software. En este modesto blog [ya hablamos de ello](/2015/05/multithreading-1) desde un punto de vista más o menos práctico, pero a más bajo nivel.
 
@@ -44,7 +44,7 @@ Aunque este tema es muy complejo de implementar correctamente, tenemos la suerte
 * [Coarse-Grained Lock](http://martinfowler.com/eaaCatalog/coarseGrainedLock.html): se trata de utilizar un lock común para un grupo de objetos que deben ser tratados como unidad (o aggregate). Así por ejemplo, si un objeto `Person` tiene un objeto `Address` asociado, aunque solo queramos modificar la dirección vamos a bloquear también a la persona. Esta estrategia puede implementarse de forma pesimista u optimista
 * [Implicit Lock](http://martinfowler.com/eaaCatalog/implicitLock.html): encapsula la estrategia de locking en un objeto determinado, haciéndolo transparente para los objetos que lo usan. Si entendemos el concepto de Thread Safe, esto viene a ser lo mismo pero ampliado al ámbito de una transacción de negocio. De nuevo, hay que ser muy cuidadosos para implementar esta estrategia
 
-##Session State Patterns
+## Session State Patterns
 
 A la hora de plantearnos la escalabilidad de un sistema que desarrollemos, el mayor impedimento será siempre el mantenimiento del estado de las sesiones de usuario. Los tres patrones descritos en esta sección responden a la pregunta, ¿dónde guardo el estado de las sesiones?
 
@@ -52,7 +52,7 @@ A la hora de plantearnos la escalabilidad de un sistema que desarrollemos, el ma
 * [Server Session State](http://martinfowler.com/eaaCatalog/serverSessionState.html): pues eso, almacenar la sesión en el servidor. Conviene resaltar que, utilizando esta estrategia necesitaremos al menos almacenar una mínima información en cliente debido a la naturaleza stateless del protocolo HTTP (la famosa cookie JSESSIONID en Java, por ejemplo). A grandes rasgos, esta cookie sería la clave en un mapa que localiza los datos de la sesión para un usuario determinado a lo largo de una transacción que comprende varias requests. El mayor problema de este patrón es la escalabilidad, que se resuelve con estrategias como [sticky sessions](http://stackoverflow.com/questions/10494431/sticky-and-non-sticky-sessions) (en base a la IP, por ejemplo, todas las requests de un usuario irían a parar al mismo nodo), o migración de datos de sesión entre nodos del cluster (si se detecta que una petición de una transacción en curso va a parar a otro nodo)
 * [Database Session State](http://martinfowler.com/eaaCatalog/databaseSessionState.html): es una modalidad de Server Session State que mantiene la información de sesión en base de datos. Más fácilmente escalable, debido a la naturaleza centralizada de una base de datos, un problema a considerar es la limpieza de sesiones longevas (para lo que necesitaríamos un demonio que lo compruebe a determinados intervalos). Otro problema es que su rendimiento respecto a Server Session State es menor, al introducir las conexiones a BDD en la ecuación
 
-##Base Patterns
+## Base Patterns
 
 La última sección del libro describe una serie de patrones más genéricos, y relativamente sencillos (sobre todo tras asimilar todo lo que venía antes). Los más importantes son:
 
@@ -64,7 +64,7 @@ La última sección del libro describe una serie de patrones más genéricos, y 
 * [Plugin](http://martinfowler.com/eaaCatalog/plugin.html): otro patrón relacionado con el Dependency Inversion Principle. Viene a decir que el linkado de las clases se realiza en tiempo de configuración en lugar de en tiempo de compilación. O en otras palabras: programa con interfaces y utiliza inyección de dependencias
 * [Service Stub](http://martinfowler.com/eaaCatalog/serviceStub.html): encapsula el acceso a un servicio externo mediante una interfaz para facilitar los tests unitarios, mediante mocks de dicha interfaz. Nada que las buenas prácticas y los [principios SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) no nos dicten, vamos
 
-##Conclusión
+## Conclusión
 
 Este libro es un obra monumental, de importancia capital para entender el desarrollo software tal y como lo entendemos hoy día. Aunque el tiempo siempre pasa factura a este tipo de libros, debido al ritmo de evolución de nuestra industria, me atrevería a decir que sigue siendo vigente, con la excepción de algunos patrones, que más que haber perdido vigencia han perdido visibilidad gracias a los frameworks que todos conocemos.
 

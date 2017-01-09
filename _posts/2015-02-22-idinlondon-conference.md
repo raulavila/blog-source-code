@@ -16,7 +16,7 @@ Cuando digo "en los meetups", es porque se trata realmente de diferentes grupos 
 
 La conferencia no giró en torno a tecnologías en concreto, como sí pueda ocurrir con otras a las que he asistido, pero siempre se pueden sacar lecciones de provecho. Resumiré en este post lo que me pareció más interesante, y que puede que me resulte de utilidad en un futuro más o menos cercano.
 
-###High performance web platform ([Martin Beeby](https://twitter.com/thebeebs))
+### High performance web platform ([Martin Beeby](https://twitter.com/thebeebs))
 
 Con la implantación definitiva de dispositivos móviles, la denominada como [experiencia de usuario](http://es.wikipedia.org/wiki/Experiencia_de_usuario) resulta cada vez más importante, y aquí es donde estamos los programadores para optimizar el rendimiento de las aplicaciones Web.
 
@@ -43,7 +43,7 @@ Por último aquí van una serie de recursos web interesantes para mejorar el ren
 
 Para finalizar con el resumen de esta charla un dato: un descenso en la latencia de 100ms le supone a Amazon una pérdida en ventas del 1%, equivalente a 2.000.000$ **AL DÍA**. UX matters, que diría aquel.
 
-###Escalabilidad
+### Escalabilidad
 
 Hubo dos charlas interesantes al respecto, "Designing distributed, scalable and reliable systems" por [Mauro Servienti](https://twitter.com/mauroservienti), y "Just queue it!" por [Marcos Placona](https://twitter.com/marcos_placona). La escalabilidad es un tema muy recurrente en los últimos tiempos, y parecer ser que todos los sistemas deben diseñarse para ser lo más escalable posible, pero expertos en el tema dejaron claro que a veces "las hojas no te dejan ver el bosque". Veamos por qué.
 
@@ -62,7 +62,7 @@ Las tecnologías que gestionan colas de mensajes son variadas. Algunas de ellas 
 
 Personalmente he trabajado durante los últimos diez meses en un sistema con esta filosofía (concretemente en un ecosistema [JBoss Fuse](http://www.jboss.org/products/fuse/overview/), que utiliza ActiveMQ o [Apache Camel](http://camel.apache.org/) entre otros), por lo que es más que seguro que volveré a hablar de todo esto más adelante.
 
-###Otras charlas
+### Otras charlas
 
 Se hablaron de otras cosas, como la importancia de seleccionar las palabras claves para aplicaciones subidas a la App Store de Apple a la hora de ganar visibilidad, las virguerías que se pueden hacer con [Arduino](http://www.arduino.cc/), la plataforma [Native Script](http://www.telerik.com/nativescript), para desarrollo Cross platform de aplicaciones móviles, o una introducción a la metodología [SCRUM](http://es.wikipedia.org/wiki/Scrum).
 

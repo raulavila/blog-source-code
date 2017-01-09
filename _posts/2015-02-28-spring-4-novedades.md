@@ -23,11 +23,11 @@ Lo que empezó principalmente como un motor de [inyección de dependencias](http
 
 La lista podría seguir, pero creo que basta para hacerse una idea de todo lo que Spring abarca.
 
-##Spring 4
+## Spring 4
 
 A primeros de 2014 se liberó la versión 4 de Spring, que introduce varias mejoras sobre la última release dentro de la versión 3 (3.2.13). En este post revisaré las más importantes en el Core de Spring, como siempre con ejemplos prácticos que [podéis descargar de GitHub](https://github.com/raulavila/spring-4-new-features).
 
-###Expresiones Lambdas
+### Expresiones Lambdas
 
 Las [Lambda Expressions](http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html) son una de las grandes mejoras de Java 8. Spring 4 por supuesto ha adaptado sus API's para soportarlas, permitiéndonos ser más concisos en el código. Un ejemplo muy claro de la diferencia entre utilizar y no utilizar expresiones Lambda lo tenemos en el siguiente ejemplo, donde se consulta una base de datos mediante [JdbcTemplate](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html) sin y con expresiones lambda:
 
@@ -72,7 +72,7 @@ private static void queryDB_Java8(JdbcTemplate jdbcTemplate) {
 Hemos eliminado toda la verbosidad que conlleva la creación de una instancia de RowMapper, y la expresión queda mucho más clara. El método query seguirá recibiendo una objeto del tipo RowMapper, pero nos quitamos la responsabilidad de crearlo nosotros (nos quitamos [boilerplate code](http://en.wikipedia.org/wiki/Boilerplate_code) vaya).
 
 
-###Generics con @Autowired
+### Generics con @Autowired
 
 La anotación `@Autowired`es omnipresente en proyectos con Spring, y se utiliza para inyectar dependencias de forma automática. Es decir, Spring busca en su contexto un bean que encaje con el tipo del atributo que está asociado a la anotación:
 
@@ -100,7 +100,7 @@ private Store<Integer> store;
 
 En Spring 3 obtendríamos la excepción "No qualifying bean of type [Store] is defined, expected single matching bean but found 2: stringStore, intStore", mientras que en Spring 4 esto es perfectamente posible, lo que nos permite desarrollar siguiendo el patrón ["program to an interface, not an implementation"](http://stackoverflow.com/questions/383947/what-does-it-mean-to-program-to-an-interface).
 
-###Inyección ordenada
+### Inyección ordenada
 
 En Spring 3 era posible inyectar una seria de beans que implementaran una interfaz en particular, pero no era posible garantizar el orden de la inyección:
 
@@ -165,7 +165,7 @@ De esta forma podemos crear los beans en el contexto estableciendo su orden:
 
 Incluso podemos configurar ese orden por base de datos o un fichero de propiedades, siempre que getOrder retorne el valor correcto.
 
-###Configuración del contexto
+### Configuración del contexto
 
 La configuración del contexto de Spring utilizando ficheros XML ha tenido sus voces críticas, aunque incido en que personalmente la prefiero al uso de anotaciones. No obstante, Spring ha ido introduciendo alternativas a la configuración XML durante los últimos años, y actualmente es posible generar un contexto mediante la configuración establecida en una clase Java anotada con `@Configuration` y `@ComponentScan`:
 
@@ -196,11 +196,11 @@ public class MyApplicationContext {
 
 En el ejemplo vemos como la clase contiene dos métodos "factory" que se encargan de instanciar los beans que residirán en el contexto y pueden ser inyectados. Esta clase no supone ninguna novedad en Spring 4, pero sí dos de las anotaciones que aparecen:
 
-####@Description
+#### @Description
 
 Bastante autoexplicativa, asocia una descripción al Bean. Es especialmente útil cuando los beans son expuestos externamente, utilizando [JMX](http://en.wikipedia.org/wiki/Java_Management_Extensions), por ejemplo, de esta forma podemos proporcionar información adicional a soporte de aplicaciones.
 
-####@Conditional
+#### @Conditional
 
 Opción bastante interesante, como su propio nombre indica condiciona la creación del bean al resultado (booleano, claro) devuelto por la clase indicada en la anotación, y que debe implementar la interfaz `Condition`:
 
@@ -221,7 +221,7 @@ public class NoGreetingServiceDefined implements Condition{
 
 En este ejemplo se revisa el contexto para comprobar si ya existe algún bean de la clase GreetingService, y en tal caso se evitaría la creación de uno nuevo. Bastante útil cuando tenemos la configuración repartida en diferentes ficheros y pueden existir duplicidades.
 
-###Configuración del contexto mediante Groovy DSL
+### Configuración del contexto mediante Groovy DSL
 
 No soy un gran fan de [Groovy](http://groovy-lang.org/), y más desde la irrupción de Java 8, pero su auge es evidente. Spring 4 permite la configuraciónd el contexto mediante ficheros de definición Groovy:
 

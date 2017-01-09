@@ -44,7 +44,7 @@ Reproduciré a continuación, a modo de referencia, los diferentes pasos que lle
 
 Creo que no me dejo nada. Mención especial para [este post](http://joshualande.com/jekyll-github-pages-poole/), que me sirvió de referencia para muchos de los puntos. De hecho, utilizo la misma plantilla.
 
-###Anexo: GitHub y los plugins
+### Anexo: GitHub y los plugins
 
 Me encontré con un problema inesperado a la hora de añadir el plugin de Ruby que creaba automáticamente las páginas para los tags. Al subirlo a GitHub pages descubrí que dichas páginas ¡no se generaban! Tras investigar un poco, lo que ocurre es que GitHub pages, al generar los sites a partir de las plantillas de Jekyll no ejecuta, por seguridad, los plugins adicionales que pueda haber en la carpeta **_plugins**, y que sí se ejecutan a nivel local.
 

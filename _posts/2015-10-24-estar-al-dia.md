@@ -20,11 +20,11 @@ Y no me parece mal en absoluto. Quien de verdad disfrute el desarrollo software 
 
 En este post pretendo recopilar las fuentes que utilizo de forma relativamente frecuente para estar al tanto de todas las innovaciones a nivel tecnológico y metodológico en el mundo IT. La mayoría de ellas, evidentemente, están en inglés. No creo que sea necesario reseñar la importancia del inglés en nuestro sector, ¿verdad? Bien, empecemos.
 
-##Twitter
+## Twitter
 
 Me atrevería a afirmar que hoy día no se puede entender Internet sin Twitter. El problema de Twitter es su inmensidad, que puede llegar a agobiar en ocasiones. Pero nada como seguir a las personas adecuadas, tirar un poco de la cuerda, y montaremos una lista de referencia que nos hará imposible vivir de espaldas a la realidad. No querría sobrecargar el post con una ristra interminable de "influencers", pero si os interesa, [aquí dejo mi lista de gente a la que sigo](https://twitter.com/_Raul_Avila/following).
 
-##Newsletters / Listas de correo
+## Newsletters / Listas de correo
 
 Las newsletters a las que estoy suscrito son:
 
@@ -33,7 +33,7 @@ Las newsletters a las que estoy suscrito son:
 * [Simple Programmer](http://simpleprogrammer.com/about-simple-programmer/): artículos sobre temas más genéricos (Soft Skills que llaman) para mejorar y crecer como profesionales. Pongo este link un poco en cuarentena, ya que recientemente John Somnez, su autor, ha publicado que dejará de escribir por un tiempo. Más que una newsletter, en su correo semanal encontrábamos los links de los artículos publicados en la web, y de vez en cuando mandaba algún artículo interesante solo para suscriptores. Es una pena que lo deje temporalmente, aunque entiendo su posición después de haber hecho un montón de dinero con sus múltiples cursos y [su libro](http://www.amazon.co.uk/Soft-Skills-software-developers-manual/dp/1617292397/ref=sr_1_1?ie=UTF8&qid=1445699801&sr=8-1&keywords=Soft+Skills). Parece ser que otros autores seguirán manteniendo la llama, veremos.
 * [Java Specialists](http://www.javaspecialists.eu/): la he descubierto hace muy poco tiempo, pero promete bastante. Correo mensual sobre temas Java muy específicos, que tratan de explotar la Java API al máximo
 
-##Agregadores de contenidos
+## Agregadores de contenidos
 
 Son tres webs que se dedican a recopilar artículos destacados en blogs y páginas varias, con artículos de cosecha propia en ocasiones. Todas ellas tienen su modelo de suscripción, donde envían de forma periódica un correo resumen o contenidos más exclusivos.
 
@@ -41,7 +41,7 @@ Son tres webs que se dedican a recopilar artículos destacados en blogs y págin
 * [Java Code Geeks](http://www.javacodegeeks.com/): la referencia indiscutible en Java. En los últimos tiempos han crecido bastante, y llegaron a ofrecer cursos de pago, que ahora han liberado. También tienen publicados una seria de minilibros bastante interesante. Imprescindible suscribirse a su lista de correo
 * [InfoQ](http://www.infoq.com/): web similar a DZone, su mayor fuerte, en mi opinión, son los vídeos grabados en conferencias que publican. Sus correos son bastante menos periódicos que los de las dos webs anteriores (pero mucho más densos), cosa que se agradece
 
-##Web personales / Tutoriales / Blogs
+## Web personales / Tutoriales / Blogs
 
 Podría estar hasta el final del año listando blogs y páginas que en algún momento u otro resultan imprescindibles, bien por la forma en que marcan tendencia, o por la utilidad de los cursos o tutoriales que publican. Pero intentaré reducir la lista en un top 3 (dejando aparte las páginas escritas por los autores de las newsletters mencionadas más arriba).
 

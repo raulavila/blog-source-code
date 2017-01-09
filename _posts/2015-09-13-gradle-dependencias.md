@@ -13,7 +13,7 @@ En el [anterior post](/2015/09/gradle-desde-maven) introdujimos Gradle como herr
 
 <!--break-->
 
-###Dependencias en Maven
+### Dependencias en Maven
 
 Para comprender cuál es el problema en Gradle, primero tenemos que revisar cómo se resuelven las dependencias en Maven. Para ello, en primer lugar es necesario tener bien clara la diferencia entre una versión `SNAPSHOT` y una que no lo es.
 
@@ -49,7 +49,7 @@ La solución "chapuzas" sería que el equipo trabajando en `Artifact3` tenga tam
 
 Para que este proceso funcione sin fisuras es necesario que nuestra herramienta de integración continua (véase [Jenkins](https://jenkins-ci.org/)) publique la versión `SNAPSHOT` en `CI repo` tan pronto como detecte una nueva versión en el repositorio CVS (véase [Git](https://git-scm.com/)). Es por esto que, en el primer diagrama, las flechas entre "Local Maven repository" y "CI internal repository" son bidireccionales, porque la versión de Maven que utilice Jenkins tendrá una tarea encargada de publicar el módulo en dicho repositorio.
 
-###Dependencias en Gradle
+### Dependencias en Gradle
 
 Tras comprender (o eso espero) la resolución de dependencias en Maven, pasemos a ver cómo funciona Gradle. Primero, y más importante, es que en los proyectos Gradle lo normal ¡será configurar repositorios Maven para buscar las dependencias! Esto es debido es que no existe algo así como "repositorios Gradle". La otra alternativa es utilizar repositorios [Ivy](http://ant.apache.org/ivy/history/latest-milestone/tutorial/build-repository.html), aunque está menos extendida.
 
@@ -103,7 +103,7 @@ El proceso aparece descrito en el siguiente diagrama:
 
 ![Dependencias Gradle 1](/public/pictures/dependencias/dep-gradle-2.jpg)
 
-###Problemas
+### Problemas
 
 Este proceso presenta varios problemas:
 
@@ -128,6 +128,6 @@ Este último problema tiene difícil solución. He probado varias configuracione
 
 Así que no nos queda otra que pelearnos de vez en cuando con este tema. Al menos el primer problema tiene solución, por lo que si no utilizamos dependencias desde la caché de Maven todo funcionará bien, aunque es improbable que no tengamos que hacerlo en algún momento u otro. Raro es el caso en que no necesitamos descargarnos el código de un módulo del que dependemos para arreglar algo, ¿verdad?
 
-###Conclusiones
+### Conclusiones
 
 A pesar de los problemas que he descrito en el post, sigo considerando Gradle como una gran opción para gestionar y construir proyectos, pero siempre es importante conocer los puntos flacos de cualquier cosa que utilicemos. Y en entornos tan distribuidos como los que existen hoy día, estos conflictos pueden dar lugar a situaciones algo enrevesadas. Esperemos que antes o después se modifique esta estrategia para dotar de mayor solidez a la herramienta.

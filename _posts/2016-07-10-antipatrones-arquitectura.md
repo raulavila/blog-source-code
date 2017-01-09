@@ -15,7 +15,7 @@ Estos antipatrones surgen de la experiencia, y tenerlos presentes puede ser extr
 
 <!--break-->
 
-###Architecture by implication
+### Architecture by implication
 
 Siendo breves, esto no es otra cosa que tener desarrollado un sistema sin una documentación de su arquitectura. En estos tiempos donde las metodologías ágiles parecen coparlo todo, muchas empresas interpretan de forma errónea uno de los puntos más importantes del [Agile Manifesto](http://www.agilemanifesto.org/), que dice:
 
@@ -42,13 +42,13 @@ Por último, esta documentación básica debería contener información crucial 
 * Requisitos de seguridad
 * Previsiones de escalabilidad
 
-###Witches brew
+### Witches brew
 
 Consiste en juntar a tantísimos roles (stakeholders) en la definición de la arquitectura, que el resultado final es una mezcla de ideas sin mucho sentido ni visión clara. Esto conducirá a lo que se conoce como "Analysis Paralysis", que bloquea el desarrollo de forma inevitable.
 
 Para remediar esta situación se necesita, en primera lugar, una clara estructura de equipo, donde los ingenieros puedan tomar la última palabra (y para que esto ocurra dichos ingenieros deben tener un bagaje suficiente que les haga hacerse respetar). Además, las primeras fases de desarrollo deberán centrarse en el descubrimiento técnico, con un análisis conveniente de los diferentes pros y contras de cada decisión tomada, así como una revisión conjunta de dichas decisiones (peer reviews).
 
-###Gold plating
+### Gold plating
 
 Este es un problema que se da tanto en fases de arquitectura como en fases de desarrollo propiamente dicho. En toda tarea a realizar llega un momento en que añadir mayor esfuerzo no genera una cantidad de valor razonablemente acorde con el esfuerzo realizado.
 
@@ -56,17 +56,17 @@ Desde el punto de vista de la arquitectura, esto puede ocurrir si se comienzan a
 
 Desde el punto de vista de la implementación, gold plating se da cuando comenzamos a refactorizar más de la cuenta, generando un diseño extremadamente flexible, pero que posiblemente no nos sea de demasiada utilidad (también conocido como [YAGNI](https://es.wikipedia.org/wiki/YAGNI)).
 
-###Vendor King (o Vendor Locking)
+### Vendor King (o Vendor Locking)
 
 Creo que por su nombre está claro de qué se trata. Tenemos un producto dependiendo de otro que condiciona enormemente nuestro diseño. Esto puede ocurrir si acoplamos nuestra solución a APIs propietarias, por ejemplo, de forma que si cambian en el futuro tendríamos que modificar un número enorme de líneas de código para adaptarse a la nueva versión. Por no hablar de que el producto desaparezca del mercado en favor de otras opciones.
 
 La solución a este problema es utilizar patrones de diseño como [Adapter](https://es.wikipedia.org/wiki/Adapter_(patr%C3%B3n_de_dise%C3%B1o)), para desacoplar al máximo nuestra aplicación del producto externo. Otra solución puede ser el uso de colas de mensajes como punto de conexión entre ambos sistemas.
 
-###Big Bang Architecture
+### Big Bang Architecture
 
 Consiste en definir todos los detalles de la arquitectura al principio del proyecto ([Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)), que es el momento en que menos información tenemos. En estos días frenéticos que vivimos, los requisitos y las necesidades cambian constantemente, por lo que lo correcto es definir únicamente la arquitectura básica adecuada para arrancar el desarrollo, e ir refinando sucesivamente. Evidentemente, para que nuestro proyecto concluya de forma exitosa será necesario que diseñemos una arquitectura flexible y adaptable al cambio ([Architecting for Change](http://www.wmrichards.com/all-things-architecture/architecting-for-change.html)), así como respetar al máximo buenas prácticas de implementación (Clean Code, Testing, etc).
 
-###Armchair Architecture
+### Armchair Architecture
 
 Esto ocurre cuando bocetos dibujados en fases iniciales pasan al equipo de desarrollo para ser implementados sin validación ninguna. En ocasiones, estos bocetos son incluso ¡fotografías tomadas a pizarras en salas de reuniones!
 
@@ -74,7 +74,7 @@ Yo he vivido esto en más de una ocasión. Para solventar el problema de las fot
 
 En otras ocasiones, la causa de este problema es la contratación de arquitectos externos, que entregan su trabajo y desaparecen. Por fortuna, cada vez está más claro que este modelo no funciona, y que los equipos deben estar implicados de principio a fin en todas las fases de desarrollo. Pero si esto no ocurre en vuestro lugar de trabajo, por favor, tratad de remediarlo cuanto antes :)
 
-###Playing With New Toys
+### Playing With New Toys
 
 Incorporar nuevas tecnologías a nuestro sistema sin verificar la conveniencia de su uso. Antes de añadir cualquier framework, librería o componente, deberíamos responder las siguientes preguntas:
 
@@ -87,20 +87,20 @@ Incorporar nuevas tecnologías a nuestro sistema sin verificar la conveniencia d
 
 Los desarrolladores somos curiosos por naturaleza, pero jamás debemos caer en el conocido como "CV Driven Development", es decir, añadir tecnologías a nuestros proyectos únicamente para poder ponerlas en nuestro CV.
 
-###Spider Web Architecture
+### Spider Web Architecture
 
 En estos días, la arquitectura de [Microservicios](http://www.javiergarzas.com/2015/06/microservicios.html) está omnipresente en cualquier conversación sobre software que se precie, pero no es la panacea. Tiene muchas ventajas, pero también grandes inconvenientes, empezando por el antipatrón ["Distributed Monolith"](https://www.infoq.com/news/2016/02/services-distributed-monolith) .
 
 "Spider Web Architecture" no es más que una arquitectura plagada de servicios distribuidos, donde no nos hemos parado a pensar en todos los problemas que esto va a generar, empezando por el mantenimiento de cada uno de ellos por separado. OK, los microservicios están bien, pero pensad bien si es lo que necesitáis cuando vayáis por esa vía.
 
-###Infinity Architecture
+### Infinity Architecture
 
 Consiste en crear arquitecturas extremadamente flexibles, para soportar requerimientos que seguramente tendremos en el futuro. El problema es que muchísimas veces estos requerimientos no llegan a materializarse, y nos vemos manejando unos niveles de abstracción que complican cualquier mínimo cambio o la solución de bugs.
 
-###Groundhog Day
+### Groundhog Day
 
 O "El día de la marmota", ocurre cuando las decisiones de arquitectura tomadas no son comunicadas de forma efectiva, lo que lleva a discutirlas de nuevo en futuras reuniones o en nuestras mesas de trabajo. Para evitar esto debemos centralizar todas estas decisiones en una Wiki o similar, de manera que ante la duda podamos remitir a nuestro interlocutor a ese lugar para finiquitar cualquier discusión innecesaria.
 
-##Conclusión
+## Conclusión
 
 Las fases de arquitectura y diseño son extremadamente complejas dentro del ciclo de vida del desarrollo software. El sentido común debe dictar cualquier decisión tomada, y muchos de estos patrones no son más que sentido común con un nombre vistoso, pero no está de más tenerlos presentes, ¿verdad?

@@ -15,7 +15,7 @@ Por mi parte lo que intentaré es no soltar demasiadas parrafadas en mis posts, 
 
 <!--break-->
 
-##La aplicación: Ping pong
+## La aplicación: Ping pong
 
 Tan sencillo como eso. Nuestra aplicación Java deberá mostrar por salida estándar y de forma alterna los textos "ping" / "pong", además de un texto cabecera y de finalización:
 
@@ -31,7 +31,7 @@ Game finished!
 
 Conceptualmente deberán existir dos jugadores / actores, que deberán imprimir el texto "ping" y "pong". El actor "ping" deberá jugar primero.
 
-###Versión cero: un solo hilo
+### Versión cero: un solo hilo
 
 La primera versión correrá en un solo hilo de ejecución, por lo que no habrá programación concurrente que valga :). En estas primeras versiones, además, el juego finalizará después de que ambos jugadores hayan participado un número de veces (definido por constante), pongamos 10.
 
@@ -97,7 +97,7 @@ Poca historia. Vemos que en el constructor de `Player` no es posible pasar quien
 
 También vemos como en `Player` el atributo `text` es declarado `final`. Es buena práctica en aplicaciones concurrentes (y en todas, la verdad) declarar un atributo como `final` si sabemos que no va a ser modificado. No sólo hace más fiable a nuestro código, también garantiza la visibilidad de las variables entre threads, un concepto conocido como "Safe publication", y del que podéis leer una discusión [aquí](http://stackoverflow.com/questions/801993/java-multi-threading-safe-publication). Yendo un poco más allá, siempre que podamos deberíamos diseñar nuestras clases como [inmutables](https://docs.oracle.com/javase/tutorial/essential/concurrency/imstrat.html), aunque en nuestro ejemplo no es posible.
 
-###Versión 1: jugadores como threads
+### Versión 1: jugadores como threads
 
 Vamos a llevar nuestra aplicación un poco más allá para que funcione en modo concurrente. Cómo la intención es hacerlo en incrementos pequeños nos iremos encontrando que nuestros primeros acercamientos no funcionan como es debido.
 
@@ -264,7 +264,7 @@ public class Player implements Runnable {
 
 Y ahora sí, nuestra aplicación funciona de forma determinista en cada ejecución. Uno de los mayores problemas de la visibilidad en aplicaciones concurrentes es que falla aleatoriamente, por lo que si no somos conscientes de las directrices a seguir, depurar estos problemas puede ser extremadamente complicado.
 
-###Versión 2: juego infinito
+### Versión 2: juego infinito
 
 En lugar de jugar un número determinado de turnos vamos a poner a los dos actores a jugar para siempre. O mejor dicho, hasta que el hilo principal quiera. Para ello, debemos utilizar las funcionalidades que ofrece Java para interrumpir un thread. Veamos cómo quedaría la clase `Game`:
 
@@ -355,7 +355,7 @@ public class Player implements Runnable {
 
 En lugar de chequear en cada vuelta del bucle si hemos agotado turnos miramos el estado del flag "interrupted", y concluimos en caso de que sea true. Tan sencillo como eso.
 
-####Versión 2b: Más sobre interrupt
+#### Versión 2b: Más sobre interrupt
 
 Antes de finalizar este primer post de la serie, vamos a mirar un poco más en profundidad las implicaciones de interrumpir un thread.
 

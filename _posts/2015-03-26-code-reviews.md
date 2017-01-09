@@ -15,7 +15,7 @@ Son muchas las preguntas que pueden surgir en un equipo de desarrolladores en re
 
 <!--break-->
 
-##Definición de Code Review
+## Definición de Code Review
 
 Partamos de un escenario en el que trabajamos en un [marco ágil](http://es.wikipedia.org/wiki/Desarrollo_%C3%A1gil_de_software), y dentro de las diferentes opciones, elijamos [Scrum](http://es.wikipedia.org/wiki/Scrum). No es el objetivo de este post profundizar en el funcionamiento de estas metodologías. Aunque es posible que en un futuro hable más sobre ellas, Internet está plagado de información al respecto; yo concretamente recomiendo el blog de [Javier Garzás](http://javiergarzas.com/).
 
@@ -25,7 +25,7 @@ Imaginemos pues, que un equipo de 4 desarrolladores tiene que repartirse el desa
 
 Una revisión de código es el proceso mediante el cual, el resto del equipo revisa en conjunto la implementación de Luis para esa historia de usuario, aportando ideas sobre como mejorarlo, quizás refactorizarlo, descubriendo posibles bugs, errores de arquitectura, falta de cobertura de tests para determinados casos, y un sinfín de cosas más que puedan surgir.
 
-####Reticencias...
+#### Reticencias...
 
 Seamos directos: en nuestra profesión abundan los perfiles "complicados". Sin entrar en demasiados detalles, determinados desarrolladores no están abiertos a crítica, y mucho menos a modificar un código que han finalizado y está, en teoría, funcionando. Si alguno de los lectores pertenece a este grupo yo le lanzaría las siguientes preguntas:
 
@@ -34,7 +34,7 @@ Seamos directos: en nuestra profesión abundan los perfiles "complicados". Sin e
 * ¿Has tenido en cuenta TODOS los factores que afectan o pueden afectar al sistema a la hora de desarrollar tu código?
 * ¿Si tú descubrieras un error flagrante en el código de otro no crees que es tu responsabilidad como profesional arreglarlo? En tal caso, ¿no es mejor detectar ese tipo de errores cuanto antes?
 
-####Colectividad del codigo. El código no es mío
+#### Colectividad del codigo. El código no es mío
 
 Efectivamente, cuando trabajamos en un proyecto empresarial, estamos programando código que seguirá siendo desarrollado, mejorado y mantenido por un buen puñado de desarrolladores en el futuro. Creo que en semejante ámbito no tiene ningún sentido hablar de propiedad individual del código, más bien todo lo contrario.
 
@@ -42,7 +42,7 @@ La propiedad colectiva del código fomenta que un equipo ágil asuma la responsa
 
 La experiencia me ha enseñado que las revisiones de código son la manera más efectiva de alcanzar ese ideal.
 
-##El proceso
+## El proceso
 
 El proceso de una revisión de código comienza cuando un desarrollador va a subir, o ya ha subido, al repositorio central (damos por hecho que estamos utilizando Git o herramienta de control de versiones similar) todos los cambios asociados con la implementación de la historia de usuario asignada.
 
@@ -58,7 +58,7 @@ Por supuesto, no todos los comentarios del resto del equipo pueden resultar acer
 
 Conviene dejar los egos aparcados a la hora de realizar una revisión de código. No estamos en un concurso para encontrar al programador más brillante, sólo buscamos que nuestro producto sea de la máxima calidad.
 
-##El resultado
+## El resultado
 
 Me gusta mucho esta fórmula (la descubrí en un vídeo de Atlassian que no he conseguido localizar de nuevo):
 
@@ -69,7 +69,7 @@ Me gusta mucho esta fórmula (la descubrí en un vídeo de Atlassian que no he c
 
 Deducimos por tanto que si un código no es revisado por nadie, **solamente una persona** será responsable de un fallo en producción. Mientras que si todo el equipo revisa el código, la culpabilidad se reparte entre todo el equipo. ¿No hemos conseguido esa "propiedad colectiva del código" buscada?
 
-##Herramientas
+## Herramientas
 
 La revisión de código puede hacerse reuniendo al equipo en una sala o utilizando una herramienta creada con ese cometido. Existen varias en el mercado, tanto Open Source como comerciales, para conducir Code Reviews. En [este link](http://en.wikipedia.org/wiki/List_of_tools_for_code_review) se listan varias de ellas. Personalmente he trabajado con [Crucible](https://www.atlassian.com/software/crucible/overview) de [Atlassian](https://www.atlassian.com/), que se integra estupendamente con el resto de la suite Atlassian (JIRA para gestión de tareas, Stash como repositorio de código Git, etc), y permite iniciar conversaciones a partir de una línea de código, bloque, añadir comentarios generales, etc:
 
@@ -79,13 +79,13 @@ La revisión de código puede hacerse reuniendo al equipo en una sala o utilizan
 (imagen descargada de la propia web de Atlassian)
 </div>
 
-##Mi experiencia personal
+## Mi experiencia personal
 
 Me atrevería afirmar que soy mucho mejor profesional desde que formo parte de un equipo que utiliza de forma constante las revisiones de código. No solamente por todo lo que se aprende cuando tu código es puesto a prueba o cuando te toca revisar el código de otros, haciéndote desarrollar un espíritu crítico y analítico que no utilizaríamos de forma tan clara en otras circunstancias.
 
 Hay otro factor más "incómodo" de decir, y es que, sabiendo de antemano que tu código va a ser revisado programamos mejor :). Ciertos vicios o prácticas adquiridas, que sabemos fehacientemente que no están bien, pero que da algo de pereza esquivar son definitivamente arrinconados cuando tenemos una revisión de código en el horizonte.
 
-##Conclusiones
+## Conclusiones
 
 Ayer mismo terminé un proyecto en el que he estado trabajando durante 11 meses (de hecho hoy estoy iniciando mis vacaciones :)), habiendo completado 75 revisiones de código a lo largo de este tiempo. Creo que es, con diferencia, el producto de mayor calidad que he entregada hasta ahora, y pondría totalmente la mano en el fuego por él. Seguro que el resto de desarrolladores del proyecto piensan exactamente lo mismo que yo. Sin "Code Reviews" jamás habríamos conseguido estándares tan altos ni por asomo.
 

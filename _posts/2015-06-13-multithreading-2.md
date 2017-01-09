@@ -57,19 +57,19 @@ Versión bastante horrible, por otro lado. En ningún caso está justificado que
 while(!mustPlay);
 {% endhighlight %}
 
-####Espera activa
+##### Espera activa
 
 Esta instrucción es un ejemplo de "espera activa" o ["Busy Waiting"](https://en.wikipedia.org/wiki/Busy_waiting), y no es más que la comprobación infinita de una condición, evitando el progreso de la aplicación hasta que sea cierta. El problema de este enfoque es que nuestro hilo sobrecarga de forma excesiva a la CPU, ya que para el [Thread Scheduler](http://www.javatpoint.com/thread-scheduler-in-java) no hay nada que le impida progresar, por lo que siempre que existen recursos lo mantiene en su estado "Running" ([aquí tenéis un buen diagrama de estados de los threads en Java](http://www.uml-diagrams.org/examples/java-6-thread-state-machine-diagram-example.html)). El resultado es un uso de recursos excesivo e injustificado.
 
 Os voy a contar una historia curiosa para ilustrar esto que estoy explicando. Cuando desarrollé los ejemplos para la primera parte de este post, dejé mi IDE abierto con la aplicación funcionando (y la espera activa). El resultado es que mi batería, que normalmente dura una 6-8 horas se consumió en menos de dos. Pensemos en las consecuencias de un diseño tan defectuoso en aplicaciones corporativas serias.
 
-####Locking
+#### Locking
 
 La forma más fácil de deshacernos de la espera activa es mediante el uso de Locks. En pocas palabras, locking es un mecanismo que permite establecer políticas de exclusión en aplicaciones concurrentes cuando existen instancias cuyo estado puede ser compartido y modificado por diferentes threads.
 
 Este estado susceptible de ser modificado por más de un thread debe protegrese mediante el uso de una sección crítica ([critical section](https://en.wikipedia.org/wiki/Critical_section)). Java ofrece diferentes mecanismos parar implementar secciones críticas, y en este post veremos los más importantes.
 
-###Versión 3: Intrinsic locking
+### Versión 3: Intrinsic locking
 
 El mecanismo más antiguo implementado en Java para la creación de secciones críticas es conocido como [Intrinsic Locking](https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html), o Monitor Locking. A grandes rasgos, cada objeto creado en Java tiene asociado un lock (intrinsic lock o monitor lock) que puede ser utilizado con fines de exclusión en nuestros threads mediante el uso de la keyword `synchronized`:
 
@@ -90,7 +90,7 @@ Internet está plagado de ejemplos sobre el uso de `synchronized`, por lo que no
 * Personalmente considero mejor práctica utilizar un lock privado (como el utilizado en el fragmento de código tres párrafos arriba), de forma que no exponemos el mecanismo de locking utilizado al exterior encapsulándolo en la propia clase
 * `synchronized` tiene otro fin además de la exclusión, y es la *visibilidad*. De la misma forma que la keyword `volatile` nos garantiza la visibilidad inmediata de la variable modificada, `synchronized` garantiza la visibilidad del estado del objeto utilizado como lock (abarcando más ámbito, pues). Esta visibilidad está garantizada por el [Java Memory Model](https://en.wikipedia.org/wiki/Java_memory_model), del que hablaremos algún día.
 
-####Mecanismos de espera
+#### Mecanismos de espera
 
 Tan solo con mecanismos de locking no podemos implementar correctamente la eliminación de la espera activa en nuestra aplicación. Necesitamos algo más, y son los mecanismos de espera.
 
@@ -239,13 +239,13 @@ public class Game {
 }
 {% endhighlight %}
 
-###Versión 4. Locks explícitos y condiciones
+### Versión 4. Locks explícitos y condiciones
 
 Java expone en su API concurrency una interfaz, `Lock`, que permite implementar los mismos mecanismos de exclusión vistos mediante el uso de intrinsic locks, pero con un acercamiento diferente.
 
 La implementación principal de `Lock` es `ReentrantLock`. El nombre se debe a que los locks en Java son reentrantes, por lo que una vez adquirido por un thread, si el mismo thread realiza un nuevo intento de adquirirlo este no fracasa. Lo que haremos será implementar los mismos ejemplos vistos más arriba con esta API.
 
-####Secciones críticas
+#### Secciones críticas
 
 {% highlight java %}
 Lock lock = new ReentrantLock();
@@ -267,7 +267,7 @@ Personalmente no diría que este mecanismo es mejor que el ofrecido por `synchro
 
 Os recomiendo echar un vistazo completo [a la API](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/ReentrantLock.html) para más detalles.
 
-####Mecanismos de espera
+#### Mecanismos de espera
 
 La implementación de estos mecanismos se realiza mediante el uso de la clase [Condition](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/Condition.html). La creación de una instancia de `Condition` debe hacerse siempre a partir de un `Lock`:
 
@@ -383,7 +383,7 @@ public class Game {
 }
 {% endhighlight %}
 
-###Bonus, escalando a N jugadores
+### Bonus, escalando a N jugadores
 
 Vamos a ver de qué forma tan sencilla podemos escalar el juego a varios jugadores, de forma que se vayan pasando la "pelota" entre ellos por orden. Es decir, la salida del programa sería algo como:
 

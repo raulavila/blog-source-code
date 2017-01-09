@@ -31,7 +31,7 @@ En fin, creo que todos nos hemos peleado en algún momento con alguna de estas c
 
 El uso de máquinas virtuales vino en parte a paliar parte de estos dolores de cabeza. Nos permitían empaquetar en un archivo todo un sistema operativo con las aplicaciones que necesitáramos, y levantar la máquina con proveedores como [VMWare](http://www.vmware.com/) o [VirtualBox](https://www.virtualbox.org/). El gran hándicap de estas soluciones es que los ficheros que empaquetaban estas máquinas virtuales tienen un tamaño considerable, y la instancia de referencia debe estar alojada en algún lugar accesible a todos los miembros del equipo. Además, esta instancia debía ser configurda desde cero, y sin posibilidad de volver atrás a su configuración básica (en plan rollback).
 
-##Vagrant
+## Vagrant
 
 [Vagrant](https://www.vagrantup.com/) es una herramienta que mitiga prácticamente todos los problemas que acabo de describir. Es una utilidad para generar, levantar, provisionar y compartir entornos de desarrollo de manera extremadamente sencilla. A diferencia de las máquinas virtuales al uso, lo único que una desarrollador necesita para levantar una instancia local es tener instalado Vagrant, un proveedor (como [VirtualBox](https://www.virtualbox.org/)), y un fichero de nombre Vagrantfile donde queda descrita la máquina virtual que debe iniciarse. Este fichero no es más que texto plano, y por tanto puede subirse junto con el código del proyecto a un repositorio de control de versiones. Veamos el contenido de uno de estos ficheros:
 
@@ -52,7 +52,7 @@ end
 
 Para comprender mejor como funciona todo, crearemos un "Hello World" desde cero.
 
-##Hello World!
+## Hello World!
 
 Lo primero que tendremos que hacer es seguir las instrucciones de la [documentación oficial de Vagrant](https://docs.vagrantup.com/v2/installation/index.html), para preparar nuestro equipo. Es muy sencillo, yo al menos no tuve ningún problema
 
@@ -78,7 +78,7 @@ vagrant up
 
 Y tendríamos un Ubuntu "up and running". No lo vamos a hacer de momento, porque queremos tunear un poco la configuración de esta máquina para alojar y desplegar nuestra aplicación "Hello World".
 
-###El fichero Vagrantfile
+### El fichero Vagrantfile
 
 El fichero Vagrantfile creado por defecto esta lleno de comentarios sobre cómo configurarlo, y os animo a echarle un ojo. Pero, en realidad, el único contenido de utilidad es el siguiente:
 
@@ -98,7 +98,7 @@ config.vm.network :forwarded_port, host: 4567, guest: 8080
 
 De esta forma conseguiremos que accediendo a la dirección `http://localhost:4567` estemos accediendo al Tomcat en ejecución dentro de la máquina virtual de Vagrant.
 
-###Provisionamiento
+### Provisionamiento
 
 O provisioning, es el proceso mediante el cual preparamos mediante configuración adicional la instancia básica, y en ocasiones le añadimos software que no viene instalado por defecto. [Vagrant permite trabajar con herramientas](https://docs.vagrantup.com/v2/provisioning/index.html) como [Chef](https://learn.chef.io/) o [Puppet](https://puppetlabs.com/), pero para tareas básicas nos basta con utilizar shell scripts, como haremos en el ejemplo.
 
@@ -123,13 +123,13 @@ En segundo lugar arranca la instancia de Tomcat en el momento de iniciar la máq
 
 Seguramente os estéis preguntando dónde se encuentra la carpeta /vagrant/bootstrap-conf, la respuesta es...
 
-###Carpetas sincronizadas
+### Carpetas sincronizadas
 
 Una de las principales utilidades de Vagrant es el uso de [carpetas sincronizadas](https://docs.vagrantup.com/v2/getting-started/synced_folders.html). Por defecto, la carpeta donde se encuentra el fichero Vagrantfile se sincroniza de forma automática con la carpeta `/vagrant/` de la instancia virtual, y cualquier cambio en esos ficheros se refleja en ambos sentidos. Esto es muy útil porque, en general, trabajaremos con un IDE de nuestro ordenador, mientras que desplegaremos en la máquina virtual. En breve crearemos un proyecto Maven para verlo todo en funcionamiento.
 
 En el punto anterior copiamos mediante un shell script el fichero tomcat-users, que realmente se encuentra en una subcarpeta /bootstrap-conf del proyecto Vagrant, y pasará a estar disponible para la máquina virtual tan pronto como ésta arranque (de hecho lo utilizamos para provisionarla).
 
-###Arrancando la instancia
+### Arrancando la instancia
 
 Vamos a arrancar la instancia, ejecutando desde el directorio donde se encuentra el fichero Vagrantfile:
 
@@ -153,7 +153,7 @@ Si vamos a la carpeta `/vagrant`, veremos los ficheros sincronizados con nuestra
 
 ![Vagrant sync](/public/pictures/vagrant/vagrant2.png)
 
-###Creando la aplicación Hello World
+### Creando la aplicación Hello World
 
 Dentro de la instancia virtual, vamos a crear una aplicación web "Hello World" utilizando arquetipos de Maven. Para ello invocamos el goal `mvn archetype:generate`. De todo el catálogo disponible yo seleccioné para el ejemplo el arquetipo `co.ntier:spring-mvc-archetype`.
 
@@ -187,7 +187,7 @@ Tenemos por tanto un proyecto que podremos subir a un repositorio de control de 
 3. Descargar el proyecto del repositorio
 4. Lanzar el comando `vagrant up` desde el directorio donde se encuentra el proyecto (y el fichero Vagrantfile)
 
-###Compartiendo entornos Vagrant de forma pública
+### Compartiendo entornos Vagrant de forma pública
 
 Si os parece que todo esto es genial, aún queda alguna sorpresa. ¿Alguna vez habéis pasado una tarde entera pasando la última versión de una aplicación a un servidor público de pruebas para mostrarla en una presentación? Suele ser una tarea bastante desagradecida en ocasiones, y en general, el único cometido es discutir nuevos aspectos de la funcionalidad con el cliente.
 
@@ -203,7 +203,7 @@ En el ejemplo vemos como se está compartiendo la máquina en la URL [http://gre
 
 No sé vosotros, pero yo habría ahorrado muchísimo tiempo en el pasado de haber tenido a mi disposición una herramienta como ésta.
 
-###Otros comandos útiles
+### Otros comandos útiles
 
 Por supuesto, la máquina virtual puede suspenderse en cualquier momento, o incluso resetearla a su estado inicial, de forma que al levantarla de nuevo esté como nueva. Todo esto viene explicado muy bien en [la documentación](https://docs.vagrantup.com/v2/getting-started/teardown.html), y no es el cometido de este post profudizar demasiado en ello.
 
@@ -215,6 +215,6 @@ vagrant package
 
 para tener listo un clon que podrán utilizar otros usuarios. Las opciones de package están explicadas [aquí](http://docs.vagrantup.com/v2/cli/package.html).
 
-###Conclusiones
+### Conclusiones
 
 Las posibilidades de Vagrant son muy amplias, pero espero haber dado una buena visión general. [En mi repositorio de GitHub](https://github.com/raulavila/vagrant-hw) está el proyecto completo, por si queréis tomarlo como punto de partida. Ya sabéis: `vagrant up`, ¡y a correr!

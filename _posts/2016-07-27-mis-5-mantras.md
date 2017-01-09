@@ -16,7 +16,7 @@ En este post pasaré lista a estos "mantras", que en general no son más que lec
 
 <!--break-->
 
-##Don't leave broken windows
+## Don't leave broken windows
 
 "No dejes ventanas rotas". Sin lugar a dudas la sección más importante del libro [The Pragmatic Programmer](https://www.amazon.co.uk/Pragmatic-Programmer-Andrew-Hunt/dp/020161622X), donde lo leí por primera vez.
 
@@ -28,7 +28,7 @@ Ejemplos de ventanas rotas pueden ser cosas tan flagrantes como no escribir test
 
 Por favor, no dejéis ventanas rotas. ¡Ojo!, que no estoy hablando de [deuda técnica](https://es.wikipedia.org/wiki/Deuda_t%C3%A9cnica), que puede estar justificada en determinadas circunstancias (siempre que seamos conscientes de estar incurriendo en dicha deuda y volvamos a ella en el futuro).
 
-##Do one thing, do it well and do it only
+## Do one thing, do it well and do it only
 
 "Haz una cosa, hazla bien, y sólo esa". Este mantra se lo debo a [Uncle Bob](https://twitter.com/unclebobmartin), y no es más que el [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) formulado de forma pegadiza :)
 
@@ -36,7 +36,7 @@ No creo que sea necesario profundizar mucho aquí. Nunca, **nunca**, debemos añ
 
 Otra forma de ver esto es pensar desde la perspectiva de los diferentes actores involucrados en nuestro sistema. Cada actor podrá motivar cambios en nuestro código, y nosotros deberemos diseñarlo de forma que los cambios de opinión de cada actor pueda motivar cambios en un lugar perfectamente aislado. Ejemplos de actores pueden ser: nuestro sistema de transporte (http, colas de mensajes...), el equipo de seguridad de nuestra empresa, los diseñadores gráficos, nuestro sistema de bases de datos...muy heterogéneo vaya.
 
-##Extract till you drop
+## Extract till you drop
 
 Algo así como "extrae hasta que te caigas a pedazos". También se lo debo a Uncle Bob, y en su serie de videos [Clean Coders](https://cleancoders.com/) lo complementa con esta sentencia:
 
@@ -49,7 +49,7 @@ Extraer nuestro código en métodos pequeños es extremadamente sencillo hoy dí
 
 Me voy a ahorrar un ejemplo, ya que no me veo capaz de hacerlo mejor que [el autor de este mantra](https://sites.google.com/site/unclebobconsultingllc/one-thing-extract-till-you-drop). Y por favor, si no lo habéis hecho ya, leed [Clean Code](https://www.amazon.es/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882).
 
-##Abstractions in code, details in data
+## Abstractions in code, details in data
 
 "Abstracciones en código, detalles en datos". Esto lo aprendí en el curso ["World's best intro to TDD"](http://www.jbrains.ca/permalink/the-worlds-best-intro-to-tdd-demo-video), aunque indirectamente lo venía aplicando en determinadas circunstancias.
 
@@ -102,7 +102,7 @@ Claramente, los beneficios de este diseño es que nuestro método se ha converti
 Podría discutirse que la clase `GreetingService` sigue sin ser inmutable, pero esto podríamos solucionarlo extrayendo la información del mapa en ficheros de configuración o de propiedades, por ejemplo, e inyectando un mapa equivalente creado por el contenedor de inyección de dependencias.
 
 
-##Make it work, make it better, make it pretty
+## Make it work, make it better, make it pretty
 
 "Haz que funcione, hazlo mejor, hazlo bonito". Esto lo he aprendido recientemente, y es el enfoque que utilizamos en mi empresa durante el desarrollo mediante TDD. Cuando tenemos que desarrollar una determinada funcionalidad solemos seguir estos pasos:
 

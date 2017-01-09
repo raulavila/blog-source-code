@@ -13,7 +13,7 @@ Termino con este post mi repaso a los "puntos mejorables" en el libro de Fowler.
 
 <!--break-->
 
-###Inline Temp (pág. 119)
+### Inline Temp (pág. 119)
 
 Este refactoring es bastante sencillo, en el libro de Fowler se propone reemplazar
 
@@ -37,7 +37,7 @@ final double basePrice = anOrder.basePrice();
 return (basePrice > 1000);
 {% endhighlight %}
 
-###Replace Subclass with Fields (pág. 232)
+### Replace Subclass with Fields (pág. 232)
 
 Este refactoring, [descrito en la web de Fowler](http://refactoring.com/catalog/replaceSubclassWithFields.html), pretende eliminar jerarquías innecesarias, pero no diría que el resultado es especiamente brillante:
 
@@ -124,7 +124,7 @@ Mantengo el código de tipo char, ya que los clientes pueden seguir necesitando 
 
 ( [El código de este apartado está subido en mi repositorio de GitHub](https://github.com/raulavila/fowlers-refactoring-errors) )
 
-###Class.forName
+### Class.forName
 
 En el refactoring "Replace Constructor with Factory Method" (pág 304), se crea un método factory genérico de la siguiente forma:
 

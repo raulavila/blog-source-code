@@ -12,7 +12,7 @@ comments: true
 
 <!--break-->
 
-###Midiendo la calidad de los tests
+### Midiendo la calidad de los tests
 
 La medida más extendida para medir la calidad de una suite de tests desarrollada para un sistema en concreto, es la [cobertura de código](http://es.wikipedia.org/wiki/Cobertura_de_c%C3%B3digo). Las herramientas utilizadas para generar esta medida analizan las líneas del código de producción que son ejecutadas por los tests. A más líneas ejecutadas, mayor cobertura de código.
 
@@ -51,7 +51,7 @@ public class MaxCoverageTest {
 
 genera una cobertura del 100% en la clase MaxCoverage...¿diriáis que el test tiene una mínima calidad por ello? Por supuesto que no. De hecho a nada que añadiéramos más casos de test romperiamos la suite y deberíamos modificar la implementación del método `addOne` (en realidad esta sería la forma de desarrollar utiliando TDD, de la que hablaremos en el futuro).
 
-###Mutation testing al rescate
+### Mutation testing al rescate
 
 ¿En qué consiste Mutation testing? El concepto es bastante sencillo: consiste en realizar pequeñas modificaciones en el código de producción, conocidas como "mutaciones". Cada mutación "debería" romper algún test. Si no lo hace, la mutación "ha sobrevivido" (survived). Si rompe algún test, la mutación "ha sido derribada" (killed). De esta forma estamos generando una nueva medida de calidad, mucho más fiable que la cobertura de código, conocida como "porcentaje de mutaciones derribadas" (percentage of mutations killed). Este porcentaje debería ser del 100%.
 
@@ -64,7 +64,7 @@ Las mutaciones realizadas en el código son pequeñas modificaciones del estilo:
 
 En [este link](http://pitest.org/quickstart/mutators/) hay una lista completa de los mutadores utilizados por la herramienta que vamos a utilizar para mostrar un ejemplo práctico de desarrollo utilizando Mutation Testing: [PIT](http://pitest.org/).
 
-###Mutation testing en la práctica
+### Mutation testing en la práctica
 
 Configuremos nuestro proyecto para generar reportes de Mutation Testing con PIT. Optaremos por utilizarlo a través de su plugin de maven, para lo cual tenemos que añadir el siguiente fragmento de código al fichero POM:
 
@@ -99,7 +99,7 @@ public class Calculator {
 }
 {% endhighlight %}
 
-####Test defectuoso: falta de Assertions
+#### Test defectuoso: falta de Assertions
 
 Vamos a ir creando tests que en todo momento generarán una cobertura del 100%, pero que son claramente fallidos. PIT nos ayudará a detectar sus carencias y mejorarlos paulatinamente.
 
@@ -150,7 +150,7 @@ Ahora sí hemos conseguido hacer feliz a PIT:
 
 La verdad es que este test no es perfecto. Desde mi punto de vista, cuando testeamos clases que trabajan con operandos, el enfoque de [Data Driven Testing](http://es.wikipedia.org/wiki/Data-driven_testing) es mucho más adecuado. Por ello lo utilizaremos en breve.
 
-####Test defectuoso: casos de test insuficiente
+#### Test defectuoso: casos de test insuficiente
 
 Vamos a evolucionar nuestra calculadora. El método add recibirá un nuevo parámetro de tipo `Mode` (de tipo enumerado), de forma que si su valor es `ABSOLUTE`, se realizará una suma de los valores absolutos de los operandos:
 
@@ -243,7 +243,7 @@ public class CalculatorTest {
 
 En esta ocasión ponemos a prueba datos de diferente naturaleza y en ambos modos de ejecución. De nuevo, PIT vuelve a ser feliz, dando un 100% de mutaciones derribadas.
 
-####Test defectuoso: verificación de colaboraciones
+#### Test defectuoso: verificación de colaboraciones
 
 Por último, añadamos a nuestra calculadora la funcionalidad de auditoría, de forma que todas las llamadas al método add sean registradas en algún sitio (que no importa demasiado a efectos de este post):
 

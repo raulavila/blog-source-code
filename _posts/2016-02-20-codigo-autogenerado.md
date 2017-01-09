@@ -37,7 +37,7 @@ La mejor forma de solucionar esto es editando la plantilla por defecto para una 
 
 Una de las mejores prácticas al utilizar el ámbito package por defecto, es crear una interfaz como pública, pero no exponer sus implementaciones. De esta forma los clientes de la interfaz no tendrán ni idea de la implementación que están utilizando porque ni siquiera tienen acceso a ella, favoreciendo de esta forma prácticas como la [inyección de dependencias](/2015/03/principios-dependencias/).
 
-###Clases inmutables
+### Clases inmutables
 
 Este es un detalle que no tiene una asociación directa con el código autogenerado, pero que en el 99% de ocasiones se pasa por alto. En general, cuando queremos diseñar una clase como inmutable el resultado se asemejará bastante a este:
 
@@ -104,7 +104,7 @@ public final class MyImmutableClass {
 
 Y ya no será posible crear instancias derivadas.
 
-###Getters y Setters
+### Getters y Setters
 
 Es bastante habitual crear una clase con sus campos, y añadir, en un frenesí de código autogenerado, un constructor, y getters y setters para todos los campos.
 
@@ -142,7 +142,7 @@ public class MyClass {
 
 Una clase debería exponer el mínimo posible de detalles internos. Así que, de la misma forma que en la primera sección mencionaba que una clase debería tener scope package hasta que requiera ser pública, ahora digo que una clase no debería tener ni getters ni setters hasta que sea necesario. Y cuando lo sea, pensad si realmente es la mejor decisión o hay algo en vuestro diseño que no es adecuado.
 
-###Método equals
+### Método equals
 
 En general, los IDEs exponen una opción para generar los métodos `equals` y `hashCode` conjutamente. Esto tiene sentido, ya que no tendría mucho sentido definir un método sin el otro (no entraré en detalles aquí, pero creo que todos entendemos el [contrato equals y hashCode](http://www.programcreek.com/2011/07/java-equals-and-hashcode-contract/)).
 

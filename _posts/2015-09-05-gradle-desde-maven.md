@@ -16,7 +16,7 @@ Gradle, aunque pensado inicialmente para construir proyectos Groovy, se aprovech
 
 <!--break-->
 
-###Fichero build
+### Fichero build
 
 Tras instalar Gradle en nuestro equipo (os remito a la [documentación oficial](https://docs.gradle.org/current/userguide/installation.html)), vamos a construir el típico "Hello World". Todos conocemos el fichero POM en Maven, se trata de un XML en el que configuramos las características básicas del proceso de construcción, las dependencias, etc. Al ser XML un formato tan verboso, incluso el proyecto más básico requiere de una configuración mínima, o será imposible ejecutar tareas de Maven en el directorio en cuestión.
 
@@ -30,7 +30,7 @@ Vemos que, aunque ha ocurrido poca cosa, el build es exitoso. También vemos que
 
 Tenemos por tanto una lista de tareas que podríamos ejecutar, en la forma `gradle <task>`, por ejemplo `gradle dependencies`. Pero, ¿qué es una tarea?
 
-###Tareas (tasks)
+### Tareas (tasks)
 
 La tarea es la unidad básica de trabajo en Gradle. Mientras que en Maven podríamos decir que las unidades de trabajo son las fases y los plugin goals, que son conceptos de más alto nivel, en Gradle se produce una vuelta a la base, utilizando un concepto que guarda mucha relación con algo que los más viejos del lugar conocerán: los targets de [Ant](http://ant.apache.org/). Ant fue la primera herramienta seria para construir proyectos en Java, y que destacaba por su flexibilidad. Maven impuso un modelo más rígido, que tiene sus desventajas, y Gradle ha revertido algo las tornas volviendo a la flexibilidad (que no digo que sea necesariamente buena).
 
@@ -66,7 +66,7 @@ task task1 {
 
 Vemos que la ejecución de cada tarea viene precedida por `:task`, ¡pero el texto "Configuring task" se ha mostrado antes! En esta ocasión, no hemos utilizado el operador `<<`, por lo que el closure pasado a task1 no es un conjunto de acciones, sino lo que se conoce como "configuration closure", y que viene a ser el equivalente al constructor de la tarea. Dentro de este constructor, mediante el método `doLast` podemos ir añadiendo acciones, que serán las que realmente se ejecuten cuando se ejecute la tarea, y todo lo que esté fuera de este método serán comandos ejecutados en tiempo de construcción. Gradle construye las tareas en su fase `init` que se ejecuta antes de pasar a cualquier otra cosa (y que podemos ejecutar nosotros mismos para ver lo ocurre, probadlo con `gradle init`). Además de `doLast`, tenemos el contrapunto `doFirst`, aunque es utilizado menos.
 
-###Proyecto (project)
+### Proyecto (project)
 
 Gradle genera una instancia de la clase Project, que contendrá la configuración de todo nuestro proyecto, a saber: tareas, propiedades, dependencias, etc. Por defecto, este objeto contiene un montón de propiedades configuradas (que podemos consultar mediante `gradle properties`). Nosotros podemos añadir propiedades al gusto mediante el closure `ext`, o utilizando un fichero de propiedades (gradle.properties). Veamos como sería en el primer caso:
 
@@ -90,7 +90,7 @@ task task1 << {
 }
 {% endhighlight %}
 
-###Más sobre tareas
+### Más sobre tareas
 
 Sabiendo ya que las tareas no son más que un fragmento de código que se ejecuta cuando es requerido en el proceso de build, otras características a conocer de las mismas son:
 
@@ -128,7 +128,7 @@ task copyTask(type: Copy) {
 
 Esta tarea copiaría el fichero file1.txt, que se encuentra en el directorio de proyecto (el mismo que contiene el fichero build.gradle) dentro del directorio de build (projectDir/build por defecto). Si no conocéis Groovy, la notación `$property` reemplaza en la cadena la referencia a la variable por su contenido (y es una de las características más molonas de Groovy, por otro lado). `projectDir` y `buildDir` no son más que propiedades del proyecto.
 
-###Plugins
+### Plugins
 
 Vamos a ir poniendo las cosas interesantes. Un plugin en Gradle no es otra cosa que un conjunto de tareas, dependencias, propiedades, etc, que se inyectan al objecto Project. Tan simple como eso.
 
@@ -149,7 +149,7 @@ Otra cosa que este tipo de plugins añaden al proyecto es un objecto `Convention
 * src/test/java
 * src/test/resources
 
-###Dependencias
+### Dependencias
 
 Una vez aplicamos uno de los plugin comentados arriba, podemos añadir dependencias a nuestro proyecto. Además debemos indicar a Gradle donde buscarlas:
 
@@ -179,7 +179,7 @@ Lo que vemos en esta configuración es:
 
 En Maven las dependencias hay que asociarlas a "scopes". En Gradle tenemos un concepto similar, conocido como "configurations", y que son añadidas por los plugins. Podemos definir una configuración como un tag que permite agrupar dependencias (u otras entidades) juntas. Una o varias configuraciones específicas son asociadas a una tarea, de forma que todos los contenidos de esas configuraciones pasan a estar disponibles para la tarea. Por ejemplo, la configuración `testCompile` se asocia a la tarea `test`.
 
-###Todo junto
+### Todo junto
 
 En mi repositorio de GitHub podéis encontrar [un proyecto](https://github.com/raulavila/gradle-spock-intro) muy sencillo, donde se juntan varias de las piezas comentadas en el post. No tiene demasiado misterio, pero en posteriores posts le iré añadiendo más contenido, sobre todo cuando habemos de Spock. El proyecto contiene una clase, y un test, y las tareas básicas que podemos lanzar son:
 
@@ -189,7 +189,7 @@ En mi repositorio de GitHub podéis encontrar [un proyecto](https://github.com/r
 
 Investigar es sencillo, echad un vistazo a otras tareas disponibles mediante `gradle tasks`.
 
-###Últimas consideraciones
+### Últimas consideraciones
 
 Antes de terminar, destacar algunas cosas, en plan miscelánea:
 
@@ -200,7 +200,7 @@ Antes de terminar, destacar algunas cosas, en plan miscelánea:
 ![Gradle - empty](/public/pictures/gradle/gradle-6.jpg)
 
 
-####Entonces, ¿Gradle es mejor que Maven?
+#### Entonces, ¿Gradle es mejor que Maven?
 
 La respuesta es que ninguna de las dos herramientas es ideal, por lo que deberemos considerar las características de nuestro proyecto antes de decantarnos por una u otra. Gradle ofrece flexibilidad ilimitada, y esto puede ser contraproducente si no tenemos la disciplina adecuada, mientras que Maven en ocasiones es extremadamente rígido, pero gracias a esa rigidez es muy sencillo asimilar rápidamente la estructura de un proyecto.
 

@@ -16,7 +16,7 @@ Durante prácticamente toda mi carrera profesional, las reuniones han estado omn
 
 En los casi doce meses que llevo trabajando en UK, aunque mi empresa está intentando adoptar Scrum, aún perduran prácticas del pasado, y a las tradicionales "Scrum ceremonies" (planning, retrospective, daily scrum, etc) se le siguen sumando montones de reuniones de todo tipo, desde sesiones para decidir la convención a usar para poner nombre a las colas de mensajes hasta largas sesiones en varias entregas para escalar la jerarquía de seguridad de la empresa y conseguir una autorización para conectar con un Web Service externo, pasando por reuniones con el business (product owners) en las que involucran a desarrolladores para decisiones que no son en absoluto de desarrollo.
 
-###¿Cuál es el coste de una reunión?
+### ¿Cuál es el coste de una reunión?
 
 El coste de una reunión es muy elevado. Sin concretar cifras a nivel económico, imaginemos un equipo de tres desarrolladores, un arquitecto, un jefe proyecto, un tester y un product owner. Vamos a obviar al Scrum Master, dado que el trabajo asociado con una reunión podría formar parte de las labores explícitamente asociadas al rol.
 
@@ -32,7 +32,7 @@ El problema es que ese tiempo es aún mayor, por varios motivos:
 
 Si sumamos el impacto total en el ejemplo que he puesto, diría que esas 8 horas de reunión semanal causan un descenso en la productividad de alrededor del 35% en el trabajo de todo el equipo.
 
-###¿Cómo minimizar el impacto?
+### ¿Cómo minimizar el impacto?
 
 Desde mi humilde punto de vista, el principal problema de las reuniones es que no se filtra adecuadamente a los asistentes. La cuestión es si ese filtro deben realizarlo los encargados de gestionar el proyecto, o ser nosotros mismos, como desarrolladores, los que dejemos constancia de la poca utilidad de nuestra presencia en determinadas sesiones.
 
@@ -42,7 +42,7 @@ Nunca será posible "librarnos" de todas las reuniones, pero realmente ese no es
 
 Otra línea de actuación puede ser establecer agendas claras con los puntos a tratar, y permitir ausentarse a los perfiles que no tengan nada que aportar en algunos de esos puntos. Enfocado al desarrollo, yo siempre ubicaría los temas de desarrollo al principio y una vez terminados ofrecer a los programadores la posibilidad de volver a sus puestos de trabajo.
 
-###Las reuniones en Scrum
+### Las reuniones en Scrum
 
 Si trabajamos con Scrum, existen una seria de reuniones que no es posible saltarse si realmente queremos obtener el máximo beneficio de esta metodología. Son:
 
@@ -53,6 +53,6 @@ Si trabajamos con Scrum, existen una seria de reuniones que no es posible saltar
 
 En [este enlace](https://www.atlassian.com/agile/ceremonies) se profundiza más en el cometido de cada reunión. Lo único a tener en cuenta aquí es tratar de atajar excesos en la reunión diaria. En bastantes ocasiones somos dados a profundizar más de la cuenta en las tareas que estamos realizando, o en los problemas que nos hemos encontrado, y entablar discusiones con todo el equipo presente que pueden llevar a prolongar la daily stand-up hasta más de 30 minutos, y en ocasiones hasta una hora. Esto hay que evitarlo a toda costa, en el 95% de las ocasiones es posible posponer la discusión para después de la reunión y comentarla con un miembro determinado del equipo (que puede ser otro desarrollador, el arquitecto, etc).
 
-###Conclusiones
+### Conclusiones
 
 En última instancia, deberíamos recurrir al sentido común para conseguir el equilibrio necesario entre la comunicación y la máxima productividad. El diálogo en sí mismo no es bueno si no es productivo, y por tanto no deberíamos cortarnos a la hora de plantear este tipo de inquietudes a los responsables de gestionar nuestro proyecto (que para eso están las retrospectivas :)).

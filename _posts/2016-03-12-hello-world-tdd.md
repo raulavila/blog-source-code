@@ -14,7 +14,7 @@ He pensado que la mejor forma de responder a esta pregunta es liarme la manta a 
 
 <!--break-->
 
-###El primer commit
+### El primer commit
 
 Los ejemplos más comunes que podemos encontrar utilizando TDD en la red son [aplicaciones muy interesantes a nivel didáctico](https://www.youtube.com/watch?v=7RJM3pcMNyo), pero tras comprender los principios de esta metología se nos plantea la pregunta de cómo aplica esto al mundo real, a las aplicaciones que todos desarrollamos en nuestros puestos de trabajo. Y la verdad es que cuesta encontrar ejemplos de, por ejemplo, una aplicación web desarrollada mediante TDD.
 
@@ -88,7 +88,7 @@ public class HelloWorldWebappTddApplicationTest {
 
 Puede parecer ridiculo tener dos clases de test vacías, pero no lo es. En esta segunda clase estamos probando que el runner por defecto de JUnit funciona correctamente, y de momento debemos mantener ambas. Hora de hacer el primer commit en el repositorio Git, pues.
 
-###El primer test
+### El primer test
 
 El primer test que tenemos que escribir (tests "vacíos" aparte), es, ni más ni menos, que el test de aceptación automatizado del requisito principal de nuestra aplicación expuesto más arriba. Es decir, el punto de inicio para escribir una aplicación web mediante TDD es el test de navegador, que es el de más alto nivel.
 
@@ -131,7 +131,7 @@ Al ejecutar este test fallará, y aunque la excepción que se produce es algo co
 
 Por tanto, el intento de localizar un elemento con la clase `message` fracasa.
 
-###Siguiente paso, mapear el endpoint
+### Siguiente paso, mapear el endpoint
 
 Bien, acaba de emerger un requisito nuevo, y es que el endpoint `/hello` necesita ser mapeado en nuestra aplicación. Para esto necesitamos guiar por tests unitarios la creación de nuestra clase controladora de Spring MVC.
 
@@ -197,7 +197,7 @@ public String hello() {
 
 Y ya tenemos el test en verde.
 
-###Vuelta al test de navegador
+### Vuelta al test de navegador
 
 Veamos qué pasa cuando ejecutamos de nuevo el test funcional:
 
@@ -246,7 +246,7 @@ Para rematar la faena, ejecutemos la aplicación con el plugin Maven de Spring B
 
 La verdad es que el resultado no es muy espectacular :), pero espero que hayáis captado la idea principal del proceso. Al tener una funcionalidad perfectamente implementada es momento de hacer commit.
 
-###¡Refactoring!
+### ¡Refactoring!
 
 ¿Hemos terminado? ¡No! Nos falta un paso tan importante como todos los demás, la refactorización. Cada vez que añadimos algo nuevo a nuestro sistema es hora de reflexionar, ver si hay duplicidades en el código, si podemos mejorar nuestro diseño, etc. Estas duplicidades pueden estar tanto en nuestros tests como en nuestro código de producción.
 
@@ -313,6 +313,6 @@ De momento parece suficiente. En realidad se podrían discutir muchos otros deta
 
 Si nuestro sistema siguiera creciendo, a nada que añadiéramos una segunda clase con tests de navegador surgirían nuevas ideas para encapsular configuración común, pero no es ese el propósito de este post.
 
-###Conclusión
+### Conclusión
 
 Comenzamos el post planteando la cuestión de cuál sería el punto de partida para escribir una aplicación siguiendo la metodología TDD. Espero haber dejado clara la respuesta, que no es otra que "por los tests de aceptación, y siguiendo una aproximación top-down para escribir tests en sucesivos niveles".

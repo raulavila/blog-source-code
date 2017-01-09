@@ -30,7 +30,7 @@ public class BankUtil() {
 
 No sigo, ya sabéis a lo que me refiero. Es para evitar cosas como ésta que siempre tengo presente el mantra mencionado más arriba, que no es otra cosa que el Single Responsibility Principle (SRP) o [Principio de Responsabilidad Única](https://es.wikipedia.org/wiki/Principio_de_responsabilidad_%C3%BAnica). Este principio viene a decir (no es la primera vez que lo cito en este blog) que "las únidades de código deben tener sólo una razón para el cambio", o también "las mejores funciones o módulos son aquellos que tienen una única responsabilidad". Tras leer esto es posible que nos venga a la cabeza una pregunta...
 
-##¿Qué es una responsabilidad?
+## ¿Qué es una responsabilidad?
 
 Lo de hacer una sola cosa está muy bien, pero en la práctica esto no es tan sencillo. Vamos a empezar con el mínimo nivel en qué podemos definir responsabilidades, las funciones.
 
@@ -61,7 +61,7 @@ public void parseAndSave(String messageStr) {
 
 En este ejemplo es evidente que estamos llevando a cabo dos tareas bien diferentes, pero, ¿por qué deberíamos rediseñar esta función? ¿Qué define una responsabilidad? Para entender bien esto, pasemos al siguiente nivel de abstracción, las clases.
 
-##Clases y responsabilidades
+## Clases y responsabilidades
 
 Una clase puede ser definida de muchas maneras, pero nadie se llevará las manos a la cabeza si la defino aquí como "familia de funciones con un objetivo bien definido". Este objetivo no es otra cosa que la responsabilidad de la clase, y dicha responsabilidad no es más que la implementación de una serie de soluciones a las necesidades de un **actor**.
 
@@ -76,7 +76,7 @@ Es decir, un rol abarca aspectos muy heterogéneos.
 
 La idea es que, cada clase deberá satisfacer las necesidades de un rol o actor determinado, **y sólo ese**. Esto se traduce en que si las necesidades de dos actores diferentes cambian al mismo tiempo, es materialmente imposible que dichos cambios apliquen en la misma clase.
 
-##Por qué es importante
+## Por qué es importante
 
 En primer lugar, si seguimos este principio jamás se dará la situación de que dos programadores realicen cambios en el mismo fichero si trabajan en tareas diferentes, evitando todo tipo de desagradables conflictos en el control de versiones. Pero esto es una ventaja pequeña comparada con la principal de todas, y que define el conocido como "valor primario del software":
 
@@ -93,7 +93,7 @@ Volviendo al SRP, si una clase no lo cumple ocurrirán las siguientes cosas:
 * Comenzaremos a compartir código entre diferentes responsabilidades, código que acoplará cosas que no deberían estarlo. Por ejemplo, una función de utilidad para parsear un mensaje determinado, utilizada a la vez tras extraer el cuerpo en una respuesta HTTP y un mensaje de la base de datos. Si por algún motivo, el contrato de la API REST cambia pero los mensajes en base de datos permanecen inalterados el impacto será relativamente grande
 * Nuestras clases serán extraordinariamente difíciles de testear, principalmente mediante tests unitarios
 
-##Cómo conseguirlo
+## Cómo conseguirlo
 
 La mejor forma de diseñar clases que cumplan con el SRP es siguiendo dos sencillas reglas:
 
@@ -102,7 +102,7 @@ La mejor forma de diseñar clases que cumplan con el SRP es siguiendo dos sencil
 
 Precisamente mi tercer mantra está muy relacionado con este último punto, y hablaré de él en el siguiente post.
 
-##Otros niveles de abstracción: paquetes y aplicaciones
+## Otros niveles de abstracción: paquetes y aplicaciones
 
 Tras las clases tenemos los paquetes, y aquí de nuevo deberíamos esforzarnos por crear paquetes bien cohesionados. Sobre este tema, os recomiendo encarecidamente que leáis [este esencial post](http://olivergierke.de/2013/01/whoops-where-did-my-architecture-go/), que explica las diferencias entre layers y slices, y cuál es la mejor forma de diseñar nuestros paquetes para ajustarse a estos criterios. En pocas palabras, viene a decir que no organicéis vuestros paquetes así:
 

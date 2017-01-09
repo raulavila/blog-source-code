@@ -18,7 +18,7 @@ Recientemente he terminado de leer uno más, [The Passionate Programmer](https:/
 
 Voy a resumir los capítulos que me resultaron más interesantes, intentaré ser breve y no demasiado exhaustivo, ya que para eso tenéis el libro :).
 
-###Conoce el negocio
+### Conoce el negocio
 
 En ocasiones tendemos a centrarnos demasiado en la parte tecnológica de nuestros proyectos, de forma que "los árboles no nos dejan ver el bosque". Olvidamos que nuestra empresa no es una ONG y está en el mercado para ganar dinero en un sector determinado. Conocer ese sector nos ayudará muchísmo a tomar decisiones acertadas a la hora de diseñar o desarrollar el software que tengamos entre manos.
 
@@ -28,13 +28,13 @@ Yo estoy bastante pez en esta materia, así que si algún día leo el libro quiz
 
 En otro capítulo se comenta la importancia de poner nuestros logros personales bajo la perspectiva del negocio. Determinadas hazañas que puede nos hagan sentir muy orgullos posiblemente tengan un impacto casi nulo en nuestra empresa.
 
-###Sé el peor ("Be the worst")
+### Sé el peor ("Be the worst")
 
 Uno de mis capítulos preferidos. Comienza hablando de cómo los músicos de Jazz siempre quieren tocar con gente muchísimo mejor que ellos y lo hace extensivo a nuestra industria. Buscad siempre un entorno que os desafíe, no seas la referencia de vuestra empresa sin nadie de quién aprender, porque en ese momento os habréis estancado totalmente.
 
 Una vez leí una frase muy acertada: "Si eres la persona más inteligente de una habitación, estás en la habitación equivocada". Pues eso.
 
-###No escuches a tus padres
+### No escuches a tus padres
 
 Nuestros padres siempre quieren seguridad para nuestras vidas, y nos aconsejarán en ese camino. Mi padre, recientemente jubilado, pasó 42 años de su vida trabajando para la misma empresa y en el mismo edificio, y seguramente piense que esa situación es la ideal, asentarse en una oficina y vivir en una zona de comfort hasta los 65.
 
@@ -42,47 +42,47 @@ Tom Preston-Werner, uno de los fundadores de [GitHub](www.github.com) rechazó u
 
 Cada uno puede elegir la opción que quiera, porque si hay un sector en el mundo que ofrece esa flexibilidad es el nuestro. En los inicios de mi carrera busqué la seguridad, y aún no he dejado de lamentarlo. Por suerte rectifiqué a tiempo.
 
-###Generalista vs Especialista
+### Generalista vs Especialista
 
 Seré breve aquí: puedes saber un poco de todo o ser un especialista consumado en una materia, ambas opciones son igualmente válidas. Pero si eres un especialista debes serlo **de verdad**. Esto quiere decir que no vayas proclamando a los cuatro vientos que eres un crack en Java y luego no sepas explicar como funciona el [Java Memory Model](https://dzone.com/articles/java-memory-model-programer%E2%80%99s), por ejemplo.
 
-###Conoce tus herramientas
+### Conoce tus herramientas
 
 Aún veo a gente con muchos años de experiencia en desarrollo que no se manejan mínimamente con el IDE de turno. Esto supone, por ejemplo, que si programas en Java y utilizas IntelliJ IDEA necesites un 80% más de pulsaciones de teclado para codificar determinadas estructuras, perdiendo energía en tareas innecesarias. De los [atajos de teclado](/2015/02/atajos-teclado-ide/) ya hemos hablado aquí, pero es solo la punta del iceberg. Consejo: si no conoces tus herramientas dedica unos minutos cada día a profundizar en ellas, en muy poco tiempo las dominarás.
 
-###Mentores
+### Mentores
 
 Busca un mentor: Si no lo encuentras, seguramente admires a alguna persona en concreto, en tal caso haz una lista de sus atributos más reseñables y plantéate lo que tienes que hacer para acercarte a ese ideal.
 
 Sé un mentor: ser un mentor, aparte de una tarea muy gratificante, nos ayuda a poner en perspectiva nuestro propio conocimiento de las cosas.
 
-###Open Source
+### Open Source
 
 Lee software Open Source. Participa en proyectos Open Source. Hay pocas formas mejores de aprender. Una buena estrategia para iniciarse en este mundo puede ser elegir un proyecto, comprobar porciones de código con baja cobertura de test, y mejorar dicha cobertura, lo cual seguramente desembocará en refactorings que incrementarán nuestra compresión del proyecto...
 
 He de admitir que llevo un par de años con este objetivo en mente, y nunca me pongo a ello. Quizás sea por pereza, quizás por respeto...pero es algo que haré antes o después.
 
-###Automatiza
+### Automatiza
 
 Automatiza. Todo. Si te ves haciendo una tarea repetitiva seguramente haya una forma de crear un script, macro de Excel, o aplicación que lo haga por tí. Y comparte tus creaciones con tus compañeros.
 
-###Decir no
+### Decir no
 
 Es mucho mejor decir no, que decir sí y no cumplir las expectativas. Una vez puede pasar, pero cuando se acumulan en el tiempo se termina perdiendo toda la credibilidad.
 
-###Habla con la gente
+### Habla con la gente
 
 Olvídate del email. Últimamente no dejo de pensar que el email ha muerto como herramienta de comunicación. Busca físicamente a la persona con la que deseas hablar e interactúa con ella. Si no compartís oficina, llámala. Servirá para encontrar una solución más rápido y además evitar malentendidos.
 
-###Falla
+### Falla
 
 Falla, y aprende de ello. Aprende a fallar. Asume la culpa de los fallos, pero iza la bandera tan pronto como lo detectes, y crea un plan de ataque para solucionarlo.
 
-###Ponte en la piel del otro
+### Ponte en la piel del otro
 
 A la hora de comunicar es imprescindible ponerse en la situación de la persona que escucha, y adaptar nuestro discurso en consecuencia.
 
-###Miscelánea
+### Miscelánea
 
 * Escribe un blog
 * Ama lo que haces: si no te sientes excitado ante el día que tienes por delante busca un cambio

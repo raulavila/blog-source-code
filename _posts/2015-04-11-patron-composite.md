@@ -14,7 +14,7 @@ Para aprender el funcionamiento de estos patrones se suele remitir al [libro ori
 
 <!--break-->
 
-##Composite
+## Composite
 
 Este patrón es, a mi parecer, uno de los más útiles para conseguir un código dividido en **pequeñas** piezas reusables y testeables, que respetan al máximo el [Single Responsibility Principle](http://en.wikipedia.org/wiki/Single_responsibility_principle). Esto significa que una vez tenemos desarrollada cierta funcionalidad dentro de una clase, en pocas ocasiones tendremos un motivo para cambiar dicha clase en el futuro. Lo veremos más claro con el ejemplo.
 
@@ -37,7 +37,7 @@ Por tanto tenemos que:
 
 Es este último punto precisamente el que supone un pequeño hándicap para este patrón de diseño. En el libro de la serie "Head First" se discute bastante sobre este asunto, el problema es que estas operaciones al ser específicas de la clase Composite no pertenecen a la interfaz, por lo que, en cierta medida, los clientes han de ser conscientes de las implementaciones que existen de la interfaz (y hacer [downcasting](http://stackoverflow.com/questions/380813/downcasting-in-java)), rompiendo el principio [Program to an interface, not an implementation](http://www.fatagnus.com/program-to-an-interface-not-an-implementation/). Otra posible solución sería elevar las operaciones a la interfaz, y lanzando una excepción si las invocamos desde `Leaf`, pero esa solución me parece igualmente mala.
 
-###La versión inmutable
+### La versión inmutable
 
 En general, el típico ejemplo para explicar el patrón Composite es una aplicación de dibujo en la que a partir de formas geométricas básicas (círculo, cuadrado...) creamos formas más complejas que se van agrupando. En este caso sí que tiene sentido el carácter vivo de la clase Composite.
 
@@ -47,7 +47,7 @@ Lo que ocurre a largo plazo es que un determinado módulo o clase se vuelve inma
 
 En gran medida, estos problemas pueden evitarse con lo que yo llamo la versión inmutable del patrón Composite. Es inmutable porque se inicializa una sola vez y no permite modificar su estrucutra, es decir, nos cargamos las operaciones `add` y `remove` de la versión vista más arriba. Veámoslo con un ejemplo concreto.
 
-###Una implementación de ejemplo
+### Una implementación de ejemplo
 
 Imaginemos un escenario en el que tenemos que validar una estructura de datos utilizada para dar de alta un nuevo usuario en un sistema.
 
@@ -92,7 +92,7 @@ Vamos, por tanto, a utilizar el patrón Composite para separar la validación en
 
 ![Composite inmutable](/public/pictures/composite.jpg)
 
-####La clase CompositeValidator
+#### La clase CompositeValidator
 
 La implementación de la clase Composite sería:
 
@@ -120,7 +120,7 @@ public class CompositeValidator<T> implements Validator<T> {
 
 Como vemos, no hace más que delegar la validación a cada uno de sus "hijos" y recopilar los resultados. Lo bueno de esta estructura, es que ¡los hijos pueden ser tanto implementaciones concretas como nuevos Composites!
 
-####Las implementaciones "concretas"
+#### Las implementaciones "concretas"
 
 La idea es dividir las validaciones de los diferentes campos (o grupos de campos asociados) en sus propias clases Validator. Veamos un par de ejemplos:
 
@@ -168,7 +168,7 @@ Creo que queda bastante claro de qué forma se simplifica el código en pequeña
 
 ¿Cuántas veces en el futuro creéis que será necesario modificar la clase `AgeValidator` o `CompositeValidator`? Diría que el cambio es altamente improbable. Por otro lado, si un nuevo campo es añadido a la estructura de datos, lo único que deberíamos hacer sería crear una nueva clase para validar ese nuevo campo y agregarla a la jerarquía.
 
-####Juntando las piezas
+#### Juntando las piezas
 
 La agregación de las diferentes piezas la haremos en el fichero XML para configurar el contexto de Spring. De esta forma podemos establecer la configuración de nuestro validador sin tocar para nada las clases.
 
@@ -239,7 +239,7 @@ La salida de esta pequeña aplicación, dado que estamos validando una instancia
 {% endhighlight %}
 
 
-####Los tests
+#### Los tests
 
 Veamos por último lo sencillos que quedarían algunos de los tests. Empecemos con el test de la clase `CompositeValidator`:
 

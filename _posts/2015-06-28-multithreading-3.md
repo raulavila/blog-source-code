@@ -41,7 +41,7 @@ try {
 //...
 {% endhighlight %}
 
-####Gestión de threads / Thread pools
+#### Gestión de threads / Thread pools
 
 Además de engorroso, no encapsular la gestión de threads convenientemente nos lleva a código poco cohesionado, ya que estamos ligando la lógica del juego en sí a la gestión de la concurrencia. Como añadido, crear theads es algo costoso a nivel de rendimiento, y en aplicaciones más complejas conlleva una carga importante en el rendimiento final de nuestras aplicaciones.
 
@@ -58,7 +58,7 @@ En general se utiliza el nombre de Thread Pool para refererise las implementacio
 * Cached Thread Pool (`newCachedThreadPool`): mantiene un pool de threads que puede crecer o decrecer según demanda
 * Scheduled Thread Pool (`newScheduledThreadPool`): se utiliza para programar la ejecución de tareas. Devuelve una instancia de [ScheduledExecutorService](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ScheduledExecutorService.html), ya que `ExecutorService` no expone métodos adecuados para programar tareas futuras, tan solo para ejecutarlas tan pronto como sea posible
 
-###Ping Pong, Versión 5: Pool de threads
+### Ping Pong, Versión 5: Pool de threads
 
 Sin necesidad de realizar modificaciones en la clase `Player` podemos adaptar nuestra clase `Game` para que utilice un pool de threads en lugar de encargarse ella de la engorrosa tarea de crear, arrancar y parar hilos. Veamos cómo quedaría:
 
@@ -138,7 +138,7 @@ System.out.println("Game finished!");
 
 Ahora sí conseguimos la salida deseada, y el juego se comporta como queremos con una clase principal mucho más limpia y legible. ¿Hemos terminado? Aún no :)
 
-####Barreras
+#### Barreras
 
 Las barreras de entrada / salida, son mecanismos de sincronización que facilitan la ejecución simultánea de un grupo de threads (barrera de entrada), o la espera hasta finalizar la ejecución de (otra vez) otro pool de threads.
 
@@ -171,7 +171,7 @@ Existen varias clases en la API concurrency que pueden utilizarse con fines de b
 2. Los hilos que dependan de la barrera para continuar invocarán `await()`, y quedarán bloqueados hasta que el contador llegue a cero. También existe un método `await()` con timeout
 3. Los actores que pueden influir en la apertura de la barrera invocarán `countDown` cuando se cumplan las condiciones adecuadas para liberarla. En general deben cumplirse **N** condiciones para que la apertura tenga lugar
 
-###Versión 6: Barreras de entrada / salida
+### Versión 6: Barreras de entrada / salida
 
 En esta nueva versión deberemos modificar tanto `Game` como `Player`. Veamos como quedarían:
 
@@ -316,6 +316,6 @@ De esta forma el timing de la aplicación es el deseado, aunque para ello hayamo
 
 Antes de terminar el post, mencionar que la barrera de salida ha sido añadida a esta versión a efectos didácticos. El mejor mecanismo para esperar la finalización de un grupo de threads en un pool es la espera mediante `awaitTermination`, introduciendo un timeout razonable, de forma que si alcanzamos el timeout sea porque algún fallo está ocurriendo en las tareas de las que esperamos su terminación. [En mi repositorio de GitHub](https://github.com/raulavila/blog-examples/tree/master/src/main/java/com/raulavila/pingpong) he añadido una versión 7 donde se utiliza la barrera de entrada y `awaitTermination` como barrera de salida, pudiéndose considerar ésta la versión óptima de la aplicación.
 
-###Conclusiones
+### Conclusiones
 
 He disfrutado bastante la preparación y escritura de esta serie de tres posts sobre concurrencia, por lo que es bastante posible que la retome en algún momento en el futuro. Es por ello que no añado la coletilla "y 3" al título. El Multithreading es un tema muy complejo, y siempre hay cosas nuevas que aprender, lo cual es genial.

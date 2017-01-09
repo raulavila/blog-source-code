@@ -14,14 +14,14 @@ En los últimos días he profundizado un poco en la documentación oficial y alg
 
 <!--break-->
 
-###Modo offline
+### Modo offline
 
 Esto me ha parecido toda una revelación. Bien es sabido por todos que Maven "se descarga todo Internet" la primera vez que lo ejecutamos en un proyecto. Yo pensaba que tener conexión internet era totalmente imprescindible para trabajar con Maven, y aunque en la práctica lo es, si configuramos nuestro fichero POM con todas sus dependencias es posible trabajar en modo offline, evitando que en cada build se chequeen posibles actualizaciones de dependencias, por ejemplo. Esto puede ser muy útil para trabajar fuera de casa, en un avión, por ejemplo. Las opciones que debemos conocer para utilizar este modo son dos:
 
 1. Pasar a modo online: `mvn dependency:go-offline`. Descarga todas las dependencias del proyecto a nuestro repositorio local
 2. Ejecutar goals o phases en modo offline: `mvn -o phase`, por ejemplo `mvn -o package`. Con esta opción utilizaremos exclusivamente las dependencias instaladas localmente
 
-###Información del proyecto
+### Información del proyecto
 
 El fichero `pom.xml`, centraliza toda la configuración de nuestro proyecto. A grandes rasgos, lo que todo el mundo ha de considerar es:
 
@@ -91,7 +91,7 @@ La idea de los creadores de Maven es que fuera una herramienta de gestión integ
 </project>
 {% endhighlight %}
 
-###Maven sites
+### Maven sites
 
 Hasta ahora no me había dado cuenta de que las páginas web de los proyectos Apache que tanto nos facilitan la vida estaban construidas con Maven. En efecto, si os fijáis en la parte inferior del menú de la izquierda en, por ejemplo, [la propia web de Maven](https://maven.apache.org/), se puede leer "Built by Maven".
 
@@ -107,7 +107,7 @@ Siguiendo con la filosofía "convention over configurarion" el texto introductor
 
 Maven incluso permite levantar el site en un servidor de manera local mediante `mvn site:run` (y sería accesible desde http://localhost:8080).
 
-####Añadiendo reportes a nuestro site
+#### Añadiendo reportes a nuestro site
 
 El fichero POM tiene un elemento, `<reporting>`, al que podemos añadir diferentes plugins que generarán páginas adicionales dentro de nuestro site. Las opciones son bastante amplias, por lo que vamos a ver un ejemplo combinando varias de ellas:
 

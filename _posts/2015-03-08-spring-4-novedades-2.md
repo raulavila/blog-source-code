@@ -17,7 +17,7 @@ Cómo ya comenté en [la primera parte](/2015/02/spring-4-novedades), probableme
 
 Otra de las grandes ventajas de Spring MVC es lo rápido que permite desarrollar servicios REST, y por este lado vienen varias mejoras en la versión 4.
 
-###Controladores REST
+### Controladores REST
 
 Antes de Spring 4, para crear un servicio REST era necesario el uso de dos anotaciones, `@Controller` para anotar la clase que escucha las peticiones, y `@ResponseBody`, que anota cada método "handler" en particular, y viene a significar "establece el retorno de este método como body del response", es decir, se transformará la estructura de datos a un formato JSON o similar como el cuerpo de la respuesta:
 
@@ -78,7 +78,7 @@ public class RestController4 {
 
 En el ejemplo veréis además como el servicio `/greeting4` devuelve el time zone en su respuesta. He incluido esto en el ejemplo como muestra del soporte a la nueva API para fechas y horas que [incluye la versión 8 de Java](http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html). Aún no he profundizado en esta API lo suficiente para hablar con propiedad, pero parece ser que al fin se ha llegado a una solución en condiciones para manejar esta información (ya era hora, después de 7 versiones :) ).
 
-###Clientes REST
+### Clientes REST
 
 En Spring existía la clase `RestTemplate`, que sirve para consumir API's REST de forma sencilla:
 
@@ -151,7 +151,7 @@ futureEntity.addCallback(
 
 Cómo habréis deducido, los métodos callback serán ejecutados en un thread paralelo una vez se obtenga respuesta (exitosa o no) del servicio. Opción más elegante en mi opinión, porque elimina la necesidad de tener que manejar en el thread principal las checked exceptions lanzadas por `futureEntity.get()` (`InterruptedException` y `ExecutionException`), y además separa claramente las acciones a realizar en caso de éxito o fracaso de la petición REST.
 
-###Soporte para WebSockets
+### Soporte para WebSockets
 
 Siendo honestos, mi conocimiento de WebSockets se limita a lo que he trasteado con Spring 4 para escribir este post, así que es posible que meta algún gambazo en mi explicación. No obstante, el ejemplo que voy a mostrar (como siempre, [subido a mi repositorio GitHub](https://github.com/raulavila/spring-4-new-features)) funciona perfectamente.
 
@@ -161,7 +161,7 @@ Un problema con los websockets es su soporte por parte de determinados navegador
 
 El ejemplo que mostraré está basado en [la documentación de Spring](http://spring.io/guides/gs/messaging-stomp-websocket/), pero sin utilizar Spring Boot. No explicaré paso a paso el proceso, ya que la documentación es bastante buena, sólo haré hincapié en los principales aspectos a tener en cuenta para configurar una aplicación con WebSockets.
 
-#####Configuración de WebSockets en la aplicación
+##### Configuración de WebSockets en la aplicación
 
 {% highlight java %}
 @Configuration
@@ -194,7 +194,7 @@ En los métodos indicamos que:
 * se cree un endpoint "/app/hello" para manejos de mensajes STOMP desde clientes, y con SockJS como opción de respaldo (`registry.addEndpoint("/hello")).withSockJS()`)
 
 
-#####Clase controladora
+##### Clase controladora
 
 {% highlight java %}
 @Controller
@@ -216,7 +216,7 @@ La clase está anotada como cualquier otra clase controladora de Spring MVC (`@C
 
 Por lo demás, el método espera recibir una instancia correcta de `HelloMessage`, y devolverá una instancia de `Greeting`
 
-#####Configuración de cliente (Javascript)
+##### Configuración de cliente (Javascript)
 
 (he omitido algunas partes del código que sí está subido a GitHub por claridad)
 
@@ -268,6 +268,6 @@ En el siguiente video tenéis una demostración en vivo de la aplicación (siemp
 
 <iframe class="youtube" width="420" height="315" src="https://www.youtube.com/embed/OTvaIbVYPrU" frameborder="0" allowfullscreen></iframe>
 
-###Conclusiones
+### Conclusiones
 
 Terminamos aquí el repaso a las principales novedades de Spring 4. Creo que hay mejoras sustanciales respecto a la versión 3, y no dudo que a este framework aún le queda vida para rato.

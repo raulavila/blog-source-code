@@ -14,7 +14,7 @@ Es bastante importante recalcar este aspecto, porque los pasos a seguir si vives
 
 <!--break-->
 
-###El mercado IT en Londres
+### El mercado IT en Londres
 
 En pocas palabras, el mercado tecnológico en esta ciudad es brutal. Ya te percatas de ello cuando empiezas a mandar CV's desde fuera de UK, pero una vez vives aquí realmente empiezas a ser consciente de la necesidad de profesionales que existe. Todas las empresas están buscando a gente, repito, TODAS, y el perfil buscado suele ser Senior en el 90% de los casos. El resultado de esta circunstancia es que aunque la gente se mueve bastante , el número de Seniors no aumenta de forma considerable y hay que irse a buscar fuera del país. Y aquí es donde entramos nosotros :). Un dato: en mi empresa, de los 5 desarrolladores nuevos que nos incorporamos el año pasado, NINGUNO es británico.
 
@@ -24,7 +24,7 @@ Si resides en Londres son frecuentes (tan frecuentes como que puedes ir cada sem
 
 Valga esto para hacerse una idea de lo que se cuece aquí.
 
-###Las condiciones de trabajo
+### Las condiciones de trabajo
 
 Debido a toda la oferta que existe para los informáticos, las empresas tratan de cuidar bastante a su gente, y el respeto hacia el trabajador es bastante más grande que en España. Esto no significa que este sea el país de la piruleta y la gente sea maravillosa, solo es el resultado de una economía saludable. Ya os digo que si en unos años todo se fuera al traste por cualquier motivo aquí también saldrían a relucir muchos de los defectos del mercado laboral español.
 
@@ -32,13 +32,13 @@ Pero ahora mismo la situación es muy buena, y por tanto nunca escucharás comen
 
 Aparte del salario fijo es normal que haya un bonus anual (5-15% del bruto), y otros beneficios como planes de pensiones, seguros médicos (aunque en UK la seguridad social funciona bastante bien, así que no me parece un gran beneficio), etc. La intención es tratar de prevenir la movilidad de los trabajadores fomentando su satisfacción en el rol que tengan en la empresa.
 
-###La vida en Londres
+### La vida en Londres
 
 Sin conocer los niveles de vida de todas las ciudades del mundo, creo poder afirmar que Londres tiene que estar entre las 5 más caras sin discusión. Las dos losas para cualquier residente en Londres son la vivienda y el transporte. El precio del transporte difiere mucho según la zona en que vives, pero no baja de 120 libras/mes, y de ahí para arriba. El precio de la vivienda es directamente ridículo, si no estás dispuesto a compartir casa (cosa que aquí es muy frecuente), un apartamento de un dormitorio no baja de 1.100 libras/mes, y eso en zonas no excesivamente buenas. Lo normal es pagar entre 1.200 y 1.400 libras/mes por el alquiler de la vivienda, sin contar facturas, Council Tax (impuesto mensual similar a la contribución en España, pero mucho más caro). Una habitación doble en piso compartido puede costar entre 600 y 900 libras, dependiendo de si tiene baño propio o no.
 
 Por tanto, a la hora de decidirse a dar el salto es fundamental calcular si el sueldo (o sueldos si vamos con nuestra pareja) nos dará para cubrir las necesidades básicas y nos dejará margen para imprevistos.
 
-###El currículum
+### El currículum
 
 El primer paso es redactar un buen currículum. A mí me llevó un mes dejarlo niquelado, y contando con la ayuda de la que era mi profesora de inglés por Skype (a la que tengo mucho que agradecer). Los currículums que esperan recibir las empresas británicas difieren bastante del estándar en España. Los principales puntos a tener en cuenta son:
 
@@ -50,7 +50,7 @@ El primer paso es redactar un buen currículum. A mí me llevó un mes dejarlo n
 
 Es importante (aunque diría que no fundamental) complementar el currículum con un perfil de LinkedIn (en inglés, claro) donde se detallen más en profundidad nuestros logros del pasado.
 
-###La búsqueda
+### La búsqueda
 
 Yo inicié mi proceso de búsqueda en Diciembre de 2013. Mi idea era ir practicando entrevistas en inglés antes de ponerme realmente en serio en Enero de 2014.
 
@@ -60,7 +60,7 @@ Como hay tanta necesidad de programadores, ni siquiera es necesario enviar el CV
 
 No os preocupéis porque vuestro número de teléfono sea de fuera del Reino Unido, os van a llamar igual. De hecho, os van a llamar tanto que optaréis por desactivar el perfil (o hacerlo privado) una vez hayáis contactado con un puñado de recruiters. En mi caso, al dia siguiente de subir por la noche mi CV a Monster recibí no menos de 10 llamadas diferentes.
 
-####Las agencias de recruitment
+#### Las agencias de recruitment
 
 Un recruiter es más o menos un comercial de personas, y si encima añades Londres a la ecuación nos encontramos con que habrá que tratar con comerciales que trabajan en una de las ciudades más competitivas del mundo. Por tanto, en el 80% de los casos hay que andarse con mucho cuidado.
 
@@ -70,7 +70,7 @@ Yo me encontré con algún recruiter bastante majo, y menos agresivo, cosa que e
 
 Tras la primera conversación con un recruiter, lo normal es que te envíen al correo una lista de ofertas que están manejando y tú decides a cuál de ellas quieres optar. El siguiente paso lo tiene que dar la empresa interesada si tu CV capta su atención.
 
-####El idioma
+#### El idioma
 
 Aunque mi nivel de inglés cuando comencé a hacer entrevistas no era malo (solía dar un C1 / advanced en todos los tests que hacía), enfrentarse al inglés real es bastante complicado si no has vivido fuera de tu país nativo. Además los recruiters suelen hablar muy deprisa (supongo que para maximizar el número de candidatos "fichados" al día).
 
@@ -78,7 +78,7 @@ Por otro lado, las exigencias a nivel de idioma por parte de las empresas no son
 
 Dicho esto, en las entrevistas se pasa bastante mal, porque cuesta mucho seguir las parrafadas que sueltan desde el otro lado. Los ingleses son muy dados a enrollarse más de la cuenta explicando cosas, y siempre llega un momento en que pierdes el hilo de lo que están diciendo. En tal caso lo mejor es capear el temporal como se pueda, y pensar que en el 90% de los casos las conversaciones telefónicas se ciñen al formato pregunta-respuesta, que es más sencillo una vez vas adquiriendo experiencia en entrevistas.
 
-####La primera entrevista técnica
+#### La primera entrevista técnica
 
 Cuando una empresa te contacta, el primer paso es siempre una entrevista técnica, donde te bombardean a preguntas de todo tipo para intentar hacerse una idea del nivel del entrevistado. La primera vez impresiona bastante, porque en España no suelen abundar este tipo de entrevistas. Lo normal de esta primera vez es que no se supere con éxito, pero sí nos dará base para preparar las que vienen.
 
@@ -97,7 +97,7 @@ A veces en este primera entrevista hacen preguntas un poco menos técnicas, como
 * ¿Utilizas metodologías ágiles? ¿Scrum?
 * ¿Cómo resolverías una situación de conflicto con un compañero?
 
-####La prueba técnica tras la entrevista
+#### La prueba técnica tras la entrevista
 
 Si superamos la entrevista técnica el siguiente paso suele ser realizar una prueba de programación (challenge lo llaman), desarrollando en el lenguaje requerido en la oferta.
 
@@ -107,7 +107,7 @@ Los enunciados pueden ser de cualquier tipo, como implementar el [algoritmo de L
 
 Mi consejo para esta prueba es que utilicéis todos los consejos de Uncle Bob en su libro [Clean Code](http://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?ie=UTF8&qid=1428246839&sr=8-1&keywords=Clean+Code), y que miréis con lupa la complejidad de los algoritmos (tanto temporal como espacial). También deben funcionar, claro, y si son pruebas sin tiempo **añadid tests**, tanto unitarios como de integración.
 
-####La entrevista final
+#### La entrevista final
 
 Lo normal es que los procesos comprendan tres fases, y si superamos las dos primeras tengamos que hacer una entrevista presencial.
 
@@ -123,7 +123,7 @@ Estas entrevistas finales varían mucho entre empresas, por lo que me cuesta má
 
 Sobre la vestimenta a llevar no os preocupéis demasiado, porque las agencias se encargan de darte todo tipo de detalles sobre el dress code requerido, así que sabremos en todo momento si nuestra indumentaria es adecuada o no.
 
-####La oferta
+#### La oferta
 
 Según el número de entrevistas realizadas y nuestra pericia, es muy posible que recibamos una oferta de trabajo. En caso de no conseguirla habría que volver a iniciar el proceso y fijar otra visita en el futuro.
 
@@ -140,6 +140,6 @@ El último formalismo suele ser firmar los documentos recibidos por la empresa y
 1. Podemos tener problemas para encontrar a alguien capaz de responder en inglés. Esto en general no es para tanto, porque los contactos suelen ser por mail, y creo que cualquiera puede terminar saliendo del paso
 2. ¡Piden datos de contacto de la empresa actual! En UK es muy frecuente, pero en España resulta bastante "surrealista", por decir algo. Siempre podremos solventar esta papeleta de alguna forma, si no queremos dar la baja antes de terminar con el Reference Check, en caso contrario creo que es todo más fácil
 
-##Conclusiones
+## Conclusiones
 
 Espero que alguno de estos consejos puedan servir a alguien en algún momento para decidirse a dar el salto. Creedme que la experiencia merece la pena.

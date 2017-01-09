@@ -18,7 +18,7 @@ Mi intención con estos posts es resumir en mayor o menor medida el contenido de
 
 <!--break-->
 
-##Qué es una aplicación empresarial
+## Qué es una aplicación empresarial
 
 Para ponernos en contexto, veamos qué define el libro como una aplicación empresarial (Enterprise Application). A grandes rasgos, para que podamos englobar un sistema en este ámbito, debe cumplir todas (o casi todas) las características de la siguiente lista:
 
@@ -33,7 +33,7 @@ Ejemplos de este tipo de aplicaciones los conocemos todos: seguros, facturación
 
 No profundizaré mucho más, pero creo que está claro a qué podemos considerar "Enterprise Applications" (o eso espero).
 
-##Métricas de rendimiento (performance)
+## Métricas de rendimiento (performance)
 
 Existen varias medidas de rendimiento que debemos tener en cuenta cuando diseñamos o implementamos este tipo de aplicaciones. Estas medidas formarán además parte de los conocidos como "requerimientos no funcionales", que en ocasiones son tan importantes como los funcionales:
 
@@ -52,11 +52,11 @@ En este punto debemos plantearnos si nuestra medida más importante debe ser el 
 
 Como véis, las medidas no son pocas. En general, a la hora de diseñar aplicaciones empresariales deberíamos intentar maximimar la escalabilidad, ya que de esta forma tendremos una gran flexibilidad para ajustar otras medidas.
 
-##Los patrones
+## Los patrones
 
 En este primer post comentaré muy por encima los patrones desglosados en la primera parte del libro, y que en su mayoría fueron la fundación de muchos de los frameworks de acceso a datos que todos utilizamos actualmente. No traduciré los nombres de los patrones, ya que personalmente me suena muy raro hacerlo, y no creo que casi nadie lo haga, honestamente. Añadiré los links a cada patrón mencionado en la web oficial de [Fowler](http://martinfowler.com/).
 
-###Domain Logic patterns
+### Domain Logic patterns
 
 Bajo este grupo se agrupan patrones que sirven para organizar el procesamiento de una lógica de negocio determinada. Son cuatro, aunque diría que dos de ellos han quedado algo desfasados:
 
@@ -68,7 +68,7 @@ Bajo este grupo se agrupan patrones que sirven para organizar el procesamiento d
 Desde la perspectiva actual, mi enfoque preferido sería Domain Model + Service Layer, siendo el Domain Model una capa de estructuras de datos sin más. Por supuesto, para poblar dichas estructuras tendremos que utilizar una DAO layer ([Data Access Object](https://en.wikipedia.org/wiki/Data_access_object)), que no se menciona en este libro, aunque sí un patrón muy parecido de nombre Repository (nombre que a su vez fue extrapolado por Spring en la anotación [@Repository](http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/stereotype/Repository.html)), por lo que podríamos considerar al patrón Repository de este libro el precendente de DAO.
 
 
-###Patrones de acceso y estructuración de datos
+### Patrones de acceso y estructuración de datos
 
 En este grupo englobo tres secciones del libro: Data Source Architectural Patterns, Object-Relational Behavioral Patterns y Object-Relational Structural Patterns.
 

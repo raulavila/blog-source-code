@@ -15,7 +15,7 @@ Pero, ¿qué demonios es [Docker](https://www.docker.com/)? Hasta hace relativam
 
 <!--break-->
 
-##Precedentes
+## Precedentes
 
 En la última década se ha incrementando la tendencia a utilizar máquinas virtuales para desplegar aplicaciones. Antes de la implantación de máquinas virtuales el despliegue de una aplicación cualquiera tenía, en general, la siguiente estructura en capas:
 
@@ -31,7 +31,7 @@ Los inconvenientes de esta arquitectura es que se aumentan considerablemente los
 
 No es el objeto de este post profundizar demasiado en el uso y beneficios de las máquinas virtuales, así que lo dejaré aquí.
 
-##Qué es Docker
+## Qué es Docker
 
 Esta es la definición oficial, que aparece en la página de Docker:
 
@@ -45,7 +45,7 @@ Veamos cómo sería la arquitectura en capas de un servidor utilizando Docker:
 
 Hemos eliminado la capa "Guest OS" de la ecuación, lo que significa que **no es necesario arrancar ningún OS adicional**, eliminando una sobrecarga considerable en el proceso de virtualización.
 
-##Conceptos principales
+## Conceptos principales
 
 Repasemos cuáles son los elementos principales de la plataforma Docker:
 
@@ -62,7 +62,7 @@ Docker está diseñado para funcionar en máquinas Linux (distribuciones Ubuntu,
 
 "Pues aún no entiendo qué demonios es Docker, quierlo verlo funcionando". OK, vamos allá.
 
-##Docker en la práctica
+## Docker en la práctica
 
 Voy a exponer un caso de uso muy básico, en el que prácticamente repasaremos todos los conceptos explicados hasta ahora, y veremos la potencia real que tiene esta plataforma.
 
@@ -159,6 +159,6 @@ En este caso ocurre lo que comenté en el punto 3, la imagen ejecuta un comando 
 
 **6) Abrir la aplicación en nuestro navegador**: si vamos a [http://localhost:8080/spring-mvc-hw/](http://localhost:8080/spring-mvc-hw/), ¡podremos ver que la aplicación está funcionando según lo esperado! En cuatro sencillos pasos, y con una máquina totalmente limpia (repito, sólo contiene Git y Docker) hemos conseguido nuestro objetivo.
 
-##Conclusión
+## Conclusión
 
 Aunque este post sea únicamente una introducción, espero que haya servido para hacerse una idea general de la potencia que ofrece esta nueva plataforma. Considero que toda la atención que viene recibiendo últimamente está más que justificada, y realmente puede llegar a cambiar las cosas significativamente en los próximos años.

@@ -151,7 +151,7 @@ assertThat(calculator.performOperation(8, 2)).isEqualTo(6);
   {% endhighlight %}
 
 
-###Estados asociados
+### Estados asociados
 
 Siguiendo con el patrón State, es posible asociar estados de la misma enumeración entre sí, con la única condición de que no es posible referenciar un valor del enumerado que aún no ha sido declarado:
 
@@ -271,7 +271,7 @@ public void reset() {
 Esto ya queda al gusto de cada uno, pero yo prefiero esta última versión.
 
 
-###Enums como parametrizaciones
+### Enums como parametrizaciones
 
 Imaginemos un sistema que contiene una serie de parámetros de configuración a persistir en una base de datos o similar. Dichos parámetros pueden contener diversos tipos de datos, pero en la tabla el tipo del valor será un String para dar flexibilidad, es decir, tendremos algo como:
 
@@ -409,6 +409,6 @@ public void testIncorrectSystemName() throws Exception {
  {% endhighlight %}
 
 
-###Conclusión
+### Conclusión
 
  Espero que con este post haya quedado demostradada la flexibilidad de los enumerados en Java, y la claridad que dan al código si se usan convenientemente. Me he dejado algún uso en el tintero, como puede ser la implementación del patrón Singleton, [pero este tema ya está cubierto de sobra.](http://javarevisited.blogspot.co.uk/2012/07/why-enum-singleton-are-better-in-java.html)

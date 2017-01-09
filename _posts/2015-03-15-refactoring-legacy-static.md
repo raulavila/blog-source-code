@@ -27,7 +27,7 @@ Si descartamos el uso de PowerMock, la opción es no crear un Mock de la clase e
 
 Esta labor no es sencilla, cuando hay que abarcarla en un proyecto con miles de líneas de código, que además no contiene ningún test. Describiré a continuación una técnica paso a paso para conseguirlo de la forma más segura posible, técnica que aprendí en uno de los hangouts del [VirtualJUG](http://virtualjug.com/) impartido por [Sandro Mancuso](https://twitter.com/sandromancuso).
 
-###El sistema de partida
+### El sistema de partida
 
 Nuestro caso de uso es un sistema de registro y cobro de multas. El modelo de datos está simplificado al máximo, y contiene solo dos clases:
 
@@ -121,7 +121,7 @@ Esto es todo. Un sistema bastante tonto, pero con una carencia muy importante (d
 
 Imaginemos que el sistema es monstruoso y existen dependencias de la clase DAO por todas partes. ¿Cómo eliminar la naturaleza estática de forma segura? Veámoslo.
 
-###El proceso, paso a paso
+### El proceso, paso a paso
 
 Lo primero que tenemos que hacer es crear tests para la clase `FineService`:
 
@@ -158,7 +158,7 @@ Varias puntualizaciones aquí:
 * Teniendo en cuenta que la clase `PersonDAO` es una chapucilla creada para el ejemplo, en un sistema legacy real lo más seguro es que también fuera una clase estática, con sus métodos `getPersonByXXX`, que también habría que eliminar
 * La clase service no tiene control de errores, etc, y los tests deberían ser más completos, comprobando no solo el número de multas devueltas. De nuevo, he optado por la simplicidad para centrarme en un aspecto muy determinado
 
-####El problema: la clase DAO accede a la capa de persistencia
+#### El problema: la clase DAO accede a la capa de persistencia
 
 Efectivamente, ¿qué clase de test unitario accede a los datos reales? Como la clase `FineDAO` es estática, tenemos que pensar en alguna forma de "mockear" la llamada al método `getFines`...Para ello lo primero que vamos a hacer es aislar la invocación a `FineDAO.getFines` en un método propio dentro de `FineService`:
 
@@ -205,7 +205,7 @@ private FineService fineService = new FineServiceTestable();
 
 Paro un momento para hacer hincapié en que, la idea de este proceso es implementarlo en incrementos pequeños, **ejecutando los tests a cada paso**. El uso de una herramienta como [infinitest](https://infinitest.github.io/) facilita bastante esta labor, porque lo hace automáticamente.
 
-####Aislando dependencias en los tests
+#### Aislando dependencias en los tests
 
 Ya estamos en posición de eliminar la dependencia de la clase estática en el test de `FineService`. Esto se hace modificando el método `getFines` de FineServiceTestable:
 
@@ -239,7 +239,7 @@ public class FineServiceTestable extends FineService {
 
 ¡Maldita sea!, diréis. ¡Esta clase hace exactamente lo mismo que FineDAO! Bien, recordemos que FineDAO es un ejemplo muy simplificado, que en la realidad accedería a base de datos a traves de JDBC, MyBatis, Hibernate...En tal caso la clase `FineServiceTestable` sí pasaría a ser totalmente diferente. Además...nos hemos librado de la dependencia estática, que es lo que queríamos, ¿verdad?
 
-####Refactorizando FineDAO
+#### Refactorizando FineDAO
 
 Vamos a eliminar paso a paso la naturaleza estática de FineDAO. Creemos en primer lugar los tests de la clase:
 
@@ -331,7 +331,7 @@ public class FineService {
 La inyección de dependencias puede realizarse de múltiple formas (setters, constructores, anotaciones...). Intentando simplificar, en el ejemplo se hará mediente un setter.
 
 
-####Añadiendo Mocks auténticos
+#### Añadiendo Mocks auténticos
 
 Puesto que ya no tenemos dependencias estáticas en la clase `FineService`, es posible "mockear" sus dependencias de la forma tradicional, utilizando un framework como [Mockito](https://code.google.com/p/mockito/). Dejamos de utilizar, por tanto, la clase `FineServiceTestable`:
 
@@ -381,7 +381,7 @@ public void testNoUnpaidFines() throws Exception {
 
 Ya tenemos todos los tests en verde, y hemos conseguido lo que buscábamos, librarnos de la dependencia estática :D
 
-####Repetir el proceso para dependencias pendientes
+#### Repetir el proceso para dependencias pendientes
 
 Si existen más dependencias en el sistema del método estático `FineDAO.getFines`, deberíamos repetir el proceso  para cada una de ellas. En caso contrario, habrá llegado el momento de eliminar definitivamente el método (moviendo su cuerpo dentro del método de instancia, eliminando de esta forma la delegación), y si queremos, renombrar el método instancia a getFines (el IDE se encargará de actualizar todas sus referencias sin problema). También tendremos que eliminar los tests del método estático, puesto que dejarán de compilar. La cosa, por tanto, queda así:
 
@@ -414,7 +414,7 @@ public class FineDAO {
 {% endhighlight %}
 
 
-##Conclusiones
+## Conclusiones
 
 Eliminar esta dependencia estática no significa que ya esté todo el trabajo hecho. En el ejemplo utilizado en este post habría que seguir eliminando más dependencias estáticas (`PersonDAO`), y en un sistema legacy real seguramente estemos solo comenzando.
 

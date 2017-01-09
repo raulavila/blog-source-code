@@ -15,13 +15,13 @@ Sin embargo, recientemente está irrumpiendo con relativa fuerza un framework, q
 
 <!--break-->
 
-##Spock
+## Spock
 
 [Spock](http://spockframework.github.io/spock/docs/1.0/index.html) es el acrónimo de "Specification and Mock". Sabiendo esto es fácil deducir lo que nos permite hacer: crear especificaciones de nuestros sistemas, añadiendo capacidades para generar Mocks de dependencias. Digo especificaciones y no tests, cosa que puede resultar algo confusa de inicio, pero que se entenderá bien con los ejemplos. En líneas generales, una especificación no es más que una clase de test vitaminada.
 
 Mi intención en este artículo es mostrar con un ejemplo claro en qué se diferencia Spock de JUnit. No quiero entrar en excesivos detalles de todo lo que Spock ofrece, para eso ya tenéis [la documentación oficial](http://spockframework.github.io/spock/docs/1.0/index.html).
 
-##La clase a testear
+## La clase a testear
 
 Vamos a crear tests para la una clase `Calculator`, clase que ya utilizamos en el post sobre [Mutation Testing](/2015/05/mutation-testing). La versión "final", de la que queremos generar tests, es esta:
 
@@ -54,7 +54,7 @@ public class Calculator {
 
 Las funcionalidades de esta clase (que no es un derroche de buenas prácticas, por otro lado) son claras.
 
-##Tests en JUnit
+## Tests en JUnit
 
 Esta sería la clase de Test en JUnit que cubriría convenientemente todas las funcionalidades de `Calculator`:
 
@@ -130,7 +130,7 @@ Vemos varios problemas aquí:
 
 Todos estos contrapuntos no son malos en sí, pero ya sabemos que Java nunca se ha caracterizado por ser demasiado conciso. Esa verbosidad puede ser muy buena en determinadas ocasiones, ya que fuerza buenas prácticas y pensar de manera adecuada en nuestros diseños. Pero a la hora de escribir tests, ¿no sería mejor ahorrarse estos pequeños inconvenientes?
 
-##Spock al rescate
+## Spock al rescate
 
 Vamos a sumergirnos de lleno en Spock viendo cómo sería la implementación final de nuestra especificación para la clase `Calculator`:
 

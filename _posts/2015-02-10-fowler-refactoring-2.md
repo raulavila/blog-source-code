@@ -66,7 +66,7 @@ Employee manager = Employee.create(EmployeeType.MANAGER);
 
 El problema que veo a esta aproximación es que la clase Employee no debería tener conocimiento alguno sobre sus clases derivadas. Estamos creando un acoplamiento innecesario que viola tanto el [Single Responsibility Principle (SRP)](http://en.wikipedia.org/wiki/Single_responsibility_principle) como el [Open Closed Principle (OCP)](http://en.wikipedia.org/wiki/Open/closed_principle). La clase Employee solo debería contener la lógica común de un empleado, y no procedimientos de creación de clases que la implementen.
 
-##Mi propuesta
+## Mi propuesta
 
 La creación de instancias debería ser claramente responsabilidad de una clase factoría, que contendría el método ubicado hasta ahora en Employee.
 
@@ -117,7 +117,7 @@ class Manager implements Employee {
 {% endhighlight %}
 
 
-###Mejorando la propuesta. Fuera switch.
+### Mejorando la propuesta. Fuera switch.
 
 En general, las sentencias switch (o en su defecto, una serie de ifs encadenados), suelen ser un ["code smell"](http://en.wikipedia.org/wiki/Code_smell), ya que entre otras cosas, aumentan la [complejidad ciclomática](http://es.wikipedia.org/wiki/Complejidad_ciclom%C3%A1tica). Me atrevería a decir que en un 95% de los casos es posible encontrar mejores soluciones que el uso de una sentencia switch.
 
@@ -166,7 +166,7 @@ Varias cosas a puntualizar:
 Diría que el diseño de este método es mucho más robusto que el anterior. Ahora sí cumple sobradamente con los SRP y OCP, la única responsabilidad de esta clase es la creación de instancias de Employee, y puede extenderse con nuevos tipos de empleado, pero no habría que modificar el método create para nada...mmmm, ¿podemos hacerlo mejor?
 
 
-###Rizando el rizo
+### Rizando el rizo
 
 Realmente la clase no cumple al 100% con el OCP, porque sí que habría que modificar la clase si se añaden al sistema nuevos tipos de empleado (añadiendo la nueva entrada en el Map). Pero, ¿es posible no tener que modificar esta clase si se da el caso? Bueno, realmente ¡sí que es posible!:
 

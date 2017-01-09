@@ -15,7 +15,7 @@ Como en cualquier ámbito de ingeniería, el uso de patrones facilita enormement
 
 <!--break-->
 
-##Producer consumer
+## Producer consumer
 
 Los cuatro conceptos a tener en cuenta para implementar este patrón son:
 
@@ -34,7 +34,7 @@ Consideraciones a tener en cuenta:
 
 ![Producer-consumer](/public/pictures/producer-consumer.jpg)
 
-###Implementación del buffer
+### Implementación del buffer
 Es el factor más importante para que este patrón funcione como es debido. Al ejecutarse los actores en diferentes threads, dependiendo de la acción que realicen sobre el ítem los ritmos de trabajo pueden ser bastante diferentes. De cara a la configuración del buffer esto implica que:
 
 * Si el buffer es de capacidad limitada puede llenarse demasiado rápido, condicionando a los productores
@@ -49,7 +49,7 @@ La API concurrency de Java contiene varias implementaciones de Queue que solvent
 
 Una vez asimilados todos los precedentes, pasemos a ver las diferentes posibilidades de implementación que tenemos a nuestra disposición en Java.
 
-####BlockingQueue
+#### BlockingQueue
 
 Esta API es una interfaz que extiende a `Queue` añadiendo operaciones bloqueantes. Es decir, implementa las características que acabamos de comentar. Sin ánimo de profundizar en [todas sus operaciones](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/BlockingQueue.html), las que realmente importan son:
 
@@ -68,11 +68,11 @@ Aunque ya lo hemos mencionado previamente, cualquiera de estas dos alternativas 
 
 Para solventar estos problemas, Java 7 introdujo una nueva modalidad de cola bloqueante, `TransferQueue`.
 
-####TransferQueue
+#### TransferQueue
 
 Básicamente,  `TransferQueue` es una `BlockingQueue` con una operación adicional, `transfer`. Este operación se utilizaría como alternativa a `put`, y viene a decir "transfiere este elemento a un consumidor, y bloquéate si no existe ningún consumidor disponible". La única implementación de `TransferQueue` es `LinkedTransferQueue`, y se trata de una cola de capacidad ilimitada, lo cual es perfectamente lógico, ya que un productor no podrá insertar elementos en la cola a discreción si no existe un consumidor en el otro lado.
 
-##Ejemplo completo
+## Ejemplo completo
 
 Vamos a crear un ejemplo completo con todos los conceptos que hemos ido revisando. El caso de uso es una "factoría" de platos (`Dish`), con 3 actores:
 
@@ -349,7 +349,7 @@ Todos correrán en un thread de forma indefinida (bucle infinito), y dependiendo
 
 Veamos ahora que ocurre cuando utilizamos las diferentes API's expuestas por Java y levantamos el sistema:
 
-###Caso 1: utilizando ArrayBlockingQueue
+### Caso 1: utilizando ArrayBlockingQueue
 
 {% highlight java %}
 public static void main(String[] args) {
@@ -418,7 +418,7 @@ new Thread(dryer).start();
 
 Sin embargo, no parece resultar una solución óptima del todo, de hecho al arrancar el sistema `Creator` queda bloqueado varios segundos de nuevo tras crear el ítem 5 en esta ocasión (ya que el 1 y 2 son consumidos inmediatamente por los dos threads "washer"). Por supuesto, deberíamos incrementar el tamaño del buffer (2 es una medida escasa, utilizada sólo a modo de ejemplo), pero en tal caso deberemos jugar también con el número de instancias de los actores, y la optimización es compleja.
 
-###Caso 2: utilizando LinkedBlockingQueue
+### Caso 2: utilizando LinkedBlockingQueue
 
 {% highlight java %}
 Buffer<UnitOfWork<Dish>> createdDishesQueue =
@@ -442,7 +442,7 @@ En este caso los buffer son de tamaño ilimitado, y ¡las consecuencias son desa
 
 Diría que, en general, el uso de esta implementación de `BlockingQueue` no es nada recomendable para utilizar el patrón Producer-Consumer, ya que nos obliga a crear otros mecanismos de sincronización si no queremos desbordar la memoria. Y no se trata de eso, ¡sino de delegar la gestión de la concurrencia lo máximo posible!
 
-###Caso 3: utilizando LinkedTransferQueue
+### Caso 3: utilizando LinkedTransferQueue
 
 {% highlight java %}
 public static void main(String[] args) {
@@ -512,7 +512,7 @@ new Thread(dryer).start();
 {% endhighlight %}
 
 
-###Conclusión
+### Conclusión
 
 La API concurrency de Java ofrece diversas alternativas para resolver los problemas tradicionales de multithreading, lo cual no quita que sigan siendo extraordinariamente complejos en ocasiones. Nunca es tarea fácil analizar y mejorar el rendimiento de este tipo de aplicaciones, pero cuanto menor sea el número de puntos a los que hay que prestar atención más sencilla será esta optimización.
 

@@ -15,7 +15,7 @@ Mi intención en este blog es ir hablando de estos acercamientos en el futuro, a
 
 <!--break-->
 
-##Qué es un contrato. Sintáxis y semántica.
+## Qué es un contrato. Sintáxis y semántica.
 
 Como todos sabemos, si programamos con interfaces crearemos mejores diseños, más encapsulados y cohesionados, y menos acoplados. Si no sabéis de lo que hablo, [ya tardáis](http://stackoverflow.com/questions/383947/what-does-it-mean-to-program-to-an-interface).
 
@@ -54,7 +54,7 @@ Bien, la línea `when(calculator.getSumFor("1,2")).thenReturn(3L)` nos está des
 
 El problema es que en la clase `Controller` estamos testeando más bien las interaciones entre componentes, y no la semántica de `Display`, que seguramente contenga muchos casos límite y de error. Aquí es donde surge el concepto que da título a este post.
 
-##Tests de Contrato
+## Tests de Contrato
 
 Un test de contrato es una conjunto de especificaciones de la semántica de una interfaz / contrato. Esta especificación se implementará en una clase abstracta de tests, que contendrá uno o más métodos abstractos de tipo factory, encargados de crear las implementaciones finales que deberán cumplir nuestro contrato. Esto se entenderá mucho mejor con el ejemplo:
 
@@ -133,7 +133,7 @@ public class CalculatorLegacyImplTest extends CalculatorContract {
 
 Esta clase ya no es abstracta, y por tanto podremos ejecutar los tests, que, efectivamente, son existosos.
 
-##Añadiendo nuevas implementaciones del contrato
+## Añadiendo nuevas implementaciones del contrato
 
 Java 8 nos facilita mucho la vida para trabajar con listas y colecciones, gracias a las [Lambda expressions](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html) y [Streams](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html). Hagamos uso de ello en una nueva implementación:
 

@@ -3,11 +3,11 @@ layout: layout_cv
 title: Raúl Ávila - CV
 ---
 
-##Profile
+## Profile
 
 Senior Java Software Engineer specialized in back-end developments, with a strong focus on quality, use of patterns and, in general, improving the processes and practices of the teams where I’m involved. Having an extensive experience (10+ years), my goal is not just delivering working software but consolidating solid architectures and optimizing the maintainability of the final result.
 
-##Core strengths
+## Core strengths
 
 * In-depth understanding of Object Oriented principles and Design Patterns
 * Passionate about Clean Code and Agile principles
@@ -15,7 +15,7 @@ Senior Java Software Engineer specialized in back-end developments, with a stron
 * Team worker; always open to discussion
 * Continuous and quick learner
 
-##Technical skills
+## Technical skills
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Java Ecosystem**
 
@@ -55,7 +55,7 @@ Senior Java Software Engineer specialized in back-end developments, with a stron
 * *Management tools:* JIRA, Redmine, Microsoft Project, Microsoft Office
 * *Other languages:* C, C++, Visual Basic for Applications
 
-##Work experience
+## Work experience
 
 **2016 to present: Software Engineer at Pivotal Labs (London)**
 
@@ -105,22 +105,22 @@ Senior Java Software Engineer specialized in back-end developments, with a stron
 * Trained and supervised newly incorporated programmers
 * Prepared and delivered presentation of ID-TAX application to an audience of over 200 people in the Ministry of Agriculture, Food and Environment (reference: [http://bit.ly/1FQnZ7q](http://bit.ly/1FQnZ7q))
 
-##Early career
+## Early career
 
 * **2007 (March to September): Programmer at Indra Sistemas (Madrid)**. Development of C++ applications for a real-time management project of take-off and landing of scheduled flights
 * **2005 to 2007: Programmer at GFI Informática (Madrid)**. Development, design and testing of C++ applications under Linux environment for projects in the telecommunication and insurance industries
 
-##Contributions to Community
+## Contributions to Community
 
 * **Blog**: [www.raulavila.com](http://www.raulavila.com), about Java and best practices in Software Development. I use my native language, Spanish, because I think the value I can add is bigger than writing in English. (The internet is full of awesome blogs in English, but not as many in Spanish, being the second language in the world)
 * **GitHub**: [www.github.com/raulavila](http://www.github.com/raulavila). It basically contains challenges, projects where I experiment with technologies and code that I comment on my blog. You can have a good idea of my programming style, even though, due to the nature of these projects, most of them don’t have a good test coverage
 * Regular attendee to events and talks in London Software Craftmanship Community and London Java Community. I even delivered one lightning talk in the LSCC (16/7/15, slides: [http://bit.ly/1e3t3xe](http://bit.ly/1e3t3xe))
 
-##Education
+## Education
 
 * **Bachelor’s Degree in Computer Science**. Complutense University of Madrid. (Graduated top student)
 
-##Certifications and additional courses
+## Certifications and additional courses
 
 * Sun Certified Java Programmer. Sun Microsystems. 2008
 * Oracle Certified Web Component Developer. Oracle. 2011
@@ -128,7 +128,7 @@ Senior Java Software Engineer specialized in back-end developments, with a stron
 * Uncle Bob's Clean Code: Agile Software Craftmanship. Skills Matter. 2014
 * Java SE 8 Lambdas and Streams. Oracle MOOC. 2015
 
-##Interests
+## Interests
 
 I’m an eager learner, so I spend most of my spare time reading (books, articles, blogs, etc) and watching training video courses or presentations about new technologies and practices. My other main interest is music.
 

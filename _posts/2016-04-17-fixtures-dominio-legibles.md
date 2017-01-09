@@ -85,11 +85,11 @@ additionalDetails.put("Favourite song", "Back in Black");
 
 No sé a vosotros, pero a mí personalmente este tipo de código siempre me ha parecido muy poco directo y nada claro de leer rápidamente para hacerse una idea de los contenidos del objeto de dominio instanciado.
 
-##Alternativas a la instanciación directa
+## Alternativas a la instanciación directa
 
 Existen varias alternativas para crear estos objetos de forma más clara, pero la mayoría de ellas requieren añadir librerías adicionales a nuestros tests (cosa que, por otro lado, tampoco es el fin del mundo). Echemos un vistazo rápido a estas soluciones.
 
-###Spock
+### Spock
 
 Mi alternativa favorita es utilizar el framework [Spock](http://spockframework.github.io/spock/docs/1.0/index.html), del que [ya hablamos en el blog](/2016/03/spock-vs-junit/). Gracias a esto, y a poder utilizar las facilidades del lenguaje Groovy, instanciar objetos complejos es muy sencillo utilizando el "map constructor" que
 expone Groovy para las clases de forma automática:
@@ -112,12 +112,12 @@ Person raul = new Person(
 
 Personalmente encuentro esta solución muy limpia y adecuada, pero no todo el mundo es partidario de utilizar Spock y Groovy en sus tests
 
-###Serializar en ficheros de texto
+### Serializar en ficheros de texto
 
 Podemos almacenar el contenido del objeto en un fichero en formato [JSON](https://es.wikipedia.org/wiki/JSON) o [YAML](https://es.wikipedia.org/wiki/YAML), y deserializar estos ficheros en nuestros tests utilizando librerías como [GSon](https://es.wikipedia.org/wiki/Gson) o [YAML Beans](http://yamlbeans.sourceforge.net/). Echad un vistazo a los links para comprobar como sería el proceso (bastante sencillo por otro lado). El punto negativo de esta solución es que nos obliga a navegar entre ficheros de texto y nuestro código de test para entender qué está ocurriendo realmente.
 
 
-###Crear factorías de test
+### Crear factorías de test
 
 Por último, y si queremos evitar añadir dependencias o frameworks adicionales para una tarea que debería ser bastante sencilla, podemos crear factorías de test que nos asistan en la creación de nuestros objetos de dominio.
 

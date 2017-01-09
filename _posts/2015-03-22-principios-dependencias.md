@@ -21,7 +21,7 @@ El motivo de tanta confusión es que estos conceptos están fuertemente relacion
 
 Otro motivo de confusión, a mi parecer, es que en foros, blogs, etc, se suele tratar el tema en el orden equivocado: IoC => DI => DIP. Yo haré justo lo contrario, y comenzaré explicando el Principio de Inversión de dependencias.
 
-##Principio de Inversión de Dependencias
+## Principio de Inversión de Dependencias
 
 Este principio, que no sé al 100% si acuñado, pero sí popularizado por [Uncle Bob](http://en.wikipedia.org/wiki/Robert_Cecil_Martin), tiene la siguiente [definición formal oficial](http://en.wikipedia.org/wiki/Dependency_inversion_principle):
 
@@ -31,7 +31,7 @@ Este principio, que no sé al 100% si acuñado, pero sí popularizado por [Uncle
 
 Diría que esta definición por sí misma no sirve de mucho, y para entenderlo en condiciones necesitamos un ejemplo plasmado en código y acompañado de algún diagrama UML.
 
-####Dependencias en tiempo de compilación / de ejecución
+#### Dependencias en tiempo de compilación / de ejecución
 
 Para entender este principio primero hay que aprender a distinguir la diferencia entre dependencias en tiempo de compilación (compile time dependencies) y dependencias en tiempo de ejecución (runtime dependencies).
 
@@ -119,7 +119,7 @@ En este ejemplo, por tanto, las dependencias en tiempo de compilación tienen el
 
 Imaginad los problemas que conlleva este acoplamiento en sistemas realmente complejos, de, digamos, cientos de módulos.
 
-####Invirtiendo las dependencias
+#### Invirtiendo las dependencias
 
 ¿Qué significa invertir las dependencias? Pues ni más ni menos que diseñar el sistema de forma que **las dependencias en tiempo de ejecución tengan el sentido contrario que las dependencias en tiempo de compilación**. Esto se consigue estableciendo un contrato entre los módulos de alto nivel y los módulos de bajo nivel. En Java, un contrato no es ni más ni menos que una interfaz.
 
@@ -132,7 +132,7 @@ Aquí vemos que `InventoryService` depende en tiempo de compilación de la inter
 Por tanto hemos desacoplado ambas clases, que se comunican entre ellas mediante un contrato (establecido en la interfaz `ItemDAO`). En tiempo de ejecución, sin embargo, la clase `InventoryService` seguirá invocando a la implemantación `ItemDAOImpl`, por lo que, efectivamente, está ocurriendo que "la dirección del flujo de ejecución es opuesta a la dirección de las dependencias en tiempo de compilación". En esto consiste el Principio de Inversión de Dependencias.
 
 
-####¡Pero si la dependencia en tiempo de compilación sigue ahí!
+#### ¡Pero si la dependencia en tiempo de compilación sigue ahí!
 
 En el punto anterior he omitido el código resultante del nuevo diseño a propósito. Lo primero que puede venir a nuestra mente tras ver el diagrama UML es lo siguiente:
 
@@ -150,7 +150,7 @@ public class InventoryService {
 
 En este código siguen existiendo dependencias en tiempo de compilación, porque la clase Service sigue siendo responsable de instanciar la implementación concreta del contrato. Y aquí es donde entra en juego la inyección de dependencias.
 
-##Inyección de Dependencias
+## Inyección de Dependencias
 
 El código que implementa el último diagrama UML ajustándose realmente al DIP sería este:
 
@@ -245,7 +245,7 @@ Esta clase tiene la responsabilidad de instanciar y ensamblar las diferentes pie
 
 El concepto fue acuñado por [Martin Fowler](http://es.wikipedia.org/wiki/Martin_Fowler) en [este artículo](http://es.wikipedia.org/wiki/Martin_Fowler), y en resumen viene a decir que los sistemas diseñador mediante Dependency Injection están controlados por un componente externo que se encarga de instanciar y ensamblar todas sus piezas convenientemente. En general, nosotros jamás desarrollaremos una clase como la `Assembler` de mi ejemplo, y dejaremos esta responsabiliad a frameworks como [Spring](http://projects.spring.io/spring-framework/).
 
-####Añadiendo Spring al sistema
+#### Añadiendo Spring al sistema
 
 Veamos como quedaría nuestro sistema utilizando Spring. El core de Spring lo forma el conocido como "Inversion of Control Container" ([IoC container](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/beans.html#beans-basics)), o más comúnmente denominado **Application Context**. No es mi intención profundizar aquí en cómo funciona Spring, pero, para posibles lectores que nunca hayan trabajado con el framework, el contexto de Spring puede verse a rasgos generales como un contenedor que almacena instancias de clases Java denominadas beans. Dichos beans están etiquetados con un identificador, su clase y la interfaz que implementan, de forma que cuando una clase necesita hacer uso de una instancia que implemente un contrato determinado, Spring realiza una búsqueda en su contexto de un bean que cumpla las características requeridas e inyecta el bean en la clase que lo solicite.
 
@@ -287,7 +287,7 @@ public class MainApp {
 
 Como se puede ver, lo único que instancia es el contexto de Spring, y a partir de ahí solicita los servicios que necesita a dicho contexto.
 
-##Inversión de Control (Inversion of Control)
+## Inversión de Control (Inversion of Control)
 
 Este concepto es confundido habitualmente con la Inyección de Dependencias (la propia documentación de Spring lo hace), pero en realidad es bastante más amplio.
 
@@ -301,7 +301,7 @@ Efectivamente, el segundo ejemplo no es otra cosa que la inyección de dependenc
 En general, diría que el uso del concepto "Inversión de Control" es bastante difuso, y es preferible olvidarnos de ello en nuestro día a día para evitar confusiones, mencionando y haciendo uso de la inyección de dependencias con verdadera propiedad.
 
 
-##DI sin DIP
+## DI sin DIP
 
 Es posible que un sistema esté diseñado para funcionar mediante inyección de depedencias, ¡y que no siga el principio de inversión de depedencias! Aplicándolo a nuestro ejemplo, si modificáramos la clase `InventoryService` como sigue:
 
@@ -381,7 +381,7 @@ Tras añadir esta última clase al sistema, el contexto de spring quedaría conf
 </beans>
 {% endhighlight %}
 
-####Inyección mediante setters
+#### Inyección mediante setters
 
 La inyección no tiene por qué hacerse en el constructor. Es posible exponer los atributos de la clase mediante setters, y en ese caso la configuración en el fichero XML es incluso más clara:
 
@@ -397,7 +397,7 @@ Omito la nueva versión de la clase `InventoryService`, pero sería necesario cr
 
 Esto nos lleva a un debate sin fin sobre si es mejor una modalidad o la otra. Personalmente esta última es bastante más clara para leer los ficheros de configuración (porque en la etiqueta property hay que mencionar también el nombre del atributo que almacenará la referencia, bastante más claro en clases con muchos atributos), pero elimina la naturaleza inmutable de las clases, y puede llevarnos a crear objetos "a medias". En [este artículo](http://spring.io/blog/2007/07/11/setter-injection-versus-constructor-injection-and-the-use-of-required/) de la web de Spring se discute sobre el tema por si queréis profundizar.
 
-##Conclusiones
+## Conclusiones
 
 Puede que me haya extendido un poco más de la cuenta, pero yo creo que este es un tema con bastante miga. He dejado de lado aspectos más avanzados de la inyección de dependencias, como puede ser la [inyección mediante anotaciones](http://blogs.sourceallies.com/2011/08/spring-injection-with-resource-and-autowired/), y también me gustaría mencionar otros frameworks que sirven a la misma causa (no solo de Spring vive el hombre), como [Apache Aries Blueprint](http://aries.apache.org/modules/blueprint.html), [Google Guice](https://github.com/google/guice) o [PicoContainer](http://picocontainer.codehaus.org/).
 

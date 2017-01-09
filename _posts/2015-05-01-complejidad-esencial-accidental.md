@@ -11,7 +11,7 @@ comments: true
 
 <!--break-->
 
-##Complejidad esencial
+## Complejidad esencial
 
 Nuestra profesión es resolver problemas. Así de simple. No es analizar requisitos, diseñar sistemas, implementar código, resolver incidencias, etc. Bueno, por supuesto que es todo eso y más, pero si hubiera que resumirlo en dos palabras, diría que "resolver problemas" es la mejor forma de hacerlo.
 
@@ -24,7 +24,7 @@ Podría seguir hasta el infinito. Bien, la complejidad esencial es aquella que v
 * Pelearnos con nuestras queridas hojas de estilo CSS para montar el prototipo del front-end
 * Configurar las herramientas de integración continua que vayamos a utilizar, los build plans, los plugins de maven, etc
 
-##Complejidad accidental
+## Complejidad accidental
 
 Al grano: complejidad accidental es aquella que añadimos nosotros mismos sobre la marcha al trabajo que estamos realizando para resolver el problema esencial, complicando su ejecución.
 
@@ -81,7 +81,7 @@ public long sum(int[] a) {
 
 Que, efectivamente, hace exactamente lo mismo que el primer método, pero es mucho más difícil de mantener a nada que el código vaya creciendo.
 
-##Minimizando la complejidad accidental
+## Minimizando la complejidad accidental
 
 Igual que al principio del post afirmaba que "resolver problemas" es la mejor forma de definir nuestro trabajo, creo que también puedo plasmar en dos palabras la mejor forma de reducir la complejidad accidental: "ser valiente".
 

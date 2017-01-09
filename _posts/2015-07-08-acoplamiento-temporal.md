@@ -18,7 +18,7 @@ Creo que todos habremos leído más de un artículo o libro en el que, mencionan
 
 Siempre me ha llamado la atención que no se preste atención al "acoplamiento temporal" (temporal coupling), quizás porque no es tan importante. De hecho no he encontrado demasiadas referencias en castellano, así que creo que merece la pena repasar en qué consiste y cómo evitarlo cuando sea posible.
 
-###Diseñando una API
+### Diseñando una API
 
 Cuando creamos una API, es de recibo hacerlo cuidadosamente de forma que sea clara para los clientes que la vayan a utilizar, que no exponga detalles internos de implementación (para conseguir el bajo acoplamiento), que no abarque más de lo necesario (alta cohesión), y a ser posible que sea intuitiva en su uso. La elección de nombres aquí es muy importante, y en ningún caso nuestros métodos deberían hacer más de lo que el usuario espera de ellos, lo que se conoce como "Principio de la mínima sorpresa" ([Principle of Least Surprise](http://www.catb.org/esr/writings/taoup/html/ch11s01.html)).
 
@@ -133,7 +133,7 @@ paella - Cooking...
 paella - Serving...
 {% endhighlight %}
 
-###Qué es el acoplamiento temporal
+### Qué es el acoplamiento temporal
 
 Vamos a realizar una modificación muy pequeña en la clase `Chef`:
 
@@ -174,7 +174,7 @@ Exception in thread "main" java.lang.IllegalStateException: Ingredients are not 
 
 Como desarrolladores, deberíamos evitar en la medida de lo posible llegar a este tipo de condiciones de uso, ya que dificulta el desarrollo a terceras partes (los clientes de nuestra API). En el ejemplo está muy claro lo que ocurre, pero en otros casos se puede dar lugar a bugs escondidos y difíciles de seguir.
 
-###Medidas para evitarlo
+### Medidas para evitarlo
 
 Primero de todo, no siempre es posible evitar completamente el acoplamiento temporal, así que, en caso de que no quede otro remedio la solución es hacerlo patente mediante excepciones explícitas en caso romperlo. Por tanto, la primera medida sería mejorar los mensajes de nuestras excepciones. En nuestro ejemplo, el método `cook` podría quedar así:
 
@@ -274,7 +274,7 @@ paella - Serving...
 
 En este punto la única restricción es que los métodos `cook` y `serve` deben ejecutarse ambos y por este orden (siempre que nos queramos comer el plato, claro, siempre podemos cocinarlo sin más...). Podríamos rizar el rizo y fusionarlos en un nuevo método `cookAndServe` como método único en la interfaz, pero creo que ya han quedado bastante claros los conceptos (cómo dirían algunos, lo dejo como ejercicio :)). Por otro lado, un uso incorrecto de la API quedará expuesto inmediatamente por las excepciones lanzadas.
 
-###Bonus: DSL's
+### Bonus: DSL's
 
 En los últimos tiempos se está extendiendo mucho el uso de DSL's ([Domain Specific Language](http://www.infoq.com/articles/internal-dsls-java)), que a grandes rasgos son fluent API's (basadas en el patrón [Builder](https://en.wikipedia.org/wiki/Builder_pattern)), y permiten diseñar soluciones a problemas específicos de forma muy legible. Por ejemplo, el framework de integración [Apache Camel](http://camel.apache.org/) nos permite crear una ruta entre dos puntos con una transformación en medio tal que así:
 
