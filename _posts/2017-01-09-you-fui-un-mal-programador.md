@@ -28,4 +28,4 @@ Si escribo este post es únicamente para que un potencial lector que se esté in
 
 La lista podría continuar con otras cosas: escribir un blog, colaborar en proyectos Open Source...pero nada de eso me parece tan importante como los cuatro puntos que he reflejado.
 
-Y como último consejo, ¡sed humildes! Nadie está en posesión de la verdad absoluta, fundamentalmente porque tal verdad no existe, y siempre habrá ahí fuera gente que sepa mucho más que vosotros.
+Y como último consejo, ¡sed humildes! Nadie está en posesión de la verdad absoluta, fundamentalmente porque tal verdad no existe, y siempre habrá ahí fuera gente que sepa mucho más que vosotros. De hecho, en este post no estoy diciendo que yo ahora sea un buen programador para nada. Es fácil decir cuando algo no es bueno, pero no es tan fácil decir cuando lo es.
