@@ -4,7 +4,6 @@ title: You fui un mal programador
 permalink: 2017/01/yo-fui-un-mal-programador/
 tags:
 - me
-- confesiones
 comments: true
 ---
 
