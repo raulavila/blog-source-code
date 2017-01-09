@@ -3,7 +3,7 @@ layout: post
 title: Aprender inglés
 permalink: 2016/12/aprender-ingles/
 tags:
-- inglés
+- ingles
 comments: true
 ---
 
