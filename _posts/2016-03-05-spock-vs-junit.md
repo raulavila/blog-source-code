@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Spock vs JUnit
+description: Comparando Spock y JUnit
 permalink: 2016/03/spock-vs-junit/
 tags:
 - desarrollo

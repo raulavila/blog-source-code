@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mi primera experiencia con TDD
+description: Mi primera vez con Test Driven Development
 permalink: 2015/08/primera-experiencia-tdd/
 tags:
 - TDD

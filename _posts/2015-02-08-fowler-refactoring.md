@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Desgranando Fowler's Refactoring (parte 1)
+description: Una visión crítica del libro Refactorin de Martin Fowler, primera parte
 permalink: 2015/02/fowler-refactoring-1/
 tags:
 - refactoring

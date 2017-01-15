@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Perdón por la ausencia
+description: Perdón por la ausencia, qué he estado haciendo en las últimas semanas
 permalink: 2016/11/perdon-por-la-ausencia/
 tags:
 - me

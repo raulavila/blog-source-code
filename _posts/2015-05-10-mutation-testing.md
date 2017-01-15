@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mutation testing&#58; tests de máxima calidad
+description: Mutation testing en Java con Pit
 permalink: 2015/05/mutation-testing/
 tags:
 - desarrollo

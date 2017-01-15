@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Pair Programming
+description: Puntos positivos y negativos de trabajar con Pair Programming
 permalink: 2016/08/pair-programming/
 tags:
 - desarrollo

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Patterns of Enterprise Application Architecture (y 2)
+description: Repasando el libro Patterns of Enterprise Aplication Architecture de Fowler, segunda parte
 permalink: 2015/10/patterns-eaa-2/
 tags:
 - desarrollo

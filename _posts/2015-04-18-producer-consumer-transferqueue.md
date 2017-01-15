@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Optimizando el patrón Producer-Consumer con TransferQueue
+description: Cómo utilizar la estructura de datos TransferQueue en Java para optimizar el patrón Producer-Consumer
 permalink: 2015/04/producer-consumer-transferqueue/
 tags:
 - desarrollo

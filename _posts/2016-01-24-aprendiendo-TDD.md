@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Aprendiendo TDD
+description: Recursos para aprender Test Driven Development
 permalink: 2016/01/aprendiendo-TDD/
 tags:
 - TDD

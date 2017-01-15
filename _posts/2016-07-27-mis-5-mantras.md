@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mis cinco mantras
+description: Mis cinco mantras para escribir software de calidad
 permalink: 2016/07/mis-5-mantras/
 tags:
 - desarrollo

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Passionate Programmer (el libro)
+description: Un resumen del libro The Passionate Programmer, de Chad Fowler
 permalink: 2016/04/passionate-programmer/
 tags:
 - soft-skills

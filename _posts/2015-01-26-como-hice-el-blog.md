@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cómo hice el blog
+description: Cómo hacer un blog con Jekyll, paso a paso
 permalink: 2015/01/como-hice-el-blog/
 tags:
 - blog

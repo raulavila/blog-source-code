@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Extract till you drop
+description: La importancia de extraer y extraer cuando desarrollamos código
 permalink: 2016/09/extract-till-you-drop/
 tags:
 - desarrollo

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Creando fixtures de dominio legibles
+description: Escribiendo fixtures de dominio legibles para nuestros tests
 permalink: 2016/04/fixtures-dominio-legibles/
 tags:
 - desarrollo

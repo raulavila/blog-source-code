@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Un año de blog
+description: Primer aniversario del blog
 permalink: 2016/01/primer-aniversario/
 tags:
 - me

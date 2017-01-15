@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Uso avanzado de enumerados
+description: Cosas que se puden hacer con Enums en Java y quizás no sabías
 permalink: 2015/02/enums-java/
 tags:
 - Java

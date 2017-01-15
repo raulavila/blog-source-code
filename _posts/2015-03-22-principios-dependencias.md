@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dependency Inversion vs Dependency Injection
+description: Diferencia entre inversión de dependencias e inyección de dependencias
 permalink: 2015/03/principios-dependencias/
 tags:
 - desarrollo

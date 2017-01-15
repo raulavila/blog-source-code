@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Antipatrones de Arquitectura Software
+description: Antipatrones de Arquitectura Software
 permalink: 2016/07/antipatrones-arquitectura/
 tags:
 - desarrollo

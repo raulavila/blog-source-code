@@ -1,6 +1,7 @@
 ---
 layout: post
 title: El patrón Composite en la práctica
+description: Un ejemplo práctico del patrón Composite, del libro Gang of four
 permalink: 2015/04/patron-composite/
 tags:
 - desarrollo

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Estar al día
+description: Recursos para estar al día en el mundo del desarrollo software
 permalink: 2015/10/estar-al-dia/
 tags:
 - desarrollo

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Gradle desde Maven
+description: Aprendiendo Gradle para expertos en Maven
 permalink: 2015/09/gradle-desde-maven/
 tags:
 - desarrollo

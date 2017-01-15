@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ventanas rotas
+description: No dejes ventanas rotas en tu software
 permalink: 2016/09/ventanas-rotas/
 tags:
 - desarrollo

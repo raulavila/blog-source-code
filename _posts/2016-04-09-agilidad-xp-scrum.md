@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Agilidad, XP y Scrum
+description: Comparando Extreme Programming y Scrum
 permalink: 2016/04/agilidad-xp-scrum/
 tags:
 - desarrollo

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Las reuniones en proyectos de desarrollo
+description: Mi opinión sobre las reuniones en proyectos de desarrollo software
 permalink: 2015/04/reuniones/
 tags:
 - desarrollo

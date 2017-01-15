@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Complejidad esencial vs Complejidad accidental
+description: Cómo reducir la complejidad accidental de los proyectos
 permalink: 2015/05/complejidad-esencial-accidental/
 tags:
 - buenas-practicas

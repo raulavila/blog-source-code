@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Revisa tu código autogenerado
+description: Cosas a tener en cuenta cuando utilizamos herramienas de generación de código en IDEs
 permalink: 2016/02/codigo-autogenerado/
 tags:
 - desarrollo

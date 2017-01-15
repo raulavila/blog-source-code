@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Eliminando dependencias estáticas en legacy code
+description: Cómo eliminar dependencias estáticas en Java, usando una suite de tests como red
 permalink: 2015/03/refactoring-legacy-static/
 tags:
 - desarrollo

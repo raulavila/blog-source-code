@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Code Reviews (revisiones de código)
+description: Mi opinión sobre las revisiones de código o code reviews
 permalink: 2015/03/code-reviews/
 tags:
 - desarrollo

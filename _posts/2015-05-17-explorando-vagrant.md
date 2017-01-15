@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Explorando Vagrant
+description: Primeros pasos con Vagrant como herramiena de desarrollo
 permalink: 2015/05/explorando-vagrant/
 tags:
 - desarrollo

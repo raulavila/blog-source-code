@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Haz una sola cosa
+description: Haz una sola cosa, o el Single Responsibility Principle
 permalink: 2016/09/haz-una-sola-cosa/
 tags:
 - desarrollo

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Novedades en Spring 4 (y 2)
+description: Novedades en Spring Framework 4, segunda parte
 permalink: 2015/03/spring-4-novedades-2/
 tags:
 - Java

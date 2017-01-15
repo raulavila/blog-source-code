@@ -1,6 +1,7 @@
 ---
 layout: post
 title: International Developers in London Conference
+description: Un día en la International Developers Conference en Londres
 permalink: 2015/02/idinlondon-conference/
 tags:
 - London

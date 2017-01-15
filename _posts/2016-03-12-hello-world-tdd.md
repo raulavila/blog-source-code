@@ -1,6 +1,7 @@
 ---
 layout: post
 title: TDD&#58; Hello World Web App
+description: Escribiendo una aplicación Hello World utilizando TDD
 permalink: 2016/03/hello-world-tdd/
 tags:
 - TDD

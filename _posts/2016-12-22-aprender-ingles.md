@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Aprender inglés
+description: Recursos para aprender inglés
 permalink: 2016/12/aprender-ingles/
 tags:
 - ingles

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Acoplamiento temporal
+description: Qué es el acoplamiento temporal, y cómo evitarlo
 permalink: 2015/07/acoplamiento-temporal/
 tags:
 - desarollo

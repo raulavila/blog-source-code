@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello World!
+description: Hola mundo, el primer post del blog
 permalink: 2015/01/hello-world/
 tags:
 - me

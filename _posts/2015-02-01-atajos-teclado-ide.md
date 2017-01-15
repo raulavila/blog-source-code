@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Atajos de teclado en IDE's
+description: Atajos de teclado en Eclipse e IntelliJ IDEA
 permalink: 2015/02/atajos-teclado-ide/
 tags:
 - IDE

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tests de contrato
+description: Qué es un test de contrato, y cómo implementarlo en Java
 permalink: 2015/11/test-de-contrato/
 tags:
 - desarrollo

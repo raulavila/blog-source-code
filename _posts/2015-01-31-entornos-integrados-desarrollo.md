@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Entornos integrados de desarrollo (IDE)
+description: Entornos integrados de desarrollo en Java
 permalink: 2015/01/entornos-integrados-desarrollo/
 tags:
 - IDE

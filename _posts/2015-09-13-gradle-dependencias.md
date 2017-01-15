@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Resolución de dependencias en Gradle
+description: Cómo funciona la resolución de dependencias en Gradle
 permalink: 2015/09/gradle-dependencias/
 tags:
 - desarrollo

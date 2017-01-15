@@ -1,6 +1,7 @@
 ---
 layout: post
 title: La revolución Docker
+description: Una introducción a Docker
 permalink: 2015/07/revolucion-docker/
 tags:
 - desarrollo

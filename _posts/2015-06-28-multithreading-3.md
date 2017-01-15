@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Multithreading para dummies (3)
+description: Aprendiendo multithreading, tercera parte
 permalink: 2015/06/multithreading-3/
 tags:
 - Java
