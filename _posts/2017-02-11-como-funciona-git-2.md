@@ -23,6 +23,8 @@ Es decir, un directorio con un fichero `hello.txt`, fichero que contiene el text
 
 Seguiremos trabajando desde aquí.
 
+<!--break-->
+
 ## Segundo commit
 
 Vamos a añadir una nueva carpeta `greetings`, que contendrá un fichero, `hello2.txt` con el mismo texto "Hello World":
