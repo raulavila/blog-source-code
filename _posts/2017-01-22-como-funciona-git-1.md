@@ -262,4 +262,4 @@ Con esto, actualicemos nuestro diagrama:
 
 ![Git Blob](/public/pictures/git-internals/git-first-commit-tag.jpg)
 
-Terminamos esta primera entrega sobre el funcionamiento interno de Git. En la siguiente veremos cómo Git añade nuevos commits al histórico, revisaremos los tipos de datos durante el proceso, y veremos cómo se realiza la gestion de ramas.
+Terminamos esta primera entrega sobre el funcionamiento interno de Git. [En la siguiente](/2017/02/como-funciona-git-2/) veremos cómo Git añade nuevos commits al histórico, revisaremos los tipos de datos durante el proceso, y veremos cómo se realiza la gestion de ramas.
