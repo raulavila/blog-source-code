@@ -44,7 +44,7 @@ La diferencia entre Deuda Técnica y código chapucero, es que para este último
 
 La comunicación con nuestros compañeros de trabajo, sean técnicos o no, es muy importante. Para conseguir una comunicación efectiva, la empatía es muy importante, y debemos adaptar nuestro discurso al oyente. Así, que por favor, nunca más le digáis a una persona de negocio algo como:
 
-> Necesitamos refactorizar la capa de persistencia, porque exixten problemas de latencia causados por Hibernate. Además, nuestro pool de threads no está correctamente dimensionado
+> Necesitamos refactorizar la capa de persistencia, porque existen problemas de latencia causados por Hibernate. Además, nuestro pool de threads no está correctamente dimensionado
 
 Supongo que sabéis a lo que me refiero. Es necesario además distinguir las diferentes prioridades dentro de cada perfil con el que tenemos que tratar, y buscar un balance entre todas esas prioridades para encontrar una solución de consenso.
 
