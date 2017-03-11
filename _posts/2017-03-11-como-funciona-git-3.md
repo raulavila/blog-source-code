@@ -156,6 +156,18 @@ Espero que tenga sentido lo que ha ocurrido ahora, Git ha detectado el merge que
 
 ![Git](/public/pictures/git-internals/git-merge-3.jpg)
 
+Por cierto, tras todo este proceso, nuestro repositorio ha quedado tal que así:
+
+{% highlight text %}
+$ tree
+.
+├── goodbye.txt
+├── goodbye_develop.txt
+├── greetings
+│   └── hello2.txt
+└── hello.txt
+{% endhighlight %}
+
 ## Rebase
 
 [Git rebase](https://git-scm.com/docs/git-rebase) es uno de los comandos más potentes de Git, pero también el más peligroso. No es más que una forma diferente de fusionar el contenido de dos ramas, siguiendo una estrategia bastante agresiva: reescribir la historia, sin añadir ningún commit adicional, como sí hacía merge. El mejor articulo para entender las diferencias entre `merge` y `rebase` [es este](https://www.atlassian.com/git/tutorials/merging-vs-rebasing), no es mi intención cubrir con mucho detalle algo que ya se ha discutido hasta la saciedad, sino mostrar cuál es el proceso interno en el repositorio de Git.
