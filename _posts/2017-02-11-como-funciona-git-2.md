@@ -19,7 +19,7 @@ Dejamos nuestro repositorio en el siguiente estado:
 
 Es decir, un directorio con un fichero `hello.txt`, fichero que contiene el texto "Hello World". Tras hacer nuestro primer commit y añadir un tag, nos quedó la siguiente estructura interna:
 
-![Git Blob](/public/pictures/git-internals/git-first-commit-tag.jpg)
+![Git](/public/pictures/git-internals/git-first-commit-tag.jpg)
 
 Seguiremos trabajando desde aquí.
 
@@ -120,7 +120,7 @@ El contenido de la carpeta es un puntero al contenido (blob) del nuevo fichero, 
 
 Con todo esto, veamos cómo queda nuestro árbol de objetos:
 
-![Git Blob](/public/pictures/git-internals/git-second-commit.jpg)
+![Git](/public/pictures/git-internals/git-second-commit.jpg)
 
 Este va a ser el diagrama más complicado que veremos en la serie, y espero que más o menos haya quedado claro. Git intenta reutilizar toda la información que sea posible al añadir nuevos commits, y así, el blob "Hello World" es apuntado desde tres lugares diferentes (el fichero del primer commit, el mismo fichero del segundo, y el nuevo fichero del segundo). De esta forma se minimiza la cantidad de datos creados por cada cambio. Además, las carpetas `info` y `pack` se utilizan en procesos de compresión que no cubriremos aquí (para empezar, porque no los conozco todavía :)).
 
@@ -130,7 +130,7 @@ A continuación veremos una de las funcionalidades más potentes de Git, y os as
 
 Para comprender bien el funcionamiento de las ramas (branches) en Git, vamos a simplificar el diagrama de la estructura que hemos ido creando, y nos quedaremos únicamente con los commits:
 
-![Git Blob](/public/pictures/git-internals/git-commit-history-1.jpg)
+![Git](/public/pictures/git-internals/git-commit-history-1.jpg)
 
 Todos sabemos que cuando iniciamos un proyecto Git, este nos crea con nuestro primer commit una única rama de nombre `master`. Internamente, una rama es algo tan tonto como un pequeño ficherito que apunta a un commit, ni más ni menos, es decir, un alias:
 
@@ -141,7 +141,7 @@ $ cat .git/refs/heads/master
 
 Como véis, el contenido de este fichero es el hash del último commit que hemos realizado:
 
-![Git Blob](/public/pictures/git-internals/git-master.jpg)
+![Git](/public/pictures/git-internals/git-master.jpg)
 
 La gran diferencia entre tags y ramas es que los tags son inmutables, mientras que las ramas están "vivas", avanzando con cada commit añadido a la historia.
 
@@ -156,7 +156,7 @@ $ cat .git/refs/heads/develop
 
 Sin demasiadas sorpresas, la nueva rama apunta al commit en que nos encontramos, coincidendo con `master`, es decir:
 
-![Git Blob](/public/pictures/git-internals/git-master-develop.jpg)
+![Git](/public/pictures/git-internals/git-master-develop.jpg)
 
 La pregunta aquí es qué rama será la que avanzará si añadimos un nuevo commit, veámoslo en vivo:
 
@@ -235,6 +235,6 @@ Switched to branch 'develop'
 
 Tras este mareo, este es la instantánea de nuestro histórico:
 
-![Git Blob](/public/pictures/git-internals/git-head.jpg)
+![Git](/public/pictures/git-internals/git-head.jpg)
 
-Lo dejamos aquí por hoy. En el último post de la serie veremos cómo funcionan `merge` y `rebase`, y finalizaremos con la sincronización con repositorios remotos.
+Lo dejamos aquí por hoy. [En el último post de la serie](/2017/03/como-funciona-git-3/) veremos cómo funcionan `merge` y `rebase`, y finalizaremos con la sincronización con repositorios remotos.
