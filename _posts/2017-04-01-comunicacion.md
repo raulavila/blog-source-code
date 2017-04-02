@@ -9,7 +9,7 @@ tags:
 comments: true
 ---
 
-Esta semana hará tres meses que inicié mi andadura como Anchor en un proyecto de mi empresa. Además de algo estresante, diría que la experiencia está siendo muy buena en todos los sentidos, y me está sirviendo para aprender un montón de cosas. Quizás la más importante de todas ellas sea como gestionar la comunicación dentro de un equipo de forma eficiente, y en este post voy a repasar muchas de las conclusiones que he ido sacando en claro.
+Esta semana hará tres meses que inicié mi andadura como Anchor en un proyecto de mi empresa. Diría que la experiencia está siendo muy buena en todos los sentidos, y me está sirviendo para aprender un montón de cosas. Quizás la más importante de todas ellas sea como gestionar la comunicación dentro de un equipo de forma eficiente, y en este post voy a repasar muchas de las conclusiones que he ido sacando en claro.
 
 <!--break-->
 
