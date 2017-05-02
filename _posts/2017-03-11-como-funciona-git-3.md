@@ -244,4 +244,4 @@ En la práctica, hacer `merge` y `rebase` no es tan bonito ni sencillo como acab
 
 Repito, esta explicación es muy "a grosso", y entrar en detalles requeriría un artículo en condiciones.
 
-Finalizo aquí este post de la serie. Mi intención inicial era cubrir la forma en que Git trabaja con repositorios remotos, pero creo que desembocaría en un artículo demasiado largo y poco cohesionado. Así que lo haré en el siguiente, y ahora sí, último post de la serie.
+Finalizo aquí este post de la serie. Mi intención inicial era cubrir la forma en que Git trabaja con repositorios remotos, pero creo que desembocaría en un artículo demasiado largo y poco cohesionado. Así que lo haré en el siguiente, y ahora sí, [último post de la serie](/2017/04/como-funciona-git-4/).
