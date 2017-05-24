@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ¿Programadores ágiles?
+title: ¿Qué es un Programador Ágil?
 description: Las habilidades más importantes de un programador ágil
 permalink: 2017/05/programadores-agiles/
 tags:
