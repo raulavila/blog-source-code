@@ -144,3 +144,5 @@ El último formalismo suele ser firmar los documentos recibidos por la empresa y
 ## Conclusiones
 
 Espero que alguno de estos consejos puedan servir a alguien en algún momento para decidirse a dar el salto. Creedme que la experiencia merece la pena.
+
+Si os interesea profundizar algo más en este tema, echad un vistazo a mi post sobre [cómo escribir un CV para el mercado anglosajón](/2017/08/cv-anglosajon/).
