@@ -139,4 +139,4 @@ Si surgen conflictos durante las operaciones de merge o rebase, no hay ninguna d
 
 Espero que esta seria os haya servido de ayuda para perder el miedo a Git. Personalmente, conocer todos estos detalles sobre el funcionamiento de la herramienta ha conseguido que cuando surge un conflicto no pierda los nervios de forma inmediata, como sí me ocurría antaño :).
 
-Serie Git Completa: | [Parte 1](/2017/01/como-funciona-git-1/) | [Parte 2](/2017/02/como-funciona-git-2/) | [Parte 3](/2017/03/como-funciona-git-3/) | [Parte 4](/2017/04/como-funciona-git-4/)
+Serie completa: | [Parte 1](/2017/01/como-funciona-git-1/) | [Parte 2](/2017/02/como-funciona-git-2/) | [Parte 3](/2017/03/como-funciona-git-3/) | [Parte 4](/2017/04/como-funciona-git-4/)

@@ -264,4 +264,4 @@ Con esto, actualicemos nuestro diagrama:
 
 Terminamos esta primera entrega sobre el funcionamiento interno de Git. [En la siguiente](/2017/02/como-funciona-git-2/) veremos cómo Git añade nuevos commits al histórico, revisaremos los tipos de datos durante el proceso, y veremos cómo se realiza la gestion de ramas.
 
-Serie Git Completa: | [Parte 1](/2017/01/como-funciona-git-1/) | [Parte 2](/2017/02/como-funciona-git-2/) | [Parte 3](/2017/03/como-funciona-git-3/) | [Parte 4](/2017/04/como-funciona-git-4/)
+Serie completa: | [Parte 1](/2017/01/como-funciona-git-1/) | [Parte 2](/2017/02/como-funciona-git-2/) | [Parte 3](/2017/03/como-funciona-git-3/) | [Parte 4](/2017/04/como-funciona-git-4/)

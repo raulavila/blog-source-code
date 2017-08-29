@@ -246,4 +246,4 @@ Repito, esta explicación es muy "a grosso", y entrar en detalles requeriría un
 
 Finalizo aquí este post de la serie. Mi intención inicial era cubrir la forma en que Git trabaja con repositorios remotos, pero creo que desembocaría en un artículo demasiado largo y poco cohesionado. Así que lo haré en el siguiente, y ahora sí, [último post de la serie](/2017/04/como-funciona-git-4/).
 
-Serie Git Completa: | [Parte 1](/2017/01/como-funciona-git-1/) | [Parte 2](/2017/02/como-funciona-git-2/) | [Parte 3](/2017/03/como-funciona-git-3/) | [Parte 4](/2017/04/como-funciona-git-4/)
+Serie completa: | [Parte 1](/2017/01/como-funciona-git-1/) | [Parte 2](/2017/02/como-funciona-git-2/) | [Parte 3](/2017/03/como-funciona-git-3/) | [Parte 4](/2017/04/como-funciona-git-4/)
