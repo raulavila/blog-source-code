@@ -238,3 +238,5 @@ Tras este mareo, este es la instantánea de nuestro histórico:
 ![Git](/public/pictures/git-internals/git-head.jpg)
 
 Lo dejamos aquí por hoy. [En el último post de la serie](/2017/03/como-funciona-git-3/) veremos cómo funcionan `merge` y `rebase`, y finalizaremos con la sincronización con repositorios remotos.
+
+Serie Git Completa: | [Parte 1](/2017/01/como-funciona-git-1/) | [Parte 2](/2017/02/como-funciona-git-2/) | [Parte 3](/2017/03/como-funciona-git-3/) | [Parte 4](/2017/04/como-funciona-git-4/)
