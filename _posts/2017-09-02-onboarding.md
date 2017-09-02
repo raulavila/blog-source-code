@@ -2,7 +2,7 @@
 layout: post
 title: Procesos de onboarding
 description: La importancia del onboarding para nuevos empleados
-permalink: 2017/09/onboarding/
+permalink: 2017/09/procesos-onboarding/
 tags:
 - onboarding
 - peopleware
