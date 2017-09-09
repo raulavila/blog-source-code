@@ -55,6 +55,6 @@ Cuando un cliente nos impone unos plazos que sabemos de antemano son completamen
 
 He puesto el ejemplo de los plazos porque creo que todos lo hemos experimentado, pero existen otros muchos aspectos donde comprender el punto de vista del cliente es también necesario. No profundizo más porque el tema es denso y daría para una serie de posts :).
 
-## 7. No pensar en quién vendrá después
+## 7. No pensar en quien vendrá después
 
 ¿A qué me refiero con esto? Me refiero tanto a futuros programadores que tendrán que lidiar con nuestro código para corregir bugs o añadir nuevas funcionalidades como al equipo de operaciones que tendrá que desplegar la aplicación en diferentes entornos, diagnosticar posibles problemas, etc. Es por tanto, fundamental, no descuidar aspectos ya mencionados anteriormente, como la legibilidad del código, pero también otros como proporcionar una documentación adecuada (a poder ser en forma de [README](https://jesuslc.com/2016/07/12/como-escribir-un-readme-que-mole/)), generar unas trazas (logs) de calidad, que en caso de problema permitan detectar qué está ocurriendo y facilitar la comunicación entre desarrollo y operaciones, encapsular parámetros de configuración en un solo lugar (y documentar cómo modificarlos), etc.
