@@ -197,11 +197,11 @@ Nuestro árbol de Git queda así:
 
 ![Git](/public/pictures/git-internals/git-rebase-1.jpg)
 
-No he dejado el commit `284c28` por error. Este es el commit que anteriormente pertenecia a `develop`, pero ha dejado de hacerlo tras el rebase, momento en que ha sido reemplazado por `3e7eed`, que tiene el mismo contenido pero distinto ancestro. El hecho de que tengamos un commit sin ninguna rama que lo referencia significa que en algún momento el recolector de basura de Git lo eliminará de su base de datos. Pero si no queremos que eso ocurra siempre podemos crear una rama apuntando a él, recordad que una rama no es más que un puntero a un commit. Es decir, podríamos hacer esto:
+No he dejado el commit `ac88e5b` por error. Este es el commit que anteriormente pertenecia a `develop`, pero ha dejado de hacerlo tras el rebase, momento en que ha sido reemplazado por `3e7eed`, que tiene el mismo contenido pero distinto ancestro. El hecho de que tengamos un commit sin ninguna rama que lo referencia significa que en algún momento el recolector de basura de Git lo eliminará de su base de datos. Pero si no queremos que eso ocurra siempre podemos crear una rama apuntando a él, recordad que una rama no es más que un puntero a un commit. Es decir, podríamos hacer esto:
 
 {% highlight text %}
-$ git checkout 284c28
-Note: checking out '284c28'.
+$ git checkout ac88e5b
+Note: checking out 'ac88e5b'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -212,7 +212,7 @@ do so (now or later) by using -b with the checkout command again. Example:
 
   git checkout -b <new-branch-name>
 
-HEAD is now at 284c288... Second commit
+HEAD is now at ac88e5b... Second commit
 
 $ git checkout -b backup
 Switched to a new branch 'backup'
